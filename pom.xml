@@ -45,12 +45,6 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.despegar.atp</groupId>
-            <artifactId>atp3-java-client</artifactId>
-            <version>2.2.1</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpcore</artifactId>
         </dependency>
