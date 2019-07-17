@@ -14,7 +14,7 @@ public class SustainingReleaseDAO {
 
     private SustainingReleaseRepository sustainingReleaseRepository;
 
-    public List<SustainingRelease> getSustainingRelease(){
+    public List<SustainingRelease> getSustainingReleaseList(){
         List<SustainingRelease>sustainingReleaseList = new ArrayList<>();
         sustainingReleaseRepository.findAll().forEach(sustainingRelease -> sustainingReleaseList.add(sustainingRelease));
         return sustainingReleaseList;

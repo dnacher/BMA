@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 import com.bma.api.dtos.CallingDTO;
 import com.bma.domain.service.mappers.CallingMapper;
 import com.bma.domain.service.CallingService;
-import com.bma.utils.CallingUtils;
+import com.bma.utils.Utils;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
@@ -22,7 +22,7 @@ public class CallingController {
 
     @PostMapping(value = "/")
     public CallingDTO saveCalling(@RequestBody CallingDTO callingDTO){
-        CallingUtils.validateIdNull(callingDTO.getId(), String.format("A new Calling cannot contains an Id"));
+        Utils.validateIdNull(callingDTO.getId(), String.format("A new Calling cannot contains an Id"));
        return this.callingService.saveCalling(callingDTO);
     }
 

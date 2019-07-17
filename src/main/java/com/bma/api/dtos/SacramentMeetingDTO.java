@@ -17,7 +17,7 @@ public class SacramentMeetingDTO {
 
     private List<PrayerDTO> prayerDTOS;
 
-    private List<DiscourseDTO> discours;
+    private List<DiscourseDTO> discourses;
 
     private MemberDTO preside;
 
@@ -73,12 +73,12 @@ public class SacramentMeetingDTO {
         this.prayerDTOS = prayerDTOS;
     }
 
-    public List<DiscourseDTO> getDiscours() {
-        return discours;
+    public List<DiscourseDTO> getDiscourses() {
+        return discourses;
     }
 
-    public void setDiscours(List<DiscourseDTO> discours) {
-        this.discours = discours;
+    public void setDiscourses(List<DiscourseDTO> discourses) {
+        this.discourses = discourses;
     }
 
     public MemberDTO getPreside() {

@@ -10,7 +10,7 @@ public class SustainingReleaseDTO {
 
     private MemberDTO memberDTO;
 
-    private Calling calling;
+    private CallingDTO callingDTO;
 
     private Date initDate;
 
@@ -32,12 +32,12 @@ public class SustainingReleaseDTO {
         this.memberDTO = memberDTO;
     }
 
-    public Calling getCalling() {
-        return calling;
+    public CallingDTO getCallingDTO() {
+        return callingDTO;
     }
 
-    public void setCalling(Calling calling) {
-        this.calling = calling;
+    public void setCallingDTO(CallingDTO callingDTO) {
+        this.callingDTO = callingDTO;
     }
 
     public Date getInitDate() {

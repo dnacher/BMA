@@ -3,7 +3,7 @@ package com.bma.utils;
 import com.bma.exception.BMAException;
 import org.eclipse.jetty.http.HttpStatus;
 
-public class CallingUtils {
+public class Utils {
 
     public static void validateIdNull(Integer id, String errorMsg){
         if (id != null) {
