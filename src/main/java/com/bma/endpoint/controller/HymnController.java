@@ -12,12 +12,12 @@ import com.bma.utils.Utils;
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/discourses")
-public class DiscourseController {
+public class HymnController {
 
     private final DiscourseService discourseService;
     private final DiscourseMapper discourseMapper;
 
-    public DiscourseController(DiscourseService discourseService, DiscourseMapper discourseMapper){
+    public HymnController(DiscourseService discourseService, DiscourseMapper discourseMapper){
         this.discourseService = discourseService;
         this.discourseMapper = discourseMapper;
     }

@@ -38,7 +38,7 @@ public class DiscourseService {
         this.discourseDAO.deleteDiscourse(discourseMapper.mapToEntity(discourseDTO));
     }
 
-    public DiscourseDTO updateCalling(DiscourseDTO discourseDTO) throws BMAException{
+    public DiscourseDTO updateDiscourse(DiscourseDTO discourseDTO) throws BMAException{
         try {
             return this.discourseMapper.mapToDTO(this.discourseDAO.updateDiscourse(discourseMapper.mapToEntity(discourseDTO)));
         }catch (BMAException e){
@@ -46,12 +46,12 @@ public class DiscourseService {
         }
     }
 
-    public List<DiscourseDTO> getCallings(){
+    public List<DiscourseDTO> getDiscourses(){
         List<Discourse> discourses = this.discourseDAO.getDiscourses();
         return discourses.stream().map(calling -> this.discourseMapper.mapToDTO(calling)).collect(Collectors.toList());
     }
 
-    public DiscourseDTO getCallingById(Integer id) throws BMAException{
+    public DiscourseDTO getDiscourseById(Integer id) throws BMAException{
         try {
             return this.discourseMapper.mapToDTO(this.discourseDAO.getDiscourseById(id));
         }catch (BMAException e){
