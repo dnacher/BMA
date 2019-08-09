@@ -3,20 +3,20 @@ package com.bma.persistence.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "HYMN")
+@Table(name = "hymn")
 public class Hymn {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "NAME")
+    @Column(name = "name")
     private String name;
 
-    @Column(name = "NUMBER")
+    @Column(name = "number")
     private Integer number;
 
-    @Column(name = "PIANO_NUMBER")
+    @Column(name = "piano_number")
     private Integer pianoNumber;
 
     public Integer getId() {

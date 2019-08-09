@@ -5,18 +5,18 @@ import java.util.Date;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "PRAYER")
+@Table(name = "prayer")
 public class Prayer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
-    @JoinColumn(name = "MEMBER")
+    @ManyToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "member")
     private Member member;
 
-    @Column
+    @Column(name = "date")
     private Date date;
 
     public Integer getId() {

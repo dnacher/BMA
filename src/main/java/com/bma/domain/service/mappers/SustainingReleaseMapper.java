@@ -1,14 +1,12 @@
 package com.bma.domain.service.mappers;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.bma.api.dtos.CallingDTO;
 import com.bma.api.dtos.SustainingReleaseDTO;
-import com.bma.persistence.model.Calling;
 import com.bma.persistence.model.SustainingRelease;
 
 @Component
@@ -25,8 +23,8 @@ public class SustainingReleaseMapper implements AbstractMapper<SustainingRelease
     public SustainingRelease mapToEntity(SustainingReleaseDTO dto) {
         SustainingRelease sustainingRelease = new SustainingRelease();
         sustainingRelease.setId(dto.getId());
-        sustainingRelease.setMember(this.memberMapper.mapToEntity(dto.getMemberDTO()));
-        sustainingRelease.setCalling(this.callingMapper.mapToEntity(dto.getCallingDTO()));
+        sustainingRelease.setMember(this.memberMapper.mapToEntity(dto.getMember()));
+        sustainingRelease.setCalling(this.callingMapper.mapToEntity(dto.getCalling()));
         sustainingRelease.setInitDate(dto.getInitDate());
         sustainingRelease.setEndDate(dto.getEndDate());
         return  sustainingRelease;
@@ -36,23 +34,23 @@ public class SustainingReleaseMapper implements AbstractMapper<SustainingRelease
     public SustainingReleaseDTO mapToDTO(SustainingRelease entity) {
         SustainingReleaseDTO sustainingReleaseDTO = new SustainingReleaseDTO();
         sustainingReleaseDTO.setId(entity.getId());
-        sustainingReleaseDTO.setMemberDTO(this.memberMapper.mapToDTO(entity.getMember()));
-        sustainingReleaseDTO.setCallingDTO(this.callingMapper.mapToDTO(entity.getCalling()));
+        sustainingReleaseDTO.setMember(this.memberMapper.mapToDTO(entity.getMember()));
+        sustainingReleaseDTO.setCalling(this.callingMapper.mapToDTO(entity.getCalling()));
         sustainingReleaseDTO.setInitDate(entity.getInitDate());
         sustainingReleaseDTO.setEndDate(entity.getEndDate());
         return sustainingReleaseDTO;
     }
 
-    public List<SustainingRelease> mapToEntityList(List<SustainingReleaseDTO> dtos) {
-        List<SustainingRelease> sustainingReleaseList = new ArrayList<>();
-        dtos.forEach(sustainingReleaseDTO -> sustainingReleaseList.add(this.mapToEntity(sustainingReleaseDTO)));
-        return sustainingReleaseList;
+    public Set<SustainingRelease> mapToEntitySet(Set<SustainingReleaseDTO> dtos) {
+        Set<SustainingRelease> sustainingReleaseSet = new HashSet<>();
+        dtos.forEach(sustainingReleaseDTO -> sustainingReleaseSet.add(this.mapToEntity(sustainingReleaseDTO)));
+        return sustainingReleaseSet;
     }
 
 
-    public List<SustainingReleaseDTO> mapToDTOList(List<SustainingRelease> entities) {
-        List<SustainingReleaseDTO> sustainingReleaseDTOList = new ArrayList<>();
-        entities.forEach(sustainingRelease -> sustainingReleaseDTOList.add(this.mapToDTO((sustainingRelease))));
-        return sustainingReleaseDTOList;
+    public Set<SustainingReleaseDTO> mapToDTOSet(Set<SustainingRelease> entities) {
+        Set<SustainingReleaseDTO> sustainingReleaseDTOSet = new HashSet<>();
+        entities.forEach(sustainingRelease -> sustainingReleaseDTOSet.add(this.mapToDTO((sustainingRelease))));
+        return sustainingReleaseDTOSet;
     }
 }

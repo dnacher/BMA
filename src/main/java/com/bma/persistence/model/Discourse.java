@@ -12,7 +12,7 @@ public class Discourse {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
     @JoinColumn(name = "MEMBER")
     private Member member;
 
@@ -22,7 +22,7 @@ public class Discourse {
     @Column(name = "DATE")
     private Date date;
 
-    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
     @JoinColumn(name = "ASSIGNED_BY")
     private Member assignedBy;
 

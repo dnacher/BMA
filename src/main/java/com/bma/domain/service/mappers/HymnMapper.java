@@ -1,13 +1,10 @@
 package com.bma.domain.service.mappers;
-
-import java.util.ArrayList;
-import java.util.List;
+;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.springframework.stereotype.Component;
-
-import com.bma.api.dtos.CallingDTO;
 import com.bma.api.dtos.HymnDTO;
-import com.bma.persistence.model.Calling;
 import com.bma.persistence.model.Hymn;
 
 @Component
@@ -34,16 +31,16 @@ public class HymnMapper implements AbstractMapper<Hymn, HymnDTO> {
         return hymnDTO;
     }
 
-    public List<Hymn> mapToEntityList(List<HymnDTO> dtos) {
-        List<Hymn>hymns = new ArrayList<>();
+    public Set<Hymn> mapToEntitySet(Set<HymnDTO> dtos) {
+        Set<Hymn>hymns = new HashSet<>();
         dtos.forEach(hymnDTO -> hymns.add(this.mapToEntity(hymnDTO)));
         return hymns;
     }
 
 
-    public List<HymnDTO> mapToDTOList(List<Hymn> entityList) {
-        List<HymnDTO>dtos = new ArrayList<>();
-        entityList.forEach(hymn -> dtos.add(this.mapToDTO(hymn)));
+    public Set<HymnDTO> mapToDTOSet(Set<Hymn> entitySet) {
+        Set<HymnDTO>dtos = new HashSet<>();
+        entitySet.forEach(hymn -> dtos.add(this.mapToDTO(hymn)));
         return dtos;
     }
 

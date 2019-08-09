@@ -1,55 +1,64 @@
 package com.bma.endpoint.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.*;
 
-import com.bma.api.dtos.DiscourseDTO;
-import com.bma.domain.service.DiscourseService;
-import com.bma.domain.service.mappers.DiscourseMapper;
+import com.bma.api.dtos.HymnDTO;
+import com.bma.domain.service.HymnService;
+import com.bma.domain.service.mappers.HymnMapper;
 import com.bma.utils.Utils;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
-@RequestMapping("/discourses")
+@RequestMapping("/hymns")
 public class HymnController {
 
-    private final DiscourseService discourseService;
-    private final DiscourseMapper discourseMapper;
+    private final HymnService hymnService;
+    private final HymnMapper hymnMapper;
 
-    public HymnController(DiscourseService discourseService, DiscourseMapper discourseMapper){
-        this.discourseService = discourseService;
-        this.discourseMapper = discourseMapper;
+    public HymnController(HymnService hymnService, HymnMapper hymnMapper){
+        this.hymnService = hymnService;
+        this.hymnMapper = hymnMapper;
     }
 
     @PostMapping(value = "/")
-    public DiscourseDTO saveDiscourse(@RequestBody DiscourseDTO discourseDTO){
-        Utils.validateIdNull(discourseDTO.getId(), String.format("A new Discourse cannot contains an Id"));
-       return this.discourseService.saveDiscourse(discourseDTO);
+    public HymnDTO saveHymn(@RequestBody HymnDTO hymnDTO){
+        Utils.validateIdNull(hymnDTO.getId(), String.format("A new Hymn cannot contains an Id"));
+       return this.hymnService.saveHymn(hymnDTO);
+    }
+
+    @PostMapping(value = "/mul")
+    public List<HymnDTO> saveHymn(@RequestBody List<HymnDTO> hymnDTOs){
+//        Utils.validateIdNull(hymnDTO.getId(), String.format("A new Hymn cannot contains an Id"));
+        List<HymnDTO> finalList = new ArrayList<>();
+         hymnDTOs.forEach( hymnDTO -> finalList.add(this.hymnService.saveHymn(hymnDTO)));
+        return finalList;
     }
 
     @GetMapping(value = "/")
-    public List<DiscourseDTO> getDiscourses(){
-        return this.discourseService.getDiscourses();
+    public List<HymnDTO> getHymns(){
+        return this.hymnService.getHymns();
     }
 
     @GetMapping(value = "/{id}")
-    public DiscourseDTO getDiscourse(@PathVariable Integer id){
-        return this.discourseService.getDiscourseById(id);
+    public HymnDTO getHymn(@PathVariable Integer id){
+        return this.hymnService.getHymnById(id);
     }
     
     @PutMapping(value = "/{id}")
-    public DiscourseDTO updateDiscourse(@RequestParam Integer id, @RequestBody DiscourseDTO discourseDTO){
-        String msg = String.format("The Discourse Id %s is different from the Url Id",discourseDTO.getId());
-        Utils.validateUrlIdEqualsBodyId(id,discourseDTO.getId(),msg);
-        return this.discourseService.updateDiscourse(discourseDTO);
+    public HymnDTO updateHymn(@PathVariable Integer id, @RequestBody HymnDTO hymnDTO){
+        String msg = String.format("The Hymn Id %s is different from the Url Id",hymnDTO.getId());
+        Utils.validateUrlIdEqualsBodyId(id,hymnDTO.getId(),msg);
+        return this.hymnService.updateHymn(hymnDTO);
     }
     
     @DeleteMapping(value = "/{id}")
-    public void deleteDiscourse(@RequestParam Integer id, DiscourseDTO discourseDTO){
-        String msg = String.format("The Discourse Id %s is different from the Url Id",discourseDTO.getId());
-        Utils.validateUrlIdEqualsBodyId(id,discourseDTO.getId(),msg);
-        this.discourseService.deleteDiscourse(discourseDTO);
+    public void deleteHymn(@PathVariable Integer id, HymnDTO hymnDTO){
+        String msg = String.format("The Hymn Id %s is different from the Url Id",hymnDTO.getId());
+        Utils.validateUrlIdEqualsBodyId(id,hymnDTO.getId(),msg);
+        this.hymnService.deleteHymn(hymnDTO);
     }
     
 }

@@ -4,52 +4,52 @@ import java.util.List;
 
 import org.springframework.web.bind.annotation.*;
 
-import com.bma.api.dtos.HymnDTO;
-import com.bma.domain.service.HymnService;
-import com.bma.domain.service.mappers.HymnMapper;
+import com.bma.api.dtos.SustainingReleaseDTO;
+import com.bma.domain.service.SustainingReleaseService;
+import com.bma.domain.service.mappers.SustainingReleaseMapper;
 import com.bma.utils.Utils;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
-@RequestMapping("/hymns")
-public class HymnController {
+@RequestMapping("/sustaining_releases")
+public class SustainingReleaseController {
 
-    private final HymnService hymnService;
-    private final HymnMapper hymnMapper;
+    private final SustainingReleaseService sustainingReleaseService;
+    private final SustainingReleaseMapper sustainingReleaseMapper;
 
-    public HymnController(HymnService hymnService, HymnMapper hymnMapper){
-        this.hymnService = hymnService;
-        this.hymnMapper = hymnMapper;
+    public SustainingReleaseController(SustainingReleaseService sustainingReleaseService, SustainingReleaseMapper sustainingReleaseMapper){
+        this.sustainingReleaseService = sustainingReleaseService;
+        this.sustainingReleaseMapper = sustainingReleaseMapper;
     }
 
     @PostMapping(value = "/")
-    public HymnDTO saveHymn(@RequestBody HymnDTO hymnDTO){
-        Utils.validateIdNull(hymnDTO.getId(), String.format("A new Hymn cannot contains an Id"));
-       return this.hymnService.saveHymn(hymnDTO);
+    public SustainingReleaseDTO saveSustainingRelease(@RequestBody SustainingReleaseDTO sustainingReleaseDTO){
+        Utils.validateIdNull(sustainingReleaseDTO.getId(), String.format("A new SustainingRelease cannot contains an Id"));
+       return this.sustainingReleaseService.saveSustainingRelease(sustainingReleaseDTO);
     }
 
     @GetMapping(value = "/")
-    public List<HymnDTO> getHymns(){
-        return this.hymnService.getHymns();
+    public List<SustainingReleaseDTO> getSustainingReleases(){
+        return this.sustainingReleaseService.getSustainingReleases();
     }
 
     @GetMapping(value = "/{id}")
-    public HymnDTO getHymn(@PathVariable Integer id){
-        return this.hymnService.getHymnById(id);
+    public SustainingReleaseDTO getSustainingRelease(@PathVariable Integer id){
+        return this.sustainingReleaseService.getSustainingReleaseById(id);
     }
     
     @PutMapping(value = "/{id}")
-    public HymnDTO updateHymn(@RequestParam Integer id, @RequestBody HymnDTO hymnDTO){
-        String msg = String.format("The Hymn Id %s is different from the Url Id",hymnDTO.getId());
-        Utils.validateUrlIdEqualsBodyId(id,hymnDTO.getId(),msg);
-        return this.hymnService.updateHymn(hymnDTO);
+    public SustainingReleaseDTO updateSustainingRelease(@PathVariable Integer id, @RequestBody SustainingReleaseDTO sustainingReleaseDTO){
+        String msg = String.format("The SustainingRelease Id %s is different from the Url Id",sustainingReleaseDTO.getId());
+        Utils.validateUrlIdEqualsBodyId(id,sustainingReleaseDTO.getId(),msg);
+        return this.sustainingReleaseService.updateSustainingRelease(sustainingReleaseDTO);
     }
     
     @DeleteMapping(value = "/{id}")
-    public void deleteHymn(@RequestParam Integer id, HymnDTO hymnDTO){
-        String msg = String.format("The Hymn Id %s is different from the Url Id",hymnDTO.getId());
-        Utils.validateUrlIdEqualsBodyId(id,hymnDTO.getId(),msg);
-        this.hymnService.deleteHymn(hymnDTO);
+    public void deleteSustainingRelease(@PathVariable Integer id,@RequestBody SustainingReleaseDTO sustainingReleaseDTO){
+        String msg = String.format("The SustainingRelease Id %s is different from the Url Id",sustainingReleaseDTO.getId());
+        Utils.validateUrlIdEqualsBodyId(id,sustainingReleaseDTO.getId(),msg);
+        this.sustainingReleaseService.deleteSustainingRelease(sustainingReleaseDTO);
     }
     
 }

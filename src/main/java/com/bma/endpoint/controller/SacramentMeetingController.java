@@ -4,52 +4,47 @@ import java.util.List;
 
 import org.springframework.web.bind.annotation.*;
 
-import com.bma.api.dtos.HymnDTO;
-import com.bma.domain.service.HymnService;
-import com.bma.domain.service.mappers.HymnMapper;
+import com.bma.api.dtos.SacramentMeetingDTO;
+import com.bma.domain.service.SacramentMeetingService;
+import com.bma.domain.service.mappers.SacramentMeetingMapper;
 import com.bma.utils.Utils;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
-@RequestMapping("/hymns")
-public class HymnController {
+@RequestMapping("/sacrament_meetings")
+public class SacramentMeetingController {
 
-    private final HymnService hymnService;
-    private final HymnMapper hymnMapper;
+    private final SacramentMeetingService sacramentMeetingService;
+    private final SacramentMeetingMapper sacramentMeetingMapper;
 
-    public HymnController(HymnService hymnService, HymnMapper hymnMapper){
-        this.hymnService = hymnService;
-        this.hymnMapper = hymnMapper;
+    public SacramentMeetingController(SacramentMeetingService sacramentMeetingService, SacramentMeetingMapper sacramentMeetingMapper){
+        this.sacramentMeetingService = sacramentMeetingService;
+        this.sacramentMeetingMapper = sacramentMeetingMapper;
     }
 
     @PostMapping(value = "/")
-    public HymnDTO saveHymn(@RequestBody HymnDTO hymnDTO){
-        Utils.validateIdNull(hymnDTO.getId(), String.format("A new Hymn cannot contains an Id"));
-       return this.hymnService.saveHymn(hymnDTO);
-    }
-
-    @GetMapping(value = "/")
-    public List<HymnDTO> getHymns(){
-        return this.hymnService.getHymns();
+    public SacramentMeetingDTO saveSacramentMeeting(@RequestBody SacramentMeetingDTO sacramentMeetingDTO){
+        Utils.validateIdNull(sacramentMeetingDTO.getId(), String.format("A new SacramentMeeting cannot contains an Id"));
+       return this.sacramentMeetingService.saveSacramentMeeting(sacramentMeetingDTO);
     }
 
     @GetMapping(value = "/{id}")
-    public HymnDTO getHymn(@PathVariable Integer id){
-        return this.hymnService.getHymnById(id);
+    public SacramentMeetingDTO getSacramentMeeting(@PathVariable Integer id){
+        return this.sacramentMeetingService.getSacramentMeetingById(id);
     }
     
     @PutMapping(value = "/{id}")
-    public HymnDTO updateHymn(@RequestParam Integer id, @RequestBody HymnDTO hymnDTO){
-        String msg = String.format("The Hymn Id %s is different from the Url Id",hymnDTO.getId());
-        Utils.validateUrlIdEqualsBodyId(id,hymnDTO.getId(),msg);
-        return this.hymnService.updateHymn(hymnDTO);
+    public SacramentMeetingDTO updateSacramentMeeting(@PathVariable Integer id, @RequestBody SacramentMeetingDTO sacramentMeetingDTO){
+        String msg = String.format("The SacramentMeeting Id %s is different from the Url Id",sacramentMeetingDTO.getId());
+        Utils.validateUrlIdEqualsBodyId(id,sacramentMeetingDTO.getId(),msg);
+        return this.sacramentMeetingService.updateSacramentMeeting(sacramentMeetingDTO);
     }
     
     @DeleteMapping(value = "/{id}")
-    public void deleteHymn(@RequestParam Integer id, HymnDTO hymnDTO){
-        String msg = String.format("The Hymn Id %s is different from the Url Id",hymnDTO.getId());
-        Utils.validateUrlIdEqualsBodyId(id,hymnDTO.getId(),msg);
-        this.hymnService.deleteHymn(hymnDTO);
+    public void deleteSacramentMeeting(@PathVariable Integer id,@RequestBody SacramentMeetingDTO sacramentMeetingDTO){
+        String msg = String.format("The SacramentMeeting Id %s is different from the Url Id",sacramentMeetingDTO.getId());
+        Utils.validateUrlIdEqualsBodyId(id,sacramentMeetingDTO.getId(),msg);
+        this.sacramentMeetingService.deleteSacramentMeeting(sacramentMeetingDTO);
     }
     
 }

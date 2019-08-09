@@ -39,14 +39,14 @@ public class CallingController {
     }
 
     @PutMapping(value = "/{id}")
-    public CallingDTO updateCalling(@RequestParam Integer id, @RequestBody CallingDTO callingDTO){
+    public CallingDTO updateCalling(@PathVariable Integer id, @RequestBody CallingDTO callingDTO){
         String msg = String.format("The Calling Id %s is different from the Url Id",callingDTO.getId());
         Utils.validateUrlIdEqualsBodyId(id,callingDTO.getId(),msg);
         return this.callingService.updateCalling(callingDTO);
     }
 
     @DeleteMapping(value = "/{id}")
-    public void deleteCalling(@RequestParam Integer id, CallingDTO callingDTO){
+    public void deleteCalling(@PathVariable Integer id,@RequestBody CallingDTO callingDTO){
         String msg = String.format("The Calling Id %s is different from the Url Id",callingDTO.getId());
         Utils.validateUrlIdEqualsBodyId(id,callingDTO.getId(),msg);
         this.callingService.deleteCalling(callingDTO);

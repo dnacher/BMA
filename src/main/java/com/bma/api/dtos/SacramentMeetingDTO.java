@@ -1,7 +1,7 @@
 package com.bma.api.dtos;
 
 import java.util.Date;
-import java.util.List;
+import java.util.Set;
 
 public class SacramentMeetingDTO {
 
@@ -9,15 +9,15 @@ public class SacramentMeetingDTO {
 
     private Date date;
 
-    private List<HymnDTO> hymnDTOS;
+    private Set<HymnDTO> hymns;
 
     private String Announcements;
 
-    private List<SustainingReleaseDTO> sustainingReleaseDTOS;
+    private Set<SustainingReleaseDTO> sustainingReleases;
 
-    private List<PrayerDTO> prayerDTOS;
+    private Set<PrayerDTO> prayers;
 
-    private List<DiscourseDTO> discourses;
+    private Set<DiscourseDTO> discourses;
 
     private MemberDTO preside;
 
@@ -41,12 +41,12 @@ public class SacramentMeetingDTO {
         this.date = date;
     }
 
-    public List<HymnDTO> getHymnDTOS() {
-        return hymnDTOS;
+    public Set<HymnDTO> getHymns() {
+        return hymns;
     }
 
-    public void setHymnDTOS(List<HymnDTO> hymnDTOS) {
-        this.hymnDTOS = hymnDTOS;
+    public void setHymns(Set<HymnDTO> hymns) {
+        this.hymns = hymns;
     }
 
     public String getAnnouncements() {
@@ -57,27 +57,27 @@ public class SacramentMeetingDTO {
         Announcements = announcements;
     }
 
-    public List<SustainingReleaseDTO> getSustainingReleaseDTOS() {
-        return sustainingReleaseDTOS;
+    public Set<SustainingReleaseDTO> getSustainingReleases() {
+        return sustainingReleases;
     }
 
-    public void setSustainingReleaseDTOS(List<SustainingReleaseDTO> sustainingReleaseDTOS) {
-        this.sustainingReleaseDTOS = sustainingReleaseDTOS;
+    public void setSustainingReleases(Set<SustainingReleaseDTO> sustainingReleases) {
+        this.sustainingReleases = sustainingReleases;
     }
 
-    public List<PrayerDTO> getPrayerDTOS() {
-        return prayerDTOS;
+    public Set<PrayerDTO> getPrayers() {
+        return prayers;
     }
 
-    public void setPrayerDTOS(List<PrayerDTO> prayerDTOS) {
-        this.prayerDTOS = prayerDTOS;
+    public void setPrayers(Set<PrayerDTO> prayers) {
+        this.prayers = prayers;
     }
 
-    public List<DiscourseDTO> getDiscourses() {
+    public Set<DiscourseDTO> getDiscourses() {
         return discourses;
     }
 
-    public void setDiscourses(List<DiscourseDTO> discourses) {
+    public void setDiscourses(Set<DiscourseDTO> discourses) {
         this.discourses = discourses;
     }
 

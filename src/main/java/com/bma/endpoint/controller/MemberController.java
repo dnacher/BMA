@@ -1,55 +1,70 @@
 package com.bma.endpoint.controller;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
+import com.bma.api.dtos.AttendanceDTO;
 import org.springframework.web.bind.annotation.*;
 
-import com.bma.api.dtos.HymnDTO;
-import com.bma.domain.service.HymnService;
-import com.bma.domain.service.mappers.HymnMapper;
+import com.bma.api.dtos.MemberDTO;
+import com.bma.domain.service.MemberService;
+import com.bma.domain.service.mappers.MemberMapper;
 import com.bma.utils.Utils;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
-@RequestMapping("/hymns")
-public class HymnController {
+@RequestMapping("/members")
+public class MemberController {
 
-    private final HymnService hymnService;
-    private final HymnMapper hymnMapper;
+    private final MemberService memberService;
+    private final MemberMapper memberMapper;
 
-    public HymnController(HymnService hymnService, HymnMapper hymnMapper){
-        this.hymnService = hymnService;
-        this.hymnMapper = hymnMapper;
+    public MemberController(MemberService memberService, MemberMapper memberMapper){
+        this.memberService = memberService;
+        this.memberMapper = memberMapper;
     }
 
     @PostMapping(value = "/")
-    public HymnDTO saveHymn(@RequestBody HymnDTO hymnDTO){
-        Utils.validateIdNull(hymnDTO.getId(), String.format("A new Hymn cannot contains an Id"));
-       return this.hymnService.saveHymn(hymnDTO);
+    public MemberDTO saveMember(@RequestBody MemberDTO memberDTO){
+        Utils.validateIdNull(memberDTO.getId(), String.format("A new Member cannot contains an Id"));
+       return this.memberService.saveMember(memberDTO);
+    }
+
+    @PostMapping(value = "/mu")
+    public List<MemberDTO> saveMembers(@RequestBody List<MemberDTO> memberDTOs){
+        List<MemberDTO>finalMemberDTOs = new ArrayList<>();
+        memberDTOs.forEach(memberDTO -> finalMemberDTOs.add(this.memberService.saveMember(memberDTO)));
+        return finalMemberDTOs;
     }
 
     @GetMapping(value = "/")
-    public List<HymnDTO> getHymns(){
-        return this.hymnService.getHymns();
+    public List<MemberDTO> getMembers(){
+        return this.memberService.getMembers();
+    }
+
+    @GetMapping(value = "/test")
+    public List<AttendanceDTO> getMembersTest(){
+        return this.memberService.getMembersTest();
     }
 
     @GetMapping(value = "/{id}")
-    public HymnDTO getHymn(@PathVariable Integer id){
-        return this.hymnService.getHymnById(id);
+    public MemberDTO getMember(@PathVariable("id") Integer id){
+        return this.memberService.getMemberById(id);
     }
     
     @PutMapping(value = "/{id}")
-    public HymnDTO updateHymn(@RequestParam Integer id, @RequestBody HymnDTO hymnDTO){
-        String msg = String.format("The Hymn Id %s is different from the Url Id",hymnDTO.getId());
-        Utils.validateUrlIdEqualsBodyId(id,hymnDTO.getId(),msg);
-        return this.hymnService.updateHymn(hymnDTO);
+    public MemberDTO updateMember(@PathVariable("id") int id, @RequestBody MemberDTO memberDTO){
+        String msg = String.format("The Member Id %s is different from the Url Id",memberDTO.getId());
+        Utils.validateUrlIdEqualsBodyId(id,memberDTO.getId(),msg);
+        return this.memberService.updateMember(memberDTO);
     }
     
     @DeleteMapping(value = "/{id}")
-    public void deleteHymn(@RequestParam Integer id, HymnDTO hymnDTO){
-        String msg = String.format("The Hymn Id %s is different from the Url Id",hymnDTO.getId());
-        Utils.validateUrlIdEqualsBodyId(id,hymnDTO.getId(),msg);
-        this.hymnService.deleteHymn(hymnDTO);
+    public void deleteMember(@PathVariable Integer id,@RequestBody MemberDTO memberDTO){
+        String msg = String.format("The Member Id %s is different from the Url Id",memberDTO.getId());
+        Utils.validateUrlIdEqualsBodyId(id,memberDTO.getId(),msg);
+        this.memberService.deleteMember(memberDTO);
     }
     
 }

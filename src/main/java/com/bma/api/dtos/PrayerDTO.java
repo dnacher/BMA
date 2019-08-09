@@ -6,7 +6,7 @@ public class PrayerDTO {
 
     private Integer id;
 
-    private MemberDTO memberDTO;
+    private MemberDTO member;
 
     private Date date;
 
@@ -18,12 +18,12 @@ public class PrayerDTO {
         this.id = id;
     }
 
-    public MemberDTO getMemberDTO() {
-        return memberDTO;
+    public MemberDTO getMember() {
+        return member;
     }
 
-    public void setMemberDTO(MemberDTO memberDTO) {
-        this.memberDTO = memberDTO;
+    public void setMember(MemberDTO member) {
+        this.member = member;
     }
 
     public Date getDate() {

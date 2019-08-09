@@ -1,5 +1,6 @@
 package com.bma.domain.service.mappers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.bma.api.dtos.CallingDTO;
@@ -10,6 +11,8 @@ import com.bma.persistence.model.Member;
 @Component
 public class MemberMapper implements AbstractMapper<Member, MemberDTO> {
 
+    @Autowired
+    private CallingMapper callingMapper;
 
     @Override
     public Member mapToEntity(MemberDTO dto) {
@@ -17,7 +20,10 @@ public class MemberMapper implements AbstractMapper<Member, MemberDTO> {
         member.setId(dto.getId());
         member.setName(dto.getName());
         member.setSurname(dto.getSurname());
-        member.setCalling(dto.getCalling());
+        member.setFullname(dto.getFullname());
+        if(dto.getCalling()!=null) {
+            member.setCalling(callingMapper.mapToEntity(dto.getCalling()));
+        }
         return  member;
     }
 
@@ -27,7 +33,10 @@ public class MemberMapper implements AbstractMapper<Member, MemberDTO> {
         memberDTO.setId(entity.getId());
         memberDTO.setName(entity.getName());
         memberDTO.setSurname(entity.getSurname());
-        memberDTO.setCalling(entity.getCalling());
+        memberDTO.setFullname(entity.getFullname());
+        if(entity.getCalling()!=null) {
+            memberDTO.setCalling(callingMapper.mapToDTO(entity.getCalling()));
+        }
         return memberDTO;
     }
 }

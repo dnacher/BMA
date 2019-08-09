@@ -22,6 +22,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+
+        <endpoint>bma</endpoint>
+        <main-class>com.bma.BmaServer</main-class>
+        <health-check-token>imbma</health-check-token>
+        <health-check-timeout>120</health-check-timeout>
+        <shutdown-timeout>50</shutdown-timeout>
     </properties>
 
     <dependencies>

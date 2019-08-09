@@ -1,7 +1,9 @@
 package com.bma.persistence.dao;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -18,15 +20,18 @@ public class MemberDAO {
 
     public List<Member> getMembers(){
         List<Member> members = new ArrayList<>();
-        memberRepository.findAll().forEach(member -> members.add(member));
+        Iterable<Member>it = memberRepository.findAll();
+//        memberRepository.findallOrOrderBySurname().forEach(member -> members.add(member));
+        it.forEach(member -> members.add(member));
         return members;
     }
 
     public Member getMemberById(Integer id){
-        return memberRepository.findById(id).orElseThrow(()->{
-            String msg = String.format("The member id %s does not exist", id.toString());
-            throw new BMAException(msg);
-        });
+        return memberRepository.findById(id).get();
+//        return memberRepository.findById(id).orElseThrow(()->{
+//            String msg = String.format("The member id %s does not exist", id.toString());
+//            throw new BMAException(msg);
+//        });
     }
 
     public Member saveMember(Member member){

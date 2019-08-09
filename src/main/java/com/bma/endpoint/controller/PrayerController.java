@@ -4,52 +4,52 @@ import java.util.List;
 
 import org.springframework.web.bind.annotation.*;
 
-import com.bma.api.dtos.HymnDTO;
-import com.bma.domain.service.HymnService;
-import com.bma.domain.service.mappers.HymnMapper;
+import com.bma.api.dtos.PrayerDTO;
+import com.bma.domain.service.PrayerService;
+import com.bma.domain.service.mappers.PrayerMapper;
 import com.bma.utils.Utils;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
-@RequestMapping("/hymns")
-public class HymnController {
+@RequestMapping("/prayers")
+public class PrayerController {
 
-    private final HymnService hymnService;
-    private final HymnMapper hymnMapper;
+    private final PrayerService prayerService;
+    private final PrayerMapper prayerMapper;
 
-    public HymnController(HymnService hymnService, HymnMapper hymnMapper){
-        this.hymnService = hymnService;
-        this.hymnMapper = hymnMapper;
+    public PrayerController(PrayerService prayerService, PrayerMapper prayerMapper){
+        this.prayerService = prayerService;
+        this.prayerMapper = prayerMapper;
     }
 
     @PostMapping(value = "/")
-    public HymnDTO saveHymn(@RequestBody HymnDTO hymnDTO){
-        Utils.validateIdNull(hymnDTO.getId(), String.format("A new Hymn cannot contains an Id"));
-       return this.hymnService.saveHymn(hymnDTO);
+    public PrayerDTO savePrayer(@RequestBody PrayerDTO prayerDTO){
+        Utils.validateIdNull(prayerDTO.getId(), String.format("A new Prayer cannot contains an Id"));
+       return this.prayerService.savePrayer(prayerDTO);
     }
 
     @GetMapping(value = "/")
-    public List<HymnDTO> getHymns(){
-        return this.hymnService.getHymns();
+    public List<PrayerDTO> getPrayers(){
+        return this.prayerService.getPrayers();
     }
 
     @GetMapping(value = "/{id}")
-    public HymnDTO getHymn(@PathVariable Integer id){
-        return this.hymnService.getHymnById(id);
+    public PrayerDTO getPrayer(@PathVariable Integer id){
+        return this.prayerService.getPrayerById(id);
     }
     
     @PutMapping(value = "/{id}")
-    public HymnDTO updateHymn(@RequestParam Integer id, @RequestBody HymnDTO hymnDTO){
-        String msg = String.format("The Hymn Id %s is different from the Url Id",hymnDTO.getId());
-        Utils.validateUrlIdEqualsBodyId(id,hymnDTO.getId(),msg);
-        return this.hymnService.updateHymn(hymnDTO);
+    public PrayerDTO updatePrayer(@PathVariable Integer id, @RequestBody PrayerDTO prayerDTO){
+        String msg = String.format("The Prayer Id %s is different from the Url Id",prayerDTO.getId());
+        Utils.validateUrlIdEqualsBodyId(id,prayerDTO.getId(),msg);
+        return this.prayerService.updatePrayer(prayerDTO);
     }
     
     @DeleteMapping(value = "/{id}")
-    public void deleteHymn(@RequestParam Integer id, HymnDTO hymnDTO){
-        String msg = String.format("The Hymn Id %s is different from the Url Id",hymnDTO.getId());
-        Utils.validateUrlIdEqualsBodyId(id,hymnDTO.getId(),msg);
-        this.hymnService.deleteHymn(hymnDTO);
+    public void deletePrayer(@PathVariable Integer id,@RequestBody PrayerDTO prayerDTO){
+        String msg = String.format("The Prayer Id %s is different from the Url Id",prayerDTO.getId());
+        Utils.validateUrlIdEqualsBodyId(id,prayerDTO.getId(),msg);
+        this.prayerService.deletePrayer(prayerDTO);
     }
     
 }

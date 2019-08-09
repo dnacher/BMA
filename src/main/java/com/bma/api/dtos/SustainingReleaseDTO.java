@@ -2,15 +2,13 @@ package com.bma.api.dtos;
 
 import java.util.Date;
 
-import com.bma.persistence.model.Calling;
-
 public class SustainingReleaseDTO {
 
     private Integer id;
 
-    private MemberDTO memberDTO;
+    private MemberDTO member;
 
-    private CallingDTO callingDTO;
+    private CallingDTO calling;
 
     private Date initDate;
 
@@ -24,20 +22,20 @@ public class SustainingReleaseDTO {
         this.id = id;
     }
 
-    public MemberDTO getMemberDTO() {
-        return memberDTO;
+    public MemberDTO getMember() {
+        return member;
     }
 
-    public void setMemberDTO(MemberDTO memberDTO) {
-        this.memberDTO = memberDTO;
+    public void setMember(MemberDTO member) {
+        this.member = member;
     }
 
-    public CallingDTO getCallingDTO() {
-        return callingDTO;
+    public CallingDTO getCalling() {
+        return calling;
     }
 
-    public void setCallingDTO(CallingDTO callingDTO) {
-        this.callingDTO = callingDTO;
+    public void setCalling(CallingDTO calling) {
+        this.calling = calling;
     }
 
     public Date getInitDate() {

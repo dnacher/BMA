@@ -1,5 +1,7 @@
 package com.bma.domain.service;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,6 +11,7 @@ import com.bma.exception.BMAException;
 import com.bma.persistence.dao.SacramentMeetingDAO;
 import com.bma.persistence.model.SacramentMeeting;
 
+@Transactional
 @Service
 public class SacramentMeetingService {
 

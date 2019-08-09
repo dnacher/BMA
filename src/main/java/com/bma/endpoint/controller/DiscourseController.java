@@ -39,14 +39,14 @@ public class DiscourseController {
     }
     
     @PutMapping(value = "/{id}")
-    public DiscourseDTO updateDiscourse(@RequestParam Integer id, @RequestBody DiscourseDTO discourseDTO){
+    public DiscourseDTO updateDiscourse(@PathVariable Integer id, @RequestBody DiscourseDTO discourseDTO){
         String msg = String.format("The Discourse Id %s is different from the Url Id",discourseDTO.getId());
         Utils.validateUrlIdEqualsBodyId(id,discourseDTO.getId(),msg);
         return this.discourseService.updateDiscourse(discourseDTO);
     }
     
     @DeleteMapping(value = "/{id}")
-    public void deleteDiscourse(@RequestParam Integer id, DiscourseDTO discourseDTO){
+    public void deleteDiscourse(@PathVariable Integer id,@RequestBody DiscourseDTO discourseDTO){
         String msg = String.format("The Discourse Id %s is different from the Url Id",discourseDTO.getId());
         Utils.validateUrlIdEqualsBodyId(id,discourseDTO.getId(),msg);
         this.discourseService.deleteDiscourse(discourseDTO);

@@ -1,7 +1,7 @@
 package com.bma.persistence.model;
 
 import java.util.Date;
-import java.util.List;
+import java.util.Set;
 
 import javax.persistence.*;
 
@@ -16,30 +16,33 @@ public class SacramentMeeting {
     @Column(name = "DATE")
     private Date date;
 
-    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
-    @JoinColumn(name = "HYMN")
-    private List<Hymn> hymns;
+    @OneToMany(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "sacrament_meeting_hymn",
+            joinColumns = @JoinColumn(name = "sacrament_meeting_id"),
+            inverseJoinColumns = @JoinColumn(name = "hymn_id"))
+    private Set<Hymn> hymns;
 
     @Column(name = "ANNOUNCEMENTS")
-    private String Announcements;
+    private String announcements;
 
-    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
-    @JoinColumn(name ="SUSTAINING_RELEASE")
-    private List<SustainingRelease>sustainingReleases;
+    @OneToMany(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
+    @JoinColumn(name ="SACRAMENT_MEETING_ID")
+    private Set<SustainingRelease>sustainingReleases;
 
-    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
-    @JoinColumn(name ="PRAYER")
-    private List<Prayer>prayers;
+    @OneToMany(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
+    @JoinColumn(name ="SACRAMENT_MEETING_ID")
+    private Set<Prayer>prayers;
 
-    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
-    @JoinColumn(name ="DISCOURSES")
-    private List<Discourse> discourses;
+    @OneToMany(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
+    @JoinColumn(name ="SACRAMENT_MEETING_ID")
+    private Set<Discourse> discourses;
 
-    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
     @JoinColumn(name ="PRESIDE")
     private Member preside;
 
-    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
     @JoinColumn(name ="LEAD")
     private Member lead;
 
@@ -62,43 +65,43 @@ public class SacramentMeeting {
         this.date = date;
     }
 
-    public List<Hymn> getHymns() {
+    public Set<Hymn> getHymns() {
         return hymns;
     }
 
-    public void setHymns(List<Hymn> hymns) {
+    public void setHymns(Set<Hymn> hymns) {
         this.hymns = hymns;
     }
 
     public String getAnnouncements() {
-        return Announcements;
+        return announcements;
     }
 
     public void setAnnouncements(String announcements) {
-        Announcements = announcements;
+        this.announcements = announcements;
     }
 
-    public List<SustainingRelease> getSustainingReleases() {
+    public Set<SustainingRelease> getSustainingReleases() {
         return sustainingReleases;
     }
 
-    public void setSustainingReleases(List<SustainingRelease> sustainingReleases) {
+    public void setSustainingReleases(Set<SustainingRelease> sustainingReleases) {
         this.sustainingReleases = sustainingReleases;
     }
 
-    public List<Prayer> getPrayers() {
+    public Set<Prayer> getPrayers() {
         return prayers;
     }
 
-    public void setPrayers(List<Prayer> prayers) {
+    public void setPrayers(Set<Prayer> prayers) {
         this.prayers = prayers;
     }
 
-    public List<Discourse> getDiscourses() {
+    public Set<Discourse> getDiscourses() {
         return discourses;
     }
 
-    public void setDiscourses(List<Discourse> discourses) {
+    public void setDiscourses(Set<Discourse> discourses) {
         this.discourses = discourses;
     }
 

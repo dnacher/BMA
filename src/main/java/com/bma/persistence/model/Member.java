@@ -3,21 +3,25 @@ package com.bma.persistence.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "MEMBER")
+@Table(name = "member")
 public class Member {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
 
-    @Column(name = "NAME")
+    @Column(name = "name")
     private String name;
 
-    @Column(name = "SURNAME")
+    @Column(name = "surname")
     private String surname;
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "CALLING")
+    @Column(name = "fullname")
+    private String fullname;
+
+    @ManyToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "calling")
     private Calling calling;
 
 
@@ -43,6 +47,14 @@ public class Member {
 
     public void setSurname(String surname) {
         this.surname = surname;
+    }
+
+    public String getFullname() {
+        return fullname;
+    }
+
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
     }
 
     public Calling getCalling() {

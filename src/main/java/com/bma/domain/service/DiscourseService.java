@@ -3,6 +3,8 @@ package com.bma.domain.service;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +14,7 @@ import com.bma.exception.BMAException;
 import com.bma.persistence.dao.DiscourseDAO;
 import com.bma.persistence.model.Discourse;
 
+@Transactional
 @Service
 public class DiscourseService {
 

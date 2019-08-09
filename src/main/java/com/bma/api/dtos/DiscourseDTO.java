@@ -7,7 +7,7 @@ public class DiscourseDTO {
 
     private Integer id;
 
-    private MemberDTO memberDTO;
+    private MemberDTO member;
 
     private String topic;
 
@@ -23,12 +23,12 @@ public class DiscourseDTO {
         this.id = id;
     }
 
-    public MemberDTO getMemberDTO() {
-        return memberDTO;
+    public MemberDTO getMember() {
+        return member;
     }
 
-    public void setMemberDTO(MemberDTO memberDTO) {
-        this.memberDTO = memberDTO;
+    public void setMember(MemberDTO member) {
+        this.member = member;
     }
 
     public String getTopic() {

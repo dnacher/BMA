@@ -23,10 +23,11 @@ public class HymnDAO {
     }
 
     public Hymn getHymnById(Integer id){
-        return hymnRepository.findById(id).orElseThrow(()->{
-            String msg = String.format("the Hymn id %s does not exist", id.toString());
-            throw new BMAException(msg);
-        });
+        return hymnRepository.findById(id).get();
+//        return hymnRepository.findById(id).orElseThrow(()->{
+//            String msg = String.format("the Hymn id %s does not exist", id.toString());
+//            throw new BMAException(msg);
+//        });
     }
 
     public Hymn saveHymn(Hymn hymn){

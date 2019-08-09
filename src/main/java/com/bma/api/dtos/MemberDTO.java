@@ -10,7 +10,9 @@ public class MemberDTO {
 
     private String surname;
 
-    private Calling calling;
+    private String fullname;
+
+    private CallingDTO calling;
 
     public Integer getId() {
         return id;
@@ -36,11 +38,19 @@ public class MemberDTO {
         this.surname = surname;
     }
 
-    public Calling getCalling() {
+    public String getFullname() {
+        return fullname;
+    }
+
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
+    }
+
+    public CallingDTO getCalling() {
         return calling;
     }
 
-    public void setCalling(Calling calling) {
+    public void setCalling(CallingDTO calling) {
         this.calling = calling;
     }
 }
