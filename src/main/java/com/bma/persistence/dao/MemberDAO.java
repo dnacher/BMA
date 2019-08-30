@@ -26,11 +26,13 @@ public class MemberDAO {
         return members;
     }
 
-    public Member getMemberById(Integer id){
-        return memberRepository.findById(id).orElseThrow(()->{
+    public Member getMemberById(Integer id) throws BMAException{
+        Member member = this.memberRepository.findById(id).orElseThrow(() ->
+        {
             String msg = String.format("The member id %s does not exist", id.toString());
-            throw new BMAException(msg);
+            return new BMAException(msg);
         });
+        return member;
     }
 
     public Member saveMember(Member member){

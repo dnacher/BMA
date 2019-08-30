@@ -23,7 +23,7 @@ public class HymnDAO {
         return hymns;
     }
 
-    public Hymn getHymnById(Integer id){
+    public Hymn getHymnById(Integer id)throws BMAException{
         return hymnRepository.findById(id).orElseThrow(()->{
             String msg = String.format("The Hymn id %s does not exist", id.toString());
             throw new BMAException(HttpStatus.NOT_FOUND_404,msg);

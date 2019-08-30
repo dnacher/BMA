@@ -20,12 +20,12 @@ public class SustainingReleaseDAO {
         return sustainingReleaseList;
     }
 
-    public SustainingRelease getSustainingReleaseById(Integer id){
-        return sustainingReleaseRepository.findById(id).get();
-//        return sustainingReleaseRepository.findById(id).orElseThrow(()->{
-//            String msg = String.format("The SustainingRelease id %s does not exist", id.toString());
-//            throw new BMAException(msg);
-//        });
+    public SustainingRelease getSustainingReleaseById(Integer id)throws BMAException{
+//        return sustainingReleaseRepository.findById(id).get();
+        return sustainingReleaseRepository.findById(id).orElseThrow(()->{
+            String msg = String.format("The SustainingRelease id %s does not exist", id.toString());
+            throw new BMAException(msg);
+        });
     }
 
     public SustainingRelease saveSustainingRelease(SustainingRelease sustainingRelease){

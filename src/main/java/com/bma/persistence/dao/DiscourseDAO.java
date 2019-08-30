@@ -22,7 +22,7 @@ public class DiscourseDAO {
         return discourses;
     }
 
-    public Discourse getDiscourseById(Integer id){
+    public Discourse getDiscourseById(Integer id)throws BMAException{
         return discourseRepository.findById(id).orElseThrow(()->{
             String msg = String.format("The Discourse id %s does not exist", id.toString());
             return new BMAException(msg);

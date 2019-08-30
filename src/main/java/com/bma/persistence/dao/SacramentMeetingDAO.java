@@ -13,7 +13,7 @@ public class SacramentMeetingDAO {
     @Autowired
     private SacramentMeetingRepository sacramentMeetingRepository;
 
-    public SacramentMeeting getSacramentMeetingById(Integer id){
+    public SacramentMeeting getSacramentMeetingById(Integer id)throws BMAException{
         return sacramentMeetingRepository.findById(id).orElseThrow(()->{
             String msg = String.format("The Sacrament Meeting id %s does not exist", id.toString());
             return new BMAException(msg);
