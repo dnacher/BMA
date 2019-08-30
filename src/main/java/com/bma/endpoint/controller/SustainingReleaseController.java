@@ -9,7 +9,7 @@ import com.bma.domain.service.SustainingReleaseService;
 import com.bma.domain.service.mappers.SustainingReleaseMapper;
 import com.bma.utils.Utils;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/sustaining_releases")
 public class SustainingReleaseController {

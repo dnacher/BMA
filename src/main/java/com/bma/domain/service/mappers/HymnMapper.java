@@ -15,9 +15,10 @@ public class HymnMapper implements AbstractMapper<Hymn, HymnDTO> {
     public Hymn mapToEntity(HymnDTO dto) {
         Hymn hymn = new Hymn();
         hymn.setId(dto.getId());
-        hymn.setName(dto.getName());
+        hymn.setTitle(dto.getTitle());
         hymn.setNumber(dto.getNumber());
         hymn.setPianoNumber(dto.getPianoNumber());
+        hymn.setTopic(dto.getTopic());
         return hymn;
     }
 
@@ -25,9 +26,10 @@ public class HymnMapper implements AbstractMapper<Hymn, HymnDTO> {
     public HymnDTO mapToDTO(Hymn entity) {
         HymnDTO hymnDTO = new HymnDTO();
         hymnDTO.setId(entity.getId());
-        hymnDTO.setName(entity.getName());
+        hymnDTO.setTitle(entity.getTitle());
         hymnDTO.setNumber(entity.getNumber());
         hymnDTO.setPianoNumber(entity.getPianoNumber());
+        hymnDTO.setTopic(entity.getTopic());
         return hymnDTO;
     }
 

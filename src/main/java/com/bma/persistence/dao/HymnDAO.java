@@ -3,6 +3,7 @@ package com.bma.persistence.dao;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.eclipse.jetty.http.HttpStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -23,11 +24,10 @@ public class HymnDAO {
     }
 
     public Hymn getHymnById(Integer id){
-        return hymnRepository.findById(id).get();
-//        return hymnRepository.findById(id).orElseThrow(()->{
-//            String msg = String.format("the Hymn id %s does not exist", id.toString());
-//            throw new BMAException(msg);
-//        });
+        return hymnRepository.findById(id).orElseThrow(()->{
+            String msg = String.format("The Hymn id %s does not exist", id.toString());
+            throw new BMAException(HttpStatus.NOT_FOUND_404,msg);
+        });
     }
 
     public Hymn saveHymn(Hymn hymn){

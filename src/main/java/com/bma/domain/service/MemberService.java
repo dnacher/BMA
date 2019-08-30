@@ -44,9 +44,8 @@ public class MemberService {
         }
     }
 
-    public void deleteMember(MemberDTO memberDTO){
-
-        this.memberDAO.deleteMember(memberMapper.mapToEntity(memberDTO));
+    public void deleteMember(Integer memberId){
+        this.memberDAO.deleteMember(memberId);
     }
 
     public MemberDTO updateMember(MemberDTO memberDTO) throws BMAException{
@@ -63,16 +62,15 @@ public class MemberService {
     }
 
     public List<AttendanceDTO> getMembersTest(){
-        List<Member> members = this.memberDAO.getMembers().stream().limit(10).collect(Collectors.toList());
-        List<Attendance> attendances = new ArrayList<>();
-        Date date = new Date();
-        members.forEach(member -> {
+        List<Member> members = this.memberDAO.getMembers();
+        List<Attendance> attendances = members.stream().map(member -> {
+            Date date = new Date();
             Attendance attendance = new Attendance();
             attendance.setMember(member);
             attendance.setDate(date);
             attendance.setAttended(false);
-            attendances.add(attendance);
-        });
+            return attendance;
+        }).collect(Collectors.toList());
         List<AttendanceDTO>attendanceDTOS = attendances.stream().map(attendance -> this.attendanceMapper.mapToDTO(attendance)).collect(Collectors.toList());
         return attendanceDTOS;
     }

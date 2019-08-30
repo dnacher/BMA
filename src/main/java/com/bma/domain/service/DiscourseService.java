@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import javax.transaction.Transactional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,7 +29,9 @@ public class DiscourseService {
     public DiscourseDTO saveDiscourse(DiscourseDTO discourseDTO) throws BMAException{
         try {
             Discourse discourse = discourseMapper.mapToEntity(discourseDTO);
-            return discourseMapper.mapToDTO(this.discourseDAO.saveDiscourse(discourse));
+            discourse = this.discourseDAO.saveDiscourse(discourse);
+            discourseDTO = discourseMapper.mapToDTO(discourse);
+            return discourseDTO;
         } catch (BMAException e) {
             throw new BMAException(e.getMessage());
         }
@@ -39,6 +40,10 @@ public class DiscourseService {
     public void deleteDiscourse(DiscourseDTO discourseDTO){
 
         this.discourseDAO.deleteDiscourse(discourseMapper.mapToEntity(discourseDTO));
+    }
+
+    public void deleteDiscourse(Integer id){
+        this.discourseDAO.deleteDiscourseById(id);
     }
 
     public DiscourseDTO updateDiscourse(DiscourseDTO discourseDTO) throws BMAException{
@@ -61,6 +66,4 @@ public class DiscourseService {
             throw new BMAException(e.getMessage());
         }
     }
-
-
 }

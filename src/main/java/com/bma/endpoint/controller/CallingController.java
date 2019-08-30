@@ -9,7 +9,7 @@ import com.bma.domain.service.mappers.CallingMapper;
 import com.bma.domain.service.CallingService;
 import com.bma.utils.Utils;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/callings")
 public class CallingController {

@@ -9,7 +9,7 @@ import com.bma.domain.service.DiscourseService;
 import com.bma.domain.service.mappers.DiscourseMapper;
 import com.bma.utils.Utils;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/discourses")
 public class DiscourseController {
@@ -46,10 +46,10 @@ public class DiscourseController {
     }
     
     @DeleteMapping(value = "/{id}")
-    public void deleteDiscourse(@PathVariable Integer id,@RequestBody DiscourseDTO discourseDTO){
-        String msg = String.format("The Discourse Id %s is different from the Url Id",discourseDTO.getId());
-        Utils.validateUrlIdEqualsBodyId(id,discourseDTO.getId(),msg);
-        this.discourseService.deleteDiscourse(discourseDTO);
+    public void deleteDiscourse(@PathVariable Integer id){
+//        String msg = String.format("The Discourse Id %s is different from the Url Id",discourseDTO.getId());
+//        Utils.validateUrlIdEqualsBodyId(id,discourseDTO.getId(),msg);
+        this.discourseService.deleteDiscourse(id);
     }
     
 }

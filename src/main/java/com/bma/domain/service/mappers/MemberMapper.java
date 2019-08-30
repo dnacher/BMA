@@ -8,6 +8,9 @@ import com.bma.api.dtos.MemberDTO;
 import com.bma.persistence.model.Calling;
 import com.bma.persistence.model.Member;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Component
 public class MemberMapper implements AbstractMapper<Member, MemberDTO> {
 
@@ -38,5 +41,21 @@ public class MemberMapper implements AbstractMapper<Member, MemberDTO> {
             memberDTO.setCalling(callingMapper.mapToDTO(entity.getCalling()));
         }
         return memberDTO;
+    }
+
+    public List<Member> mapToEntityList(List<MemberDTO> dtos){
+        List<Member> members = new ArrayList<>();
+        dtos.forEach(memberDTO -> {
+            members.add(mapToEntity(memberDTO));
+        });
+        return members;
+    }
+
+    public List<MemberDTO> mapToDTOList(List<Member> members){
+        List<MemberDTO> memberDTOS = new ArrayList<>();
+        members.forEach(member -> {
+            memberDTOS.add(mapToDTO(member));
+        });
+        return memberDTOS;
     }
 }

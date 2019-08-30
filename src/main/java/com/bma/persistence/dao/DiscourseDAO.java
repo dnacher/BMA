@@ -42,6 +42,8 @@ public class DiscourseDAO {
         discourseRepository.delete(discourse);
     }
 
+    public void deleteDiscourseById(Integer id){ discourseRepository.deleteById(id);}
+
     public Discourse updateDiscourse(Discourse discourse){
         if(discourse.getId()!=null){
             return discourseRepository.save(discourse);

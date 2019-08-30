@@ -9,7 +9,7 @@ import com.bma.domain.service.SacramentMeetingService;
 import com.bma.domain.service.mappers.SacramentMeetingMapper;
 import com.bma.utils.Utils;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/sacrament_meetings")
 public class SacramentMeetingController {

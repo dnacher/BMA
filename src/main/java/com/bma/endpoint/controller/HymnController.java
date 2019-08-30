@@ -10,7 +10,7 @@ import com.bma.domain.service.HymnService;
 import com.bma.domain.service.mappers.HymnMapper;
 import com.bma.utils.Utils;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/hymns")
 public class HymnController {
@@ -31,7 +31,6 @@ public class HymnController {
 
     @PostMapping(value = "/mul")
     public List<HymnDTO> saveHymn(@RequestBody List<HymnDTO> hymnDTOs){
-//        Utils.validateIdNull(hymnDTO.getId(), String.format("A new Hymn cannot contains an Id"));
         List<HymnDTO> finalList = new ArrayList<>();
          hymnDTOs.forEach( hymnDTO -> finalList.add(this.hymnService.saveHymn(hymnDTO)));
         return finalList;

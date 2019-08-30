@@ -9,7 +9,7 @@ import com.bma.domain.service.PrayerService;
 import com.bma.domain.service.mappers.PrayerMapper;
 import com.bma.utils.Utils;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/prayers")
 public class PrayerController {

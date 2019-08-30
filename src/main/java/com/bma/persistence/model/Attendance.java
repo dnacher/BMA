@@ -20,6 +20,7 @@ public class Attendance {
     private boolean attended;
 
     @Column(name = "date")
+    @Temporal(TemporalType.DATE)
     private Date date;
 
     public Integer getId() {

@@ -3,12 +3,10 @@ package com.bma.api.dtos;
 public class HymnDTO {
 
     private Integer id;
-
-    private String name;
-
+    private String title;
     private Integer number;
-
     private Integer pianoNumber;
+    private String topic;
 
     public Integer getId() {
         return id;
@@ -18,12 +16,12 @@ public class HymnDTO {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public Integer getNumber() {
@@ -40,5 +38,13 @@ public class HymnDTO {
 
     public void setPianoNumber(Integer pianoNumber) {
         this.pianoNumber = pianoNumber;
+    }
+
+    public String getTopic() {
+        return topic;
+    }
+
+    public void setTopic(String topic) {
+        this.topic = topic;
     }
 }

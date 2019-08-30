@@ -5,10 +5,15 @@ import com.bma.domain.service.mappers.AttendanceMapper;
 import com.bma.exception.BMAException;
 import com.bma.persistence.dao.AttendanceDAO;
 import com.bma.persistence.model.Attendance;
+import com.bma.utils.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -25,7 +30,7 @@ public class AttendanceService {
         this.attendanceDAO = attendanceDAO;
     }
 
-    public AttendanceDTO saveCalling(AttendanceDTO attendanceDTO) throws BMAException{
+    public AttendanceDTO saveAttendance(AttendanceDTO attendanceDTO) throws BMAException{
         try {
             Attendance attendance = attendanceMapper.mapToEntity(attendanceDTO);
             return attendanceMapper.mapToDTO(this.attendanceDAO.saveAttendance(attendance));
@@ -60,5 +65,12 @@ public class AttendanceService {
         }
     }
 
-
+    public List<AttendanceDTO> createOrGetAttendance(){
+        Date today = Utils.setTodayDate();
+        List<Attendance> attendances = this.attendanceDAO.getAttendanceByDate(today);
+        if(attendances.size()==0){
+            attendances = this.attendanceDAO.createAttendance();
+        }
+        return attendances.stream().map(attendance -> this.attendanceMapper.mapToDTO(attendance)).collect(Collectors.toList());
+    }
 }

@@ -12,7 +12,7 @@ import com.bma.domain.service.MemberService;
 import com.bma.domain.service.mappers.MemberMapper;
 import com.bma.utils.Utils;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/members")
 public class MemberController {
@@ -61,10 +61,9 @@ public class MemberController {
     }
     
     @DeleteMapping(value = "/{id}")
-    public void deleteMember(@PathVariable Integer id,@RequestBody MemberDTO memberDTO){
-        String msg = String.format("The Member Id %s is different from the Url Id",memberDTO.getId());
-        Utils.validateUrlIdEqualsBodyId(id,memberDTO.getId(),msg);
-        this.memberService.deleteMember(memberDTO);
+    public void deleteMember(@PathVariable Integer id){
+        String msg = String.format("The Member Id %s is different from the Url Id",id);
+        this.memberService.deleteMember(id);
     }
     
 }

@@ -20,18 +20,17 @@ public class MemberDAO {
 
     public List<Member> getMembers(){
         List<Member> members = new ArrayList<>();
-        Iterable<Member>it = memberRepository.findAll();
-//        memberRepository.findallOrOrderBySurname().forEach(member -> members.add(member));
-        it.forEach(member -> members.add(member));
+//        Iterable<Member>it = memberRepository.findAll();
+        memberRepository.findAllOrderBySurname().forEach(member -> members.add(member));
+//        it.forEach(member -> members.add(member));
         return members;
     }
 
     public Member getMemberById(Integer id){
-        return memberRepository.findById(id).get();
-//        return memberRepository.findById(id).orElseThrow(()->{
-//            String msg = String.format("The member id %s does not exist", id.toString());
-//            throw new BMAException(msg);
-//        });
+        return memberRepository.findById(id).orElseThrow(()->{
+            String msg = String.format("The member id %s does not exist", id.toString());
+            throw new BMAException(msg);
+        });
     }
 
     public Member saveMember(Member member){
@@ -43,8 +42,8 @@ public class MemberDAO {
         }
     }
 
-    public void deleteMember(Member member){
-        memberRepository.delete(member);
+    public void deleteMember(Integer memberId){
+        memberRepository.deleteById(memberId);
     }
 
     public Member updateMember(Member member){
