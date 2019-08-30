@@ -23,14 +23,14 @@ public class HymnDAO {
         return hymns;
     }
 
-    public Hymn getHymnById(Integer id)throws BMAException{
+    public Hymn getHymnById(Integer id) throws BMAException{
         return hymnRepository.findById(id).orElseThrow(()->{
             String msg = String.format("The Hymn id %s does not exist", id.toString());
             throw new BMAException(HttpStatus.NOT_FOUND_404,msg);
         });
     }
 
-    public Hymn saveHymn(Hymn hymn){
+    public Hymn saveHymn(Hymn hymn) throws BMAException{
         if(hymn.getId()!=null){
             String msg = String.format("Cannot save a Hymn with Id");
             throw new BMAException(msg);
@@ -43,7 +43,7 @@ public class HymnDAO {
         hymnRepository.delete(hymn);
     }
 
-    public Hymn updateHymn(Hymn hymn){
+    public Hymn updateHymn(Hymn hymn) throws BMAException{
         if(hymn.getId()!=null){
             return hymnRepository.save(hymn);
         }else{
