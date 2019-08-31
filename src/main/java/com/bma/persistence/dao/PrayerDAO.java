@@ -2,6 +2,7 @@ package com.bma.persistence.dao;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -23,12 +24,13 @@ public class PrayerDAO {
     }
 
     public Prayer getPrayerById(Integer id)throws BMAException{
-//        return prayerRepository.findById(id).get();
-        Prayer prayer = prayerRepository.findById(id).orElseThrow(()->{
+        Optional<Prayer> optionalPrayer = prayerRepository.findById(id);
+        if(optionalPrayer.isPresent()){
+            return optionalPrayer.get();
+        }else{
             String msg = String.format("The Prayer id %s does not exist", id.toString());
             throw new BMAException(msg);
-        });
-        return prayer;
+        }
     }
 
     public Prayer savePrayer(Prayer prayer){
