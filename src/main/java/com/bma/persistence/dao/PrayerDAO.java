@@ -24,10 +24,11 @@ public class PrayerDAO {
 
     public Prayer getPrayerById(Integer id)throws BMAException{
 //        return prayerRepository.findById(id).get();
-        return  prayerRepository.findById(id).orElseThrow(()->{
+        Prayer prayer = prayerRepository.findById(id).orElseThrow(()->{
             String msg = String.format("The Prayer id %s does not exist", id.toString());
             throw new BMAException(msg);
         });
+        return prayer;
     }
 
     public Prayer savePrayer(Prayer prayer){
