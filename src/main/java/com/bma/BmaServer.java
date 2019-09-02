@@ -44,7 +44,7 @@ public class BmaServer {
 class BmaController{
 
     private final String VERSION = "1.0.0";
-    
+
     @GetMapping("/")
     String bma(){
         return "bma v" + VERSION;
