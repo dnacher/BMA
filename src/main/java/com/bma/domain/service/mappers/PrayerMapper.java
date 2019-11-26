@@ -14,15 +14,15 @@ public class PrayerMapper implements AbstractMapper<Prayer, PrayerDTO> {
 
 
     @Autowired
-    private MemberMapper memberMapper;
+    private ChurchMemberMapper churchMemberMapper;
 
     @Override
     public Prayer mapToEntity(PrayerDTO dto) {
         Prayer prayer = new Prayer();
         prayer.setId(dto.getId());
         prayer.setDate(dto.getDate());
-        if(dto.getMember()!=null) {
-            prayer.setMember(memberMapper.mapToEntity(dto.getMember()));
+        if(dto.getChurchMember()!=null) {
+            prayer.setMember(churchMemberMapper.mapToEntity(dto.getChurchMember()));
         }
         return prayer;
     }
@@ -33,7 +33,7 @@ public class PrayerMapper implements AbstractMapper<Prayer, PrayerDTO> {
         prayerDTO.setId(entity.getId());
         prayerDTO.setDate(entity.getDate());
         if(entity.getMember()!=null) {
-            prayerDTO.setMember(memberMapper.mapToDTO(entity.getMember()));
+            prayerDTO.setMember(churchMemberMapper.mapToDTO(entity.getMember()));
         }
         return prayerDTO;
     }

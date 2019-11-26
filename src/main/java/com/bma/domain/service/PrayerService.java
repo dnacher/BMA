@@ -5,16 +5,16 @@ import java.util.stream.Collectors;
 
 import javax.transaction.Transactional;
 
+import com.bma.persistence.model.ChurchMember;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.bma.api.dtos.PrayerDTO;
-import com.bma.domain.service.mappers.MemberMapper;
+import com.bma.domain.service.mappers.ChurchMemberMapper;
 import com.bma.domain.service.mappers.PrayerMapper;
 import com.bma.exception.BMAException;
-import com.bma.persistence.dao.MemberDAO;
+import com.bma.persistence.dao.ChurchMemberDAO;
 import com.bma.persistence.dao.PrayerDAO;
-import com.bma.persistence.model.Member;
 import com.bma.persistence.model.Prayer;
 
 @Transactional
@@ -22,26 +22,26 @@ import com.bma.persistence.model.Prayer;
 public class PrayerService {
 
     private final PrayerDAO prayerDAO;
-    private final MemberDAO memberDAO;
+    private final ChurchMemberDAO churchMemberDAO;
     private final PrayerMapper prayerMapper;
-    private final MemberMapper memberMapper;
+    private final ChurchMemberMapper churchMemberMapper;
 
     @Autowired
-    public PrayerService(PrayerDAO prayerDAO, PrayerMapper prayerMapper, MemberDAO memberDAO, MemberMapper memberMapper){
+    public PrayerService(PrayerDAO prayerDAO, PrayerMapper prayerMapper, ChurchMemberDAO churchMemberDAO, ChurchMemberMapper churchMemberMapper){
         this.prayerMapper = prayerMapper;
         this.prayerDAO = prayerDAO;
-        this.memberDAO = memberDAO;
-        this.memberMapper = memberMapper;
+        this.churchMemberDAO = churchMemberDAO;
+        this.churchMemberMapper = churchMemberMapper;
     }
 
     public PrayerDTO savePrayer(PrayerDTO prayerDTO) throws BMAException{
         try {
-            if(prayerDTO.getMember().getId()!=null){
+            if(prayerDTO.getChurchMember().getId()!=null){
                 return savePrayerDTO(prayerDTO);
             }else{
-                Member member = this.memberMapper.mapToEntity(prayerDTO.getMember());
-                member = memberDAO.saveMember(member);
-                prayerDTO.setMember(memberMapper.mapToDTO(member));
+                ChurchMember churchMember = this.churchMemberMapper.mapToEntity(prayerDTO.getChurchMember());
+                churchMember = churchMemberDAO.saveChurchMember(churchMember);
+                prayerDTO.setMember(churchMemberMapper.mapToDTO(churchMember));
                 return savePrayerDTO(prayerDTO);
             }
         } catch (BMAException e) {

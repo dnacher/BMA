@@ -13,8 +13,8 @@ public class Discourse {
     private Integer id;
 
     @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
-    @JoinColumn(name = "member")
-    private Member member;
+    @JoinColumn(name = "church_member")
+    private ChurchMember churchMember;
 
     @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
     @JoinColumn(name = "topic")
@@ -25,7 +25,7 @@ public class Discourse {
 
     @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
     @JoinColumn(name = "assigned_by")
-    private Member assignedBy;
+    private ChurchMember assignedBy;
 
     public Integer getId() {
         return id;
@@ -35,12 +35,12 @@ public class Discourse {
         this.id = id;
     }
 
-    public Member getMember() {
-        return member;
+    public ChurchMember getChurchMember() {
+        return churchMember;
     }
 
-    public void setMember(Member member) {
-        this.member = member;
+    public void setMember(ChurchMember churchMember) {
+        this.churchMember = churchMember;
     }
 
     public Topic getTopic() {
@@ -59,11 +59,11 @@ public class Discourse {
         this.date = date;
     }
 
-    public Member getAssignedBy() {
+    public ChurchMember getAssignedBy() {
         return assignedBy;
     }
 
-    public void setAssignedBy(Member assignedBy) {
+    public void setAssignedBy(ChurchMember assignedBy) {
         this.assignedBy = assignedBy;
     }
 }

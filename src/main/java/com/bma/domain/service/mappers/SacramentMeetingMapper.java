@@ -11,7 +11,7 @@ public class SacramentMeetingMapper implements AbstractMapper<SacramentMeeting, 
 
 
     @Autowired
-    private MemberMapper memberMapper;
+    private ChurchMemberMapper churchMemberMapper;
 
     @Autowired
     private HymnMapper hymnMapper;
@@ -35,8 +35,8 @@ public class SacramentMeetingMapper implements AbstractMapper<SacramentMeeting, 
         sacramentMeeting.setSustainingReleases(sustainingReleaseMapper.mapToEntitySet(dto.getSustainingReleases()));
         sacramentMeeting.setPrayers(prayerMapper.mapToEntitySet(dto.getPrayers()));
         sacramentMeeting.setDiscourses(this.discourseMapper.mapToEntitySet(dto.getDiscourses()));
-        sacramentMeeting.setPreside(memberMapper.mapToEntity(dto.getPreside()));
-        sacramentMeeting.setLead(memberMapper.mapToEntity(dto.getLead()));
+        sacramentMeeting.setPreside(churchMemberMapper.mapToEntity(dto.getPreside()));
+        sacramentMeeting.setLead(churchMemberMapper.mapToEntity(dto.getLead()));
         sacramentMeeting.setAssistance(dto.getAssistance());
         return sacramentMeeting;
     }
@@ -51,8 +51,8 @@ public class SacramentMeetingMapper implements AbstractMapper<SacramentMeeting, 
         sacramentMeetingDTO.setSustainingReleases(this.sustainingReleaseMapper.mapToDTOSet(entity.getSustainingReleases()));
         sacramentMeetingDTO.setPrayers(prayerMapper.mapToDTOSet(entity.getPrayers()));
         sacramentMeetingDTO.setDiscourses(this.discourseMapper.mapToDTOSet(entity.getDiscourses()));
-        sacramentMeetingDTO.setPreside(this.memberMapper.mapToDTO(entity.getPreside()));
-        sacramentMeetingDTO.setLead(this.memberMapper.mapToDTO(entity.getLead()));
+        sacramentMeetingDTO.setPreside(this.churchMemberMapper.mapToDTO(entity.getPreside()));
+        sacramentMeetingDTO.setLead(this.churchMemberMapper.mapToDTO(entity.getLead()));
         sacramentMeetingDTO.setAssistance(entity.getAssistance());
         return sacramentMeetingDTO;
     }

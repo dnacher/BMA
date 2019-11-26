@@ -19,9 +19,9 @@ public class SacramentMeetingDTO {
 
     private Set<DiscourseDTO> discourses;
 
-    private MemberDTO preside;
+    private ChurchMemberDTO preside;
 
-    private MemberDTO lead;
+    private ChurchMemberDTO lead;
 
     private Integer assistance;
 
@@ -81,19 +81,19 @@ public class SacramentMeetingDTO {
         this.discourses = discourses;
     }
 
-    public MemberDTO getPreside() {
+    public ChurchMemberDTO getPreside() {
         return preside;
     }
 
-    public void setPreside(MemberDTO preside) {
+    public void setPreside(ChurchMemberDTO preside) {
         this.preside = preside;
     }
 
-    public MemberDTO getLead() {
+    public ChurchMemberDTO getLead() {
         return lead;
     }
 
-    public void setLead(MemberDTO lead) {
+    public void setLead(ChurchMemberDTO lead) {
         this.lead = lead;
     }
 

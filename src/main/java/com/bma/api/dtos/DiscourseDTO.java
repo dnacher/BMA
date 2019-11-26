@@ -7,13 +7,13 @@ public class DiscourseDTO {
 
     private Integer id;
 
-    private MemberDTO member;
+    private ChurchMemberDTO churchMember;
 
     private TopicDTO topic;
 
     private Date date;
 
-    private MemberDTO assignedBy;
+    private ChurchMemberDTO assignedBy;
 
     public Integer getId() {
         return id;
@@ -23,12 +23,12 @@ public class DiscourseDTO {
         this.id = id;
     }
 
-    public MemberDTO getMember() {
-        return member;
+    public ChurchMemberDTO getChurchMember() {
+        return churchMember;
     }
 
-    public void setMember(MemberDTO member) {
-        this.member = member;
+    public void setChurchMember(ChurchMemberDTO churchMember) {
+        this.churchMember = churchMember;
     }
 
     public TopicDTO getTopic() {
@@ -47,11 +47,11 @@ public class DiscourseDTO {
         this.date = date;
     }
 
-    public MemberDTO getAssignedBy() {
+    public ChurchMemberDTO getAssignedBy() {
         return assignedBy;
     }
 
-    public void setAssignedBy(MemberDTO assignedBy) {
+    public void setAssignedBy(ChurchMemberDTO assignedBy) {
         this.assignedBy = assignedBy;
     }
 }

@@ -13,8 +13,8 @@ public class Prayer {
     private Integer id;
 
     @ManyToOne(cascade = CascadeType.MERGE)
-    @JoinColumn(name = "member")
-    private Member member;
+    @JoinColumn(name = "church_member")
+    private ChurchMember member;
 
     @Column(name = "date")
     private Date date;
@@ -27,11 +27,11 @@ public class Prayer {
         this.id = id;
     }
 
-    public Member getMember() {
+    public ChurchMember getMember() {
         return member;
     }
 
-    public void setMember(Member member) {
+    public void setMember(ChurchMember member) {
         this.member = member;
     }
 

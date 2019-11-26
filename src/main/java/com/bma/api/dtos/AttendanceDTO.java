@@ -6,7 +6,7 @@ import java.util.Date;
 public class AttendanceDTO implements Serializable {
 
     private Integer id;
-    private MemberDTO member;
+    private ChurchMemberDTO churchMember;
     private boolean attended;
     private Date date;
 
@@ -18,12 +18,12 @@ public class AttendanceDTO implements Serializable {
         this.id = id;
     }
 
-    public MemberDTO getMember() {
-        return member;
+    public ChurchMemberDTO getChurchMember() {
+        return churchMember;
     }
 
-    public void setMember(MemberDTO member) {
-        this.member = member;
+    public void setChurchMember(ChurchMemberDTO churchMember) {
+        this.churchMember = churchMember;
     }
 
     public boolean isAttended() {

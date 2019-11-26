@@ -1,20 +1,33 @@
-package com.bma.api.dtos;
+package com.bma.persistence.model;
 
-import com.bma.persistence.model.Calling;
+import javax.persistence.*;
 
-public class MemberDTO {
+@Entity
+@Table(name = "church_member")
+public class ChurchMember {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
 
+    @Column(name = "name")
     private String name;
 
+    @Column(name = "surname")
     private String surname;
 
+    @Column(name = "fullname")
     private String fullname;
 
-    private CallingDTO calling;
+    @ManyToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "calling")
+    private Calling calling;
 
-    private String organization;
+    @Column(name = "organization")
+    @Enumerated(EnumType.STRING)
+    private Organization organization;
+
 
     public Integer getId() {
         return id;
@@ -48,19 +61,19 @@ public class MemberDTO {
         this.fullname = fullname;
     }
 
-    public CallingDTO getCalling() {
+    public Calling getCalling() {
         return calling;
     }
 
-    public void setCalling(CallingDTO calling) {
+    public void setCalling(Calling calling) {
         this.calling = calling;
     }
 
-    public String getOrganization() {
+    public Organization getOrganization() {
         return organization;
     }
 
-    public void setOrganization(String organization) {
+    public void setOrganization(Organization organization) {
         this.organization = organization;
     }
 }

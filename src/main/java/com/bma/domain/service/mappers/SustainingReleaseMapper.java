@@ -14,7 +14,7 @@ public class SustainingReleaseMapper implements AbstractMapper<SustainingRelease
 
 
     @Autowired
-    private MemberMapper memberMapper;
+    private ChurchMemberMapper churchMemberMapper;
 
     @Autowired
     private CallingMapper callingMapper;
@@ -23,7 +23,7 @@ public class SustainingReleaseMapper implements AbstractMapper<SustainingRelease
     public SustainingRelease mapToEntity(SustainingReleaseDTO dto) {
         SustainingRelease sustainingRelease = new SustainingRelease();
         sustainingRelease.setId(dto.getId());
-        sustainingRelease.setMember(this.memberMapper.mapToEntity(dto.getMember()));
+        sustainingRelease.setMember(this.churchMemberMapper.mapToEntity(dto.getChurchMember()));
         sustainingRelease.setCalling(this.callingMapper.mapToEntity(dto.getCalling()));
         sustainingRelease.setInitDate(dto.getInitDate());
         sustainingRelease.setEndDate(dto.getEndDate());
@@ -34,7 +34,7 @@ public class SustainingReleaseMapper implements AbstractMapper<SustainingRelease
     public SustainingReleaseDTO mapToDTO(SustainingRelease entity) {
         SustainingReleaseDTO sustainingReleaseDTO = new SustainingReleaseDTO();
         sustainingReleaseDTO.setId(entity.getId());
-        sustainingReleaseDTO.setMember(this.memberMapper.mapToDTO(entity.getMember()));
+        sustainingReleaseDTO.setMember(this.churchMemberMapper.mapToDTO(entity.getMember()));
         sustainingReleaseDTO.setCalling(this.callingMapper.mapToDTO(entity.getCalling()));
         sustainingReleaseDTO.setInitDate(entity.getInitDate());
         sustainingReleaseDTO.setEndDate(entity.getEndDate());

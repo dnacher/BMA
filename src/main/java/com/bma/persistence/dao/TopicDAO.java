@@ -1,9 +1,7 @@
 package com.bma.persistence.dao;
 
 import com.bma.exception.BMAException;
-import com.bma.persistence.model.Member;
 import com.bma.persistence.model.Topic;
-import com.bma.persistence.repository.MemberRepository;
 import com.bma.persistence.repository.TopicRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

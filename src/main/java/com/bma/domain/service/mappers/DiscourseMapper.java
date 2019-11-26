@@ -14,7 +14,7 @@ import com.bma.persistence.model.Discourse;
 public class DiscourseMapper implements AbstractMapper<Discourse, DiscourseDTO> {
 
     @Autowired
-    private MemberMapper memberMapper;
+    private ChurchMemberMapper churchMemberMapper;
 
     @Autowired
     private TopicMapper topicMapper;
@@ -23,9 +23,9 @@ public class DiscourseMapper implements AbstractMapper<Discourse, DiscourseDTO> 
     public Discourse mapToEntity(DiscourseDTO dto) {
         Discourse discourse = new Discourse();
         discourse.setId(dto.getId());
-        discourse.setAssignedBy(memberMapper.mapToEntity(dto.getAssignedBy()));
+        discourse.setAssignedBy(churchMemberMapper.mapToEntity(dto.getAssignedBy()));
         discourse.setDate(Utils.setDateToSave(dto.getDate()));
-        discourse.setMember(memberMapper.mapToEntity(dto.getMember()));
+        discourse.setMember(churchMemberMapper.mapToEntity(dto.getChurchMember()));
         discourse.setTopic(topicMapper.mapToEntity(dto.getTopic()));
         return discourse;
     }
@@ -34,10 +34,10 @@ public class DiscourseMapper implements AbstractMapper<Discourse, DiscourseDTO> 
     public DiscourseDTO mapToDTO(Discourse entity) {
         DiscourseDTO discourseDTO = new DiscourseDTO();
         discourseDTO.setId(entity.getId());
-        discourseDTO.setMember(memberMapper.mapToDTO(entity.getMember()));
+        discourseDTO.setChurchMember(churchMemberMapper.mapToDTO(entity.getChurchMember()));
         discourseDTO.setTopic(topicMapper.mapToDTO(entity.getTopic()));
         discourseDTO.setDate(entity.getDate());
-        discourseDTO.setAssignedBy(memberMapper.mapToDTO(entity.getAssignedBy()));
+        discourseDTO.setAssignedBy(churchMemberMapper.mapToDTO(entity.getAssignedBy()));
         return discourseDTO;
     }
 

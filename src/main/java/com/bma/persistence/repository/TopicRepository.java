@@ -1,6 +1,5 @@
 package com.bma.persistence.repository;
 
-import com.bma.persistence.model.Member;
 import com.bma.persistence.model.Topic;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;

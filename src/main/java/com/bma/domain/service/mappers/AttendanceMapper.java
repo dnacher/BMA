@@ -9,13 +9,13 @@ import org.springframework.stereotype.Component;
 public class AttendanceMapper implements AbstractMapper<Attendance, AttendanceDTO>{
 
     @Autowired
-    private MemberMapper memberMapper;
+    private ChurchMemberMapper churchMemberMapper;
 
     @Override
     public Attendance mapToEntity(AttendanceDTO dto) {
         Attendance attendance = new Attendance();
         attendance.setId(dto.getId());
-        attendance.setMember(memberMapper.mapToEntity(dto.getMember()));
+        attendance.setChurchMember(churchMemberMapper.mapToEntity(dto.getChurchMember()));
         attendance.setAttended(dto.isAttended());
         attendance.setDate(dto.getDate());
         return attendance;
@@ -25,7 +25,7 @@ public class AttendanceMapper implements AbstractMapper<Attendance, AttendanceDT
     public AttendanceDTO mapToDTO(Attendance entity) {
         AttendanceDTO attendanceDTO = new AttendanceDTO();
         attendanceDTO.setId(entity.getId());
-        attendanceDTO.setMember(memberMapper.mapToDTO(entity.getMember()));
+        attendanceDTO.setChurchMember(churchMemberMapper.mapToDTO(entity.getChurchMember()));
         attendanceDTO.setAttended(entity.isAttended());
         attendanceDTO.setDate(entity.getDate());
         return attendanceDTO;

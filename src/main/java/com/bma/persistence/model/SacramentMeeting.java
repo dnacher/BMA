@@ -40,11 +40,11 @@ public class SacramentMeeting {
 
     @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
     @JoinColumn(name ="preside")
-    private Member preside;
+    private ChurchMember preside;
 
     @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
     @JoinColumn(name ="lead")
-    private Member lead;
+    private ChurchMember lead;
 
     @Column(name = "assistance")
     private Integer assistance;
@@ -105,19 +105,19 @@ public class SacramentMeeting {
         this.discourses = discourses;
     }
 
-    public Member getPreside() {
+    public ChurchMember getPreside() {
         return preside;
     }
 
-    public void setPreside(Member preside) {
+    public void setPreside(ChurchMember preside) {
         this.preside = preside;
     }
 
-    public Member getLead() {
+    public ChurchMember getLead() {
         return lead;
     }
 
-    public void setLead(Member lead) {
+    public void setLead(ChurchMember lead) {
         this.lead = lead;
     }
 

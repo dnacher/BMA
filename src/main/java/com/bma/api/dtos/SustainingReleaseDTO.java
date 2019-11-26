@@ -6,7 +6,7 @@ public class SustainingReleaseDTO {
 
     private Integer id;
 
-    private MemberDTO member;
+    private ChurchMemberDTO churchMember;
 
     private CallingDTO calling;
 
@@ -22,12 +22,12 @@ public class SustainingReleaseDTO {
         this.id = id;
     }
 
-    public MemberDTO getMember() {
-        return member;
+    public ChurchMemberDTO getChurchMember() {
+        return churchMember;
     }
 
-    public void setMember(MemberDTO member) {
-        this.member = member;
+    public void setMember(ChurchMemberDTO churchMember) {
+        this.churchMember = churchMember;
     }
 
     public CallingDTO getCalling() {

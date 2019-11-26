@@ -1,10 +1,10 @@
 package com.bma.persistence.dao;
 
-import com.bma.domain.service.MemberService;
-import com.bma.domain.service.mappers.MemberMapper;
+import com.bma.domain.service.ChurchMemberService;
+import com.bma.domain.service.mappers.ChurchMemberMapper;
 import com.bma.exception.BMAException;
 import com.bma.persistence.model.Attendance;
-import com.bma.persistence.model.Member;
+import com.bma.persistence.model.ChurchMember;
 import com.bma.persistence.repository.AttendanceRepository;
 import com.bma.utils.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,10 +21,10 @@ public class AttendanceDAO {
     private AttendanceRepository repository;
 
     @Autowired
-    private MemberService memberService;
+    private ChurchMemberService churchMemberService;
 
     @Autowired
-    private MemberMapper memberMapper;
+    private ChurchMemberMapper churchMemberMapper;
 
     public List<Attendance> getAttendance(){
         List<Attendance> attendances = new ArrayList<>();
@@ -58,14 +58,14 @@ public class AttendanceDAO {
     }
 
     public List<Attendance> createAttendance(){
-        List<Member> members = this.memberMapper.mapToEntityList(this.memberService.getMembers());
+        List<ChurchMember> members = this.churchMemberMapper.mapToEntityList(this.churchMemberService.getMembers());
         List<Attendance> attendances = new ArrayList<>();
         Date today = Utils.setDateToSave(Utils.setTodayDate());
         members.forEach(member -> {
             Attendance attendance = new Attendance();
             attendance.setAttended(false);
             attendance.setDate(today);
-            attendance.setMember(member);
+            attendance.setChurchMember(member);
             attendances.add(attendance);
                 });
         return attendances;

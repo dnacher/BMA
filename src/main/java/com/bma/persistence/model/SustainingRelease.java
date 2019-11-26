@@ -12,8 +12,8 @@ public class SustainingRelease {
     private Integer id;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "member")
-    private Member member;
+    @JoinColumn(name = "church_member")
+    private ChurchMember member;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "calling")
@@ -33,11 +33,11 @@ public class SustainingRelease {
         this.id = id;
     }
 
-    public Member getMember() {
+    public ChurchMember getMember() {
         return member;
     }
 
-    public void setMember(Member member) {
+    public void setMember(ChurchMember member) {
         this.member = member;
     }
 

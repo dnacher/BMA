@@ -13,8 +13,8 @@ public class Attendance {
     private Integer id;
 
     @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
-    @JoinColumn(name = "member")
-    private Member member;
+    @JoinColumn(name = "church_member")
+    private ChurchMember churchMember;
 
     @Column(name = "attended")
     private boolean attended;
@@ -31,12 +31,12 @@ public class Attendance {
         this.id = id;
     }
 
-    public Member getMember() {
-        return member;
+    public ChurchMember getChurchMember() {
+        return churchMember;
     }
 
-    public void setMember(Member member) {
-        this.member = member;
+    public void setChurchMember(ChurchMember churchMember) {
+        this.churchMember = churchMember;
     }
 
     public boolean isAttended() {
