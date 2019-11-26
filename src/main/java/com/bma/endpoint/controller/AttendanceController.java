@@ -33,6 +33,15 @@ public class AttendanceController {
         return finalList;
     }
 
+    @PutMapping(value = "/mul")
+    public List<AttendanceDTO> updateAttendances(@RequestBody List<AttendanceDTO> attendanceDTOS){
+        List<AttendanceDTO> finalList = new ArrayList<>();
+        attendanceDTOS.forEach(attendanceDTO -> {
+            finalList.add(this.attendanceService.saveAttendance(attendanceDTO));
+        });
+        return finalList;
+    }
+
     @PostMapping(value = "/creates")
     public List<AttendanceDTO> createOrGetAttendance() {
         return this.attendanceService.createOrGetAttendance();

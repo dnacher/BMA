@@ -325,14 +325,13 @@ LOCK TABLES `topic` WRITE;
 INSERT INTO `topic` VALUES (1,'Fe'),(2,'Jesuscristo'),(3,'Arrepentimiento');
 /*!40000 ALTER TABLE `topic` ENABLE KEYS */;
 UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- Dump completed on 2019-11-26  7:15:03
+/*church member alter*/
+ALTER TABLE `bma`.`attendance`
+DROP FOREIGN KEY `attendance_member_id`;
+ALTER TABLE `bma`.`attendance`
+CHANGE COLUMN `member` `church_member` INT(11) NULL DEFAULT NULL ;
+ALTER TABLE `bma`.`attendance`
+ADD CONSTRAINT `attendance_member_id`
+  FOREIGN KEY (`church_member`)
+  REFERENCES `bma`.`church_member` (`id`);

@@ -3,9 +3,7 @@ package com.bma.utils;
 import com.bma.exception.BMAException;
 import org.eclipse.jetty.http.HttpStatus;
 
-import java.time.LocalDateTime;
-import java.time.OffsetDateTime;
-import java.time.ZoneOffset;
+import java.time.*;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.TimeZone;
@@ -36,7 +34,8 @@ public class Utils {
 
     public static Date setTodayDate(){
         Date today = new Date();
-        today.setHours(0);
+        LocalDate localDate = today.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+        today.setHours(13);
         today.setMinutes(0);
         today.setSeconds(0);
         return today;

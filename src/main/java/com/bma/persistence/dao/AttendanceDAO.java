@@ -72,6 +72,7 @@ public class AttendanceDAO {
     }
 
     public List<Attendance> getAttendanceByDate(Date date){
+        date.setHours(16);
         return this.repository.findAllByDate(date);
     }
 

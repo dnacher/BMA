@@ -32,6 +32,7 @@ public class AttendanceService {
 
     public AttendanceDTO saveAttendance(AttendanceDTO attendanceDTO) throws BMAException{
         try {
+            attendanceDTO.setDate(Utils.setTodayDate());
             Attendance attendance = attendanceMapper.mapToEntity(attendanceDTO);
             return attendanceMapper.mapToDTO(this.attendanceDAO.saveAttendance(attendance));
         } catch (BMAException e) {
