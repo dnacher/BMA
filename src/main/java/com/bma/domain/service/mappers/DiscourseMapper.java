@@ -1,7 +1,5 @@
 package com.bma.domain.service.mappers;
 
-import java.util.Calendar;
-import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -18,6 +16,9 @@ public class DiscourseMapper implements AbstractMapper<Discourse, DiscourseDTO> 
     @Autowired
     private MemberMapper memberMapper;
 
+    @Autowired
+    private TopicMapper topicMapper;
+
     @Override
     public Discourse mapToEntity(DiscourseDTO dto) {
         Discourse discourse = new Discourse();
@@ -25,7 +26,7 @@ public class DiscourseMapper implements AbstractMapper<Discourse, DiscourseDTO> 
         discourse.setAssignedBy(memberMapper.mapToEntity(dto.getAssignedBy()));
         discourse.setDate(Utils.setDateToSave(dto.getDate()));
         discourse.setMember(memberMapper.mapToEntity(dto.getMember()));
-        discourse.setTopic(dto.getTopic());
+        discourse.setTopic(topicMapper.mapToEntity(dto.getTopic()));
         return discourse;
     }
 
@@ -34,7 +35,7 @@ public class DiscourseMapper implements AbstractMapper<Discourse, DiscourseDTO> 
         DiscourseDTO discourseDTO = new DiscourseDTO();
         discourseDTO.setId(entity.getId());
         discourseDTO.setMember(memberMapper.mapToDTO(entity.getMember()));
-        discourseDTO.setTopic(entity.getTopic());
+        discourseDTO.setTopic(topicMapper.mapToDTO(entity.getTopic()));
         discourseDTO.setDate(entity.getDate());
         discourseDTO.setAssignedBy(memberMapper.mapToDTO(entity.getAssignedBy()));
         return discourseDTO;

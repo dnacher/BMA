@@ -1,11 +1,9 @@
 package com.bma.domain.service.mappers;
 
+import com.bma.persistence.model.Organization;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import com.bma.api.dtos.CallingDTO;
 import com.bma.api.dtos.MemberDTO;
-import com.bma.persistence.model.Calling;
 import com.bma.persistence.model.Member;
 
 import java.util.ArrayList;
@@ -27,6 +25,9 @@ public class MemberMapper implements AbstractMapper<Member, MemberDTO> {
         if(dto.getCalling()!=null) {
             member.setCalling(callingMapper.mapToEntity(dto.getCalling()));
         }
+        if(dto.getCalling()!=null){
+            member.setOrganization(Organization.valueOf(dto.getOrganization()));
+        }
         return  member;
     }
 
@@ -39,6 +40,9 @@ public class MemberMapper implements AbstractMapper<Member, MemberDTO> {
         memberDTO.setFullname(entity.getFullname());
         if(entity.getCalling()!=null) {
             memberDTO.setCalling(callingMapper.mapToDTO(entity.getCalling()));
+        }
+        if(entity.getOrganization()!=null){
+            memberDTO.setOrganization(entity.getOrganization().toString());
         }
         return memberDTO;
     }

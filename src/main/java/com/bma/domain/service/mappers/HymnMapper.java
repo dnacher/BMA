@@ -3,6 +3,8 @@ package com.bma.domain.service.mappers;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.bma.persistence.model.Topic;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import com.bma.api.dtos.HymnDTO;
 import com.bma.persistence.model.Hymn;
@@ -10,6 +12,8 @@ import com.bma.persistence.model.Hymn;
 @Component
 public class HymnMapper implements AbstractMapper<Hymn, HymnDTO> {
 
+    @Autowired
+    private TopicMapper topicMapper;
 
     @Override
     public Hymn mapToEntity(HymnDTO dto) {
@@ -18,7 +22,9 @@ public class HymnMapper implements AbstractMapper<Hymn, HymnDTO> {
         hymn.setTitle(dto.getTitle());
         hymn.setNumber(dto.getNumber());
         hymn.setPianoNumber(dto.getPianoNumber());
-        hymn.setTopic(dto.getTopic());
+        if(dto.getTopic()!=null){
+            hymn.setTopic(topicMapper.mapToEntity(dto.getTopic()));
+        }
         return hymn;
     }
 
@@ -29,7 +35,9 @@ public class HymnMapper implements AbstractMapper<Hymn, HymnDTO> {
         hymnDTO.setTitle(entity.getTitle());
         hymnDTO.setNumber(entity.getNumber());
         hymnDTO.setPianoNumber(entity.getPianoNumber());
-        hymnDTO.setTopic(entity.getTopic());
+        if(entity.getTopic()!=null){
+            hymnDTO.setTopic(topicMapper.mapToDTO(entity.getTopic()));
+        }
         return hymnDTO;
     }
 

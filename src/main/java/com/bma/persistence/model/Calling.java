@@ -3,7 +3,7 @@ package com.bma.persistence.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "CALLING")
+@Table(name = "calling")
 public class Calling {
 
     @Id

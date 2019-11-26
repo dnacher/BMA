@@ -3,7 +3,7 @@ package com.bma.persistence.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "member")
+@Table(name = "church_member")
 public class Member {
 
     @Id
@@ -23,6 +23,10 @@ public class Member {
     @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "calling")
     private Calling calling;
+
+    @Column(name = "organization")
+    @Enumerated(EnumType.STRING)
+    private Organization organization;
 
 
     public Integer getId() {
@@ -63,5 +67,13 @@ public class Member {
 
     public void setCalling(Calling calling) {
         this.calling = calling;
+    }
+
+    public Organization getOrganization() {
+        return organization;
+    }
+
+    public void setOrganization(Organization organization) {
+        this.organization = organization;
     }
 }

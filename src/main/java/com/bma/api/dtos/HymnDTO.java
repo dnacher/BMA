@@ -6,7 +6,7 @@ public class HymnDTO {
     private String title;
     private Integer number;
     private Integer pianoNumber;
-    private String topic;
+    private TopicDTO topic;
 
     public Integer getId() {
         return id;
@@ -40,11 +40,11 @@ public class HymnDTO {
         this.pianoNumber = pianoNumber;
     }
 
-    public String getTopic() {
+    public TopicDTO getTopic() {
         return topic;
     }
 
-    public void setTopic(String topic) {
+    public void setTopic(TopicDTO topic) {
         this.topic = topic;
     }
 }

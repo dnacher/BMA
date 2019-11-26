@@ -1,83 +1,59 @@
 package com.bma.domain.service;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
-
-import javax.transaction.Transactional;
-
-import com.bma.api.dtos.AttendanceDTO;
-import com.bma.domain.service.mappers.AttendanceMapper;
-import com.bma.persistence.model.Attendance;
+import com.bma.api.dtos.TopicDTO;
+import com.bma.domain.service.mappers.TopicMapper;
+import com.bma.exception.BMAException;
+import com.bma.persistence.dao.TopicDAO;
+import com.bma.persistence.model.Topic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.bma.api.dtos.MemberDTO;
-import com.bma.domain.service.mappers.MemberMapper;
-import com.bma.exception.BMAException;
-import com.bma.persistence.dao.MemberDAO;
-import com.bma.persistence.model.Member;
+import javax.transaction.Transactional;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Transactional
 @Service
-public class MemberService {
+public class TopicService {
 
-    private final MemberDAO memberDAO;
-    private final MemberMapper memberMapper;
-    private final AttendanceMapper attendanceMapper;
+    private final TopicDAO topicDAO;
+    private final TopicMapper topicMapper;
 
     @Autowired
-    public MemberService(MemberDAO memberDAO, MemberMapper memberMapper, AttendanceMapper attendanceMapper){
-        this.memberDAO = memberDAO;
-        this.memberMapper = memberMapper;
-        this.attendanceMapper = attendanceMapper;
+    public TopicService(TopicDAO topicDAO, TopicMapper topicMapper){
+        this.topicDAO = topicDAO;
+        this.topicMapper = topicMapper;
     }
 
-    public MemberDTO saveMember(MemberDTO memberDTO) throws BMAException{
+    public TopicDTO saveTopic(TopicDTO topicDTO) throws BMAException{
         try {
-            Member member = memberMapper.mapToEntity(memberDTO);
-            return memberMapper.mapToDTO(this.memberDAO.saveMember(member));
+            Topic topic = topicMapper.mapToEntity(topicDTO);
+            return topicMapper.mapToDTO(this.topicDAO.saveTopic(topic));
         } catch (BMAException e) {
             throw new BMAException(e.getMessage());
         }
     }
 
-    public void deleteMember(Integer memberId){
-        this.memberDAO.deleteMember(memberId);
+    public void deleteTopic(Integer topicId){
+        this.topicDAO.deleteTopic(topicId);
     }
 
-    public MemberDTO updateMember(MemberDTO memberDTO) throws BMAException{
+    public TopicDTO updateTopic(TopicDTO topicDTO) throws BMAException{
         try {
-            return this.memberMapper.mapToDTO(this.memberDAO.updateMember(memberMapper.mapToEntity(memberDTO)));
+            return this.topicMapper.mapToDTO(this.topicDAO.updateTopic(topicMapper.mapToEntity(topicDTO)));
         }catch (BMAException e){
             throw new BMAException(e.getMessage());
         }
     }
 
-    public List<MemberDTO> getMembers(){
-        List<Member> members = this.memberDAO.getMembers();
-        return members.stream().map(member -> this.memberMapper.mapToDTO(member)).collect(Collectors.toList());
+    public List<TopicDTO> getTopics(){
+        List<Topic> topics = this.topicDAO.getTopics();
+        return topics.stream().map(member -> this.topicMapper.mapToDTO(member)).collect(Collectors.toList());
     }
 
-    public List<AttendanceDTO> getMembersTest(){
-        List<Member> members = this.memberDAO.getMembers();
-        List<Attendance> attendances = members.stream().map(member -> {
-            Date date = new Date();
-            Attendance attendance = new Attendance();
-            attendance.setMember(member);
-            attendance.setDate(date);
-            attendance.setAttended(false);
-            return attendance;
-        }).collect(Collectors.toList());
-        List<AttendanceDTO>attendanceDTOS = attendances.stream().map(attendance -> this.attendanceMapper.mapToDTO(attendance)).collect(Collectors.toList());
-        return attendanceDTOS;
-    }
-
-    public MemberDTO getMemberById(Integer id) throws BMAException{
+    public TopicDTO getTopicById(Integer id) throws BMAException{
         try {
-            return this.memberMapper.mapToDTO(this.memberDAO.getMemberById(id));
+            return this.topicMapper.mapToDTO(this.topicDAO.getTopicById(id));
         }catch (BMAException e){
             throw new BMAException(e.getMessage());
         }

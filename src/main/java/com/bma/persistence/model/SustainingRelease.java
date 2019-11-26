@@ -1,11 +1,10 @@
 package com.bma.persistence.model;
 
 import java.util.Date;
-
 import javax.persistence.*;
 
 @Entity
-@Table(name = "SUSTAINING_RELEASE")
+@Table(name = "sustaining_release")
 public class SustainingRelease {
 
     @Id
@@ -13,17 +12,17 @@ public class SustainingRelease {
     private Integer id;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "MEMBER")
+    @JoinColumn(name = "member")
     private Member member;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "CALLING")
+    @JoinColumn(name = "calling")
     private Calling calling;
 
-    @Column(name = "INIT_DATE")
+    @Column(name = "init_date")
     private Date initDate;
 
-    @Column(name = "END_DATE")
+    @Column(name = "end_date")
     private Date endDate;
 
     public Integer getId() {

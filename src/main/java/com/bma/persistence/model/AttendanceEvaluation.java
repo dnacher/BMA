@@ -11,6 +11,10 @@ public class AttendanceEvaluation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "member")
+    private Member member;
+
     @Column(name = "attended1")
     private Integer attended1;
 
@@ -102,5 +106,13 @@ public class AttendanceEvaluation {
 
     public void setLastUpdate(Date lastUpdate) {
         this.lastUpdate = lastUpdate;
+    }
+
+    public Member getMember() {
+        return member;
+    }
+
+    public void setMember(Member member) {
+        this.member = member;
     }
 }

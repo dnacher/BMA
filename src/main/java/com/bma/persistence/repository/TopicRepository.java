@@ -1,15 +1,14 @@
 package com.bma.persistence.repository;
 
-import java.util.List;
-import java.util.Set;
-
+import com.bma.persistence.model.Member;
+import com.bma.persistence.model.Topic;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
-import com.bma.persistence.model.Member;
+import java.util.List;
 
-public interface MemberRepository extends CrudRepository<Member, Integer> {
+public interface TopicRepository extends CrudRepository<Topic, Integer> {
 
-    @Query("from Member m order by m.surname")
-    List<Member> findAllOrderBySurname();
+    @Query("from Topic t order by t.name")
+    List<Topic> findAllOrderByName();
 }

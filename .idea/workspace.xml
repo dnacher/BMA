@@ -1,102 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="284556b3-e213-427d-9c1a-8ae783ce691f" name="Default" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
+    <list default="true" id="3ee6e61f-6a5b-46b4-8d2f-cc903fd4071d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/classes/Topic.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/services/data.topic.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/topic/topic.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/topic/topic.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/topic/topic.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/TopicDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/TopicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/TopicMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bma/endpoint/controller/TopicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/TopicDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/Organization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/Topic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/repository/TopicRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/classes/Discourse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/classes/Discourse.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/discourse/discourse.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/discourse/discourse.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/discourse/discourse.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/discourse/discourse.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/services/data.attendance.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/services/data.attendance.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/services/data.calling.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/services/data.calling.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/services/data.discourse.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/services/data.discourse.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/services/data.hymn.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/services/data.hymn.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/services/data.member.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/services/data.member.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/services/data.prayer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/services/data.prayer.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/services/data.sacrament-meeting.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/services/data.sacrament-meeting.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/services/data.sustainingRelease.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/services/data.sustainingRelease.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/sidebar/sidebar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bma.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/library.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/DiscourseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/DiscourseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/HymnDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/HymnDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/MemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/MemberDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/DiscourseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/DiscourseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/HymnMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/HymnMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/MemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/MemberMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/HymnDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/HymnDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/MemberDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/AttendanceEvaluation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/AttendanceEvaluation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/Calling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/Calling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/Discourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/Discourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/Hymn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/Hymn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/SacramentMeeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/SacramentMeeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/SustainingRelease.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/SustainingRelease.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/DiscourseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/DiscourseDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/HymnDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/HymnDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/MemberDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/MemberDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/DiscourseMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/DiscourseMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/HymnMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/HymnMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/MemberMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/MemberMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/HymnDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/HymnDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/MemberDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/MemberDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/AttendanceEvaluation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/AttendanceEvaluation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Calling.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Calling.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Discourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Discourse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Hymn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Hymn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Member.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/SacramentMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/SacramentMeeting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/SustainingRelease.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/SustainingRelease.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../BMA-FRONT" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1563" />
-    <option name="y" value="223" />
-    <option name="width" value="1910" />
-    <option name="height" value="770" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="booksmanager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="booksmanager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="booksmanager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="booksmanager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="booksmanager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="booksmanager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="booksmanager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="booksmanager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="booksmanager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="booksmanager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="booksmanager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="booksmanager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="finalcit360" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="booksmanager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="booksmanager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="finalcit360" type="462c0819:PsiDirectoryNode" />
-              <item name="booksmanager" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
+  <component name="ProjectId" id="1RvEw5QrbgPf9bE0QvCwTIcrYHC" />
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../greene" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BMA-FRONT/src/app" />
+    <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/../BMA-FRONT/node_modules/protractor" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="ts.external.directory.path" value="C:\Desarrollo\BMA-FRONT\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bma.persistence.repository" />
+      <recent name="com.bma.persistence.dao" />
+      <recent name="com.bma.domain.service" />
+      <recent name="com.bma.endpoint.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Desarrollo\BMA-FRONT\src\app" />
+      <recent name="C:\Desarrollo\BMA-FRONT\src\app\services" />
+      <recent name="C:\Desarrollo\BMA-FRONT\src\app\classes" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -110,47 +137,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+  <component name="RunManager" selected="Spring Boot.BmaServer">
+    <configuration name="E2E Tests (bma-front)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/../BMA-FRONT/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-package value="$PROJECT_DIR$/../BMA-FRONT/node_modules/protractor" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
+    <configuration name="BmaServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="bma" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bma.BmaServer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/../BMA-FRONT/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
     </configuration>
   </component>
   <component name="SvnConfiguration">
@@ -158,72 +173,79 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="284556b3-e213-427d-9c1a-8ae783ce691f" name="Default" comment="" />
-      <created>1543851208402</created>
+      <changelist id="3ee6e61f-6a5b-46b4-8d2f-cc903fd4071d" name="Default Changelist" comment="" />
+      <created>1570539404847</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1543851208402</updated>
-      <workItem from="1543851213403" duration="63000" />
-      <workItem from="1543851301101" duration="118000" />
+      <updated>1570539404847</updated>
+      <workItem from="1570539408594" duration="798000" />
+      <workItem from="1570583298485" duration="165000" />
+      <workItem from="1570584101293" duration="1834000" />
+      <workItem from="1570763944448" duration="110000" />
+      <workItem from="1570840031669" duration="1314000" />
+      <workItem from="1570912782913" duration="697000" />
+      <workItem from="1570914412795" duration="666000" />
+      <workItem from="1571074114577" duration="1670000" />
+      <workItem from="1571540342042" duration="5000" />
+      <workItem from="1572321973538" duration="1266000" />
+      <workItem from="1572383691923" duration="8392000" />
+      <workItem from="1572486994483" duration="2239000" />
+      <workItem from="1572742511058" duration="994000" />
+      <workItem from="1573778741431" duration="62000" />
+      <workItem from="1573778924539" duration="4806000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="1600" y="-2" width="1920" height="1029" extended-state="6" />
-    <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2524013" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Learn" order="2" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bma/domain/service/MemberService.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bma/domain/service/MemberService.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/MemberMapper.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bma/endpoint/controller/TopicController.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bma/domain/service/TopicService.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/TopicDAO.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

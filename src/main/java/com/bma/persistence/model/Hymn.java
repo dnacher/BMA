@@ -10,17 +10,18 @@ public class Hymn {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "name")
-    private String title;
-
     @Column(name = "number")
     private Integer number;
 
     @Column(name = "piano_number")
     private Integer pianoNumber;
 
-    @Column(name = "topic")
-    private String topic;
+    @Column(name = "name")
+    private String title;
+
+    @ManyToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "topic")
+    private Topic topic;
 
     public Integer getId() {
         return id;
@@ -54,11 +55,12 @@ public class Hymn {
         this.pianoNumber = pianoNumber;
     }
 
-    public String getTopic() {
+    public Topic getTopic() {
         return topic;
     }
 
-    public void setTopic(String topic) {
+    public void setTopic(Topic topic) {
         this.topic = topic;
     }
+
 }

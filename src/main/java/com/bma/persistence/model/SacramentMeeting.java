@@ -6,14 +6,14 @@ import java.util.Set;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "SACRAMENT_MEETING")
+@Table(name = "sacrament_meeting")
 public class SacramentMeeting {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "DATE")
+    @Column(name = "date")
     private Date date;
 
     @OneToMany(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
@@ -23,30 +23,30 @@ public class SacramentMeeting {
             inverseJoinColumns = @JoinColumn(name = "hymn_id"))
     private Set<Hymn> hymns;
 
-    @Column(name = "ANNOUNCEMENTS")
+    @Column(name = "announcements")
     private String announcements;
 
     @OneToMany(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
-    @JoinColumn(name ="SACRAMENT_MEETING_ID")
+    @JoinColumn(name ="sacrament_meeting_id")
     private Set<SustainingRelease>sustainingReleases;
 
     @OneToMany(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
-    @JoinColumn(name ="SACRAMENT_MEETING_ID")
+    @JoinColumn(name ="sacrament_meeting_id")
     private Set<Prayer>prayers;
 
     @OneToMany(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
-    @JoinColumn(name ="SACRAMENT_MEETING_ID")
+    @JoinColumn(name ="sacrament_meeting_id")
     private Set<Discourse> discourses;
 
     @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
-    @JoinColumn(name ="PRESIDE")
+    @JoinColumn(name ="preside")
     private Member preside;
 
     @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
-    @JoinColumn(name ="LEAD")
+    @JoinColumn(name ="lead")
     private Member lead;
 
-    @Column(name = "ASSISTANCE")
+    @Column(name = "assistance")
     private Integer assistance;
 
     public Integer getId() {

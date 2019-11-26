@@ -9,7 +9,7 @@ public class DiscourseDTO {
 
     private MemberDTO member;
 
-    private String topic;
+    private TopicDTO topic;
 
     private Date date;
 
@@ -31,11 +31,11 @@ public class DiscourseDTO {
         this.member = member;
     }
 
-    public String getTopic() {
+    public TopicDTO getTopic() {
         return topic;
     }
 
-    public void setTopic(String topic) {
+    public void setTopic(TopicDTO topic) {
         this.topic = topic;
     }
 

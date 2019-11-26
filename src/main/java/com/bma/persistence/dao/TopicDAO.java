@@ -1,58 +1,55 @@
 package com.bma.persistence.dao;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
+import com.bma.exception.BMAException;
+import com.bma.persistence.model.Member;
+import com.bma.persistence.model.Topic;
+import com.bma.persistence.repository.MemberRepository;
+import com.bma.persistence.repository.TopicRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.bma.exception.BMAException;
-import com.bma.persistence.model.Member;
-import com.bma.persistence.repository.MemberRepository;
+import java.util.ArrayList;
+import java.util.List;
 
 @Component
-public class MemberDAO {
+public class TopicDAO {
 
     @Autowired
-    private MemberRepository memberRepository;
+    private TopicRepository topicRepository;
 
-    public List<Member> getMembers(){
-        List<Member> members = new ArrayList<>();
-//        Iterable<Member>it = memberRepository.findAll();
-        memberRepository.findAllOrderBySurname().forEach(member -> members.add(member));
-//        it.forEach(member -> members.add(member));
-        return members;
+    public List<Topic> getTopics(){
+        List<Topic> topics = new ArrayList<>();
+        topicRepository.findAllOrderByName().forEach(topic -> topics.add(topic));
+        return topics;
     }
 
-    public Member getMemberById(Integer id) throws BMAException{
-        Member member = this.memberRepository.findById(id).orElseThrow(() ->
+    public Topic getTopicById(Integer id) throws BMAException{
+        Topic topic = this.topicRepository.findById(id).orElseThrow(() ->
         {
-            String msg = String.format("The member id %s does not exist", id.toString());
+            String msg = String.format("The topic id %s does not exist", id.toString());
             return new BMAException(msg);
         });
-        return member;
+        return topic;
     }
 
-    public Member saveMember(Member member){
-        if(member.getId()!=null){
-            String msg = String.format("Cannot save a Member with Id");
+    public Topic saveTopic(Topic topic){
+        if(topic.getId()!=null){
+            String msg = String.format("Cannot save a topic with Id");
             throw new BMAException(msg);
         }else{
-            return memberRepository.save(member);
+            return topicRepository.save(topic);
         }
     }
 
-    public void deleteMember(Integer memberId){
-        memberRepository.deleteById(memberId);
+    public void deleteTopic(Integer topicId){
+        topicRepository.deleteById(topicId);
     }
 
-    public Member updateMember(Member member){
-        if(member.getId()!=null){
-            return memberRepository.save(member);
+    public Topic updateTopic(Topic topic){
+        if(topic.getId()!=null){
+            return topicRepository.save(topic);
         }else{
-            String msg = String.format("Cannot update a Member without an Id");
+            String msg = String.format("Cannot update a Topic without an Id");
             throw new BMAException(msg);
         }
     }

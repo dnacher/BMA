@@ -5,7 +5,7 @@ import java.util.Date;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "DISCOURSE")
+@Table(name = "discourse")
 public class Discourse {
 
     @Id
@@ -13,17 +13,18 @@ public class Discourse {
     private Integer id;
 
     @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
-    @JoinColumn(name = "MEMBER")
+    @JoinColumn(name = "member")
     private Member member;
 
-    @Column(name = "TOPIC")
-    private String topic;
+    @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
+    @JoinColumn(name = "topic")
+    private Topic topic;
 
-    @Column(name = "DATE")
+    @Column(name = "date")
     private Date date;
 
     @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
-    @JoinColumn(name = "ASSIGNED_BY")
+    @JoinColumn(name = "assigned_by")
     private Member assignedBy;
 
     public Integer getId() {
@@ -42,11 +43,11 @@ public class Discourse {
         this.member = member;
     }
 
-    public String getTopic() {
+    public Topic getTopic() {
         return topic;
     }
 
-    public void setTopic(String topic) {
+    public void setTopic(Topic topic) {
         this.topic = topic;
     }
 

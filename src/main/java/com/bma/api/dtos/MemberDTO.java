@@ -14,6 +14,8 @@ public class MemberDTO {
 
     private CallingDTO calling;
 
+    private String organization;
+
     public Integer getId() {
         return id;
     }
@@ -52,5 +54,13 @@ public class MemberDTO {
 
     public void setCalling(CallingDTO calling) {
         this.calling = calling;
+    }
+
+    public String getOrganization() {
+        return organization;
+    }
+
+    public void setOrganization(String organization) {
+        this.organization = organization;
     }
 }

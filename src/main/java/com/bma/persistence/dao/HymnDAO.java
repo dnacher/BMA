@@ -24,11 +24,11 @@ public class HymnDAO {
     }
 
     public Hymn getHymnById(Integer id) throws BMAException{
-        return hymnRepository.findById(id).get();
-//        return hymnRepository.findById(id).orElseThrow(()->{
-//            String msg = String.format("The Hymn id %s does not exist", id.toString());
-//            throw new BMAException(HttpStatus.NOT_FOUND_404,msg);
-//        });
+//        return hymnRepository.findById(id).get();
+        return hymnRepository.findById(id).orElseThrow(()->{
+            String msg = String.format("The Hymn id %s does not exist", id.toString());
+            throw new BMAException(HttpStatus.INTERNAL_SERVER_ERROR_500,msg);
+        });
     }
 
     public Hymn saveHymn(Hymn hymn) throws BMAException{

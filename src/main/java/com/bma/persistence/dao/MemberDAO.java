@@ -20,9 +20,7 @@ public class MemberDAO {
 
     public List<Member> getMembers(){
         List<Member> members = new ArrayList<>();
-//        Iterable<Member>it = memberRepository.findAll();
         memberRepository.findAllOrderBySurname().forEach(member -> members.add(member));
-//        it.forEach(member -> members.add(member));
         return members;
     }
 
