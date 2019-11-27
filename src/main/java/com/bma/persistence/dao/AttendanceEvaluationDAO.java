@@ -1,15 +1,19 @@
 package com.bma.persistence.dao;
 
 import com.bma.exception.BMAException;
+import com.bma.persistence.model.Attendance;
 import com.bma.persistence.model.AttendanceEvaluation;
+import com.bma.persistence.model.ChurchMember;
 import com.bma.persistence.repository.AttendanceEvaluationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
+@Transactional
 public class AttendanceEvaluationDAO {
 
     @Autowired
@@ -27,6 +31,10 @@ public class AttendanceEvaluationDAO {
             String msg = String.format("The attendance Evaluation id %s does not exist", id.toString());
             return new BMAException(msg);
         });
+    }
+
+    public AttendanceEvaluation getAttendanceEvaluationByChurchMember(ChurchMember churchMember){
+        return this.repository.findByChurchMember(churchMember);
     }
 
     public AttendanceEvaluation saveAttendanceEvaluation(AttendanceEvaluation attendanceEvaluation) throws BMAException{

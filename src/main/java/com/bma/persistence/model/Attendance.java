@@ -54,4 +54,8 @@ public class Attendance {
     public void setDate(Date date) {
         this.date = date;
     }
+
+    public Integer getAttendanceValue(){
+        return (attended) ? 1 : 0;
+    }
 }

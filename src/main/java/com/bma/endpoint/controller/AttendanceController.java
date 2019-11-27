@@ -61,7 +61,7 @@ public class AttendanceController {
     public AttendanceDTO updateAttendance(@PathVariable Integer id, @RequestBody AttendanceDTO attendanceDTO){
         String msg = String.format("The Attendance Id %s is different from the Url Id",attendanceDTO.getId());
         Utils.validateUrlIdEqualsBodyId(id,attendanceDTO.getId(),msg);
-        return this.attendanceService.updateAttendance(attendanceDTO);
+        return this.attendanceService.saveAttendance(attendanceDTO);
     }
     
     @DeleteMapping(value = "/{id}")

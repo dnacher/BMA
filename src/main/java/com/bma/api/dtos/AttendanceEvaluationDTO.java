@@ -6,6 +6,7 @@ import java.util.Date;
 public class AttendanceEvaluationDTO implements Serializable {
 
     private Integer id;
+    private ChurchMemberDTO member;
     private Integer attended1;
     private Integer attended2;
     private Integer attended3;
@@ -18,6 +19,14 @@ public class AttendanceEvaluationDTO implements Serializable {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public ChurchMemberDTO getMember() {
+        return member;
+    }
+
+    public void setMember(ChurchMemberDTO member) {
+        this.member = member;
     }
 
     public Integer getAttended1() {
@@ -58,5 +67,32 @@ public class AttendanceEvaluationDTO implements Serializable {
 
     public void setLastUpdate(Date lastUpdate) {
         this.lastUpdate = lastUpdate;
+    }
+
+    public Integer getOldestAttendanceValue(){
+        if(this.getAttended3()!=null){
+            return 3;
+        }else if(this.getAttended2()!=null){
+            return 2;
+        }else if(this.getAttended1()!=null){
+            return 1;
+        }else{
+            return 0;
+        }
+
+    }
+
+    public void setAttendedValue(Integer newValue){
+        Integer i = this.getOldestAttendanceValue();
+        switch (i){
+            case 3:
+                attended4 = attended3;
+            case 2:
+                attended3 = attended2;
+            case 1:
+                attended2 = attended1;
+            case 0:
+                attended1 = newValue;
+        }
     }
 }

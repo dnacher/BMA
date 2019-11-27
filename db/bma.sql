@@ -335,3 +335,15 @@ ALTER TABLE `bma`.`attendance`
 ADD CONSTRAINT `attendance_member_id`
   FOREIGN KEY (`church_member`)
   REFERENCES `bma`.`church_member` (`id`);
+
+
+ALTER TABLE `bma`.`attendance_evaluation` 
+DROP FOREIGN KEY `attendance_evaluation_member_id`;
+ALTER TABLE `bma`.`attendance_evaluation` 
+CHANGE COLUMN `member` `church_member` INT(11) NULL DEFAULT NULL ;
+ALTER TABLE `bma`.`attendance_evaluation` 
+ADD CONSTRAINT `attendance_evaluation_member_id`
+  FOREIGN KEY (`church_member`)
+  REFERENCES `bma`.`church_member` (`id`);
+
+

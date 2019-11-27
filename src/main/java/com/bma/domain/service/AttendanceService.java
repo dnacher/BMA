@@ -1,40 +1,53 @@
 package com.bma.domain.service;
 
 import com.bma.api.dtos.AttendanceDTO;
+import com.bma.api.dtos.AttendanceEvaluationDTO;
+import com.bma.domain.service.mappers.AttendanceEvaluationMapper;
 import com.bma.domain.service.mappers.AttendanceMapper;
 import com.bma.exception.BMAException;
 import com.bma.persistence.dao.AttendanceDAO;
+import com.bma.persistence.dao.AttendanceEvaluationDAO;
 import com.bma.persistence.model.Attendance;
+import com.bma.persistence.model.AttendanceEvaluation;
 import com.bma.utils.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Transactional
 @Service
 public class AttendanceService {
 
     private final AttendanceDAO attendanceDAO;
+    private final AttendanceEvaluationDAO attendanceEvaluationDAO;
     private final AttendanceMapper attendanceMapper;
+    private final AttendanceEvaluationMapper attendanceEvaluationMapper;
 
     @Autowired
-    public AttendanceService(AttendanceDAO attendanceDAO, AttendanceMapper attendanceMapper){
+    public AttendanceService(AttendanceDAO attendanceDAO, AttendanceMapper attendanceMapper, AttendanceEvaluationDAO attendanceEvaluationDAO, AttendanceEvaluationMapper attendanceEvaluationMapper){
         this.attendanceMapper = attendanceMapper;
         this.attendanceDAO = attendanceDAO;
+        this.attendanceEvaluationDAO = attendanceEvaluationDAO;
+        this.attendanceEvaluationMapper= attendanceEvaluationMapper;
     }
 
     public AttendanceDTO saveAttendance(AttendanceDTO attendanceDTO) throws BMAException{
         try {
             attendanceDTO.setDate(Utils.setTodayDate());
             Attendance attendance = attendanceMapper.mapToEntity(attendanceDTO);
-            return attendanceMapper.mapToDTO(this.attendanceDAO.saveAttendance(attendance));
+            AttendanceEvaluation attendanceEvaluation = this.attendanceEvaluationDAO.getAttendanceEvaluationByChurchMember(attendance.getChurchMember());
+            if(attendanceEvaluation!=null){
+                AttendanceEvaluationDTO attendanceEvaluationDTO = attendanceEvaluationMapper.mapToDTO(attendanceEvaluation);
+                attendanceEvaluationDTO.setAttendedValue(attendanceDTO.getAttendanceValue());
+                attendanceEvaluation = this.attendanceEvaluationMapper.mapToEntity(attendanceEvaluationDTO);
+                attendanceEvaluationDAO.updateAttendanceEvaluation(attendanceEvaluation);
+            }else{
+                this.saveAttendanceEvaluation(attendanceDTO);
+            }
+            attendanceDTO = attendanceMapper.mapToDTO(this.attendanceDAO.saveAttendance(attendance));
+            return attendanceDTO;
         } catch (BMAException e) {
             throw new BMAException(e.getMessage());
         }
@@ -45,13 +58,19 @@ public class AttendanceService {
         this.attendanceDAO.deleteAttendance(attendanceMapper.mapToEntity(attendanceDTO));
     }
 
-    public AttendanceDTO updateAttendance(AttendanceDTO attendanceDTO) throws BMAException{
-        try {
-            return this.attendanceMapper.mapToDTO(this.attendanceDAO.updateAttendance(attendanceMapper.mapToEntity(attendanceDTO)));
-        }catch (BMAException e){
-            throw new BMAException(e.getMessage());
-        }
-    }
+//    public AttendanceDTO updateAttendance(AttendanceDTO attendanceDTO) throws BMAException{
+//        try {
+//            Attendance attendance = this.attendanceDAO.updateAttendance(attendanceMapper.mapToEntity(attendanceDTO));
+//            attendanceDTO = this.attendanceMapper.mapToDTO(attendance);
+//            AttendanceEvaluationDTO attendanceEvaluationDTO = attendanceEvaluationMapper.mapToDTO(this.attendanceEvaluationDAO.getAttendanceEvaluationByChurchMember(attendance.getChurchMember()));
+//            attendanceEvaluationDTO.setAttendedValue(attendanceDTO.getAttendanceValue());
+//            AttendanceEvaluation attendanceEvaluation = this.attendanceEvaluationMapper.mapToEntity(attendanceEvaluationDTO);
+//            attendanceEvaluationDAO.saveAttendanceEvaluation(attendanceEvaluation);
+//            return attendanceDTO;
+//        }catch (BMAException e){
+//            throw new BMAException(e.getMessage());
+//        }
+//    }
 
     public List<AttendanceDTO> getAttendances(){
         List<Attendance> attendances = this.attendanceDAO.getAttendance();
@@ -73,5 +92,15 @@ public class AttendanceService {
             attendances = this.attendanceDAO.createAttendance();
         }
         return attendances.stream().map(attendance -> this.attendanceMapper.mapToDTO(attendance)).collect(Collectors.toList());
+    }
+
+    public void saveAttendanceEvaluation(AttendanceDTO attendance){
+        AttendanceEvaluationDTO attendanceEvaluationDTO = new AttendanceEvaluationDTO();
+        attendanceEvaluationDTO.setMember(attendance.getChurchMember());
+        attendanceEvaluationDTO.setLastUpdate(attendance.getDate());
+        attendanceEvaluationDTO.setAttended1(attendance.getAttendanceValue());
+        AttendanceEvaluation attendanceEvaluation = this.attendanceEvaluationMapper.mapToEntity(attendanceEvaluationDTO);
+        attendanceEvaluation = attendanceEvaluationDAO.saveAttendanceEvaluation(attendanceEvaluation);
+        attendanceEvaluation.getId();
     }
 }

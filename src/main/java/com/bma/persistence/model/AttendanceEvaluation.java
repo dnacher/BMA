@@ -10,10 +10,10 @@ public class AttendanceEvaluation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    //CascadeType is MERGE since the ChurchMember already exist. If we put ALL or PERSIST is going to throw an error
+    @ManyToOne(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
     @JoinColumn(name = "church_member")
-    private ChurchMember member;
+    private ChurchMember churchMember;
 
     @Column(name = "attended1")
     private Integer attended1;
@@ -42,7 +42,7 @@ public class AttendanceEvaluation {
         return attended1;
     }
 
-    private void setAttended1(Integer attended1) {
+    public void setAttended1(Integer attended1) {
         this.attended1 = attended1;
     }
 
@@ -50,7 +50,7 @@ public class AttendanceEvaluation {
         return attended2;
     }
 
-    private void setAttended2(Integer attended2) {
+    public void setAttended2(Integer attended2) {
         this.attended2 = attended2;
     }
 
@@ -58,7 +58,7 @@ public class AttendanceEvaluation {
         return attended3;
     }
 
-    private void setAttended3(Integer attended3) {
+    public void setAttended3(Integer attended3) {
         this.attended3 = attended3;
     }
 
@@ -67,16 +67,7 @@ public class AttendanceEvaluation {
     }
 
     public void setAttended4(Integer attended4) {
-        if(attended2!=null){
-            setAttended1(getAttended2());
-        }
-        if(attended3!=null){
-            setAttended2(getAttended3());
-        }
-        if(attended4!=null){
-            setAttended3(getAttended4());
-        }
-        this.attended4 = attended4;
+        this.attended4= attended4;
     }
 
     public String getAttendanceValueEvaluation(){
@@ -108,11 +99,11 @@ public class AttendanceEvaluation {
         this.lastUpdate = lastUpdate;
     }
 
-    public ChurchMember getMember() {
-        return member;
+    public ChurchMember getChurchMember() {
+        return churchMember;
     }
 
-    public void setMember(ChurchMember member) {
-        this.member = member;
+    public void setMember(ChurchMember churchMember) {
+        this.churchMember = churchMember;
     }
 }

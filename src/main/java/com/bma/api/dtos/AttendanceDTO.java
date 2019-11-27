@@ -41,4 +41,9 @@ public class AttendanceDTO implements Serializable {
     public void setDate(Date date) {
         this.date = date;
     }
+
+
+    public Integer getAttendanceValue() {
+        return (attended) ? 1 : 0;
+    }
 }

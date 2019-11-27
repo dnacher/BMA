@@ -2,70 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ee6e61f-6a5b-46b4-8d2f-cc903fd4071d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/classes/Discourse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/classes/Discourse.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/discourse/discourse.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/discourse/discourse.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/discourse/discourse.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/discourse/discourse.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/topic/topic.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/topic/topic.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/bma.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/bma.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/AttendanceDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/AttendanceDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/DiscourseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/DiscourseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/MemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/ChurchMemberDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/PrayerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/PrayerDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/SacramentMeetingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/SacramentMeetingDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/SustainingReleaseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/SustainingReleaseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/ChurchMemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/PrayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/PrayerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/AttendanceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/AttendanceMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/DiscourseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/DiscourseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/MemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/ChurchMemberMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/PrayerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/PrayerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/SacramentMeetingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/SacramentMeetingMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/SustainingReleaseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/SustainingReleaseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/endpoint/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/endpoint/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/AttendanceEvaluationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/AttendanceEvaluationDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/AttendanceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/AttendanceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/AttendanceEvaluationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/AttendanceEvaluationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/endpoint/controller/AttendanceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/endpoint/controller/AttendanceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/AttendanceDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/AttendanceDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/ChurchMemberDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/TopicDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/TopicDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/AttendanceEvaluationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/AttendanceEvaluationDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/Attendance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/Attendance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/AttendanceEvaluation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/AttendanceEvaluation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/Discourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/Discourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/ChurchMember.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/Prayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/Prayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/SacramentMeeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/SacramentMeeting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/SustainingRelease.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/SustainingRelease.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/repository/ChurchMemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/repository/TopicRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/repository/TopicRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/repository/AttendanceEvaluationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/repository/AttendanceEvaluationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/AttendanceDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/AttendanceDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/DiscourseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/DiscourseDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/MemberDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/PrayerDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/PrayerDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/SacramentMeetingDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/SacramentMeetingDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/SustainingReleaseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/SustainingReleaseDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/MemberService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/PrayerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/domain/service/PrayerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/AttendanceMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/AttendanceMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/DiscourseMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/DiscourseMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/MemberMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/PrayerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/PrayerMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/SacramentMeetingMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/SacramentMeetingMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/SustainingReleaseMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/SustainingReleaseMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/MemberController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/AttendanceEvaluationDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/AttendanceEvaluationDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/AttendanceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/domain/service/AttendanceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/AttendanceEvaluationMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/AttendanceEvaluationMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/AttendanceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/AttendanceController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/AttendanceDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/AttendanceDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/MemberDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/TopicDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/TopicDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/AttendanceEvaluationDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/AttendanceEvaluationDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Attendance.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Attendance.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/AttendanceEvaluation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/AttendanceEvaluation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Discourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Discourse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Member.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Prayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Prayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/SacramentMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/SacramentMeeting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/SustainingRelease.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/SustainingRelease.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/repository/MemberRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/repository/AttendanceEvaluationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/repository/AttendanceEvaluationRepository.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -76,8 +46,11 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../BMA-FRONT" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1RvEw5QrbgPf9bE0QvCwTIcrYHC" />
   <component name="PropertiesComponent">
@@ -180,6 +153,7 @@
       <workItem from="1573778741431" duration="62000" />
       <workItem from="1573778924539" duration="4806000" />
       <workItem from="1574727052819" duration="6366000" />
+      <workItem from="1574862574796" duration="10438000" />
     </task>
     <servers />
   </component>
@@ -216,6 +190,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/TopicDAO.java</url>
           <line>33</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bma/domain/service/AttendanceService.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
