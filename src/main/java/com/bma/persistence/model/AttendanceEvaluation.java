@@ -30,6 +30,9 @@ public class AttendanceEvaluation {
     @Column(name = "last_update")
     private Date lastUpdate;
 
+    @Column(name = "attendance")
+    private String attendance;
+
     public Integer getId() {
         return id;
     }
@@ -70,27 +73,6 @@ public class AttendanceEvaluation {
         this.attended4= attended4;
     }
 
-    public String getAttendanceValueEvaluation(){
-        String strValue = "";
-        if(this.getAttended1()!=null){
-            strValue+=getAttended1();
-        }else{
-            strValue+="X";
-        }
-        if(this.getAttended2()!=null){
-            strValue+=getAttended2();
-        }else{
-            strValue+="X";
-        }
-        if(this.getAttended3()!=null){
-            strValue+=getAttended3();
-        }else{
-            strValue+="X";
-        }
-        strValue+=getAttended4();
-        return  strValue;
-    }
-
     public Date getLastUpdate() {
         return lastUpdate;
     }
@@ -106,4 +88,13 @@ public class AttendanceEvaluation {
     public void setMember(ChurchMember churchMember) {
         this.churchMember = churchMember;
     }
+
+    public String getAttendance() {
+        return attendance;
+    }
+
+    public void setAttendance(String attendance) {
+        this.attendance = attendance;
+    }
+
 }

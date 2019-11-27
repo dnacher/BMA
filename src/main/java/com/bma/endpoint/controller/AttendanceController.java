@@ -37,7 +37,7 @@ public class AttendanceController {
     public List<AttendanceDTO> updateAttendances(@RequestBody List<AttendanceDTO> attendanceDTOS){
         List<AttendanceDTO> finalList = new ArrayList<>();
         attendanceDTOS.forEach(attendanceDTO -> {
-            finalList.add(this.attendanceService.saveAttendance(attendanceDTO));
+            finalList.add(this.attendanceService.updateAttendance(attendanceDTO));
         });
         return finalList;
     }

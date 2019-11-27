@@ -41,4 +41,11 @@ public class Utils {
         return today;
     }
 
+    public static Date addHoursToJavaUtilDate(Date date) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        calendar.add(Calendar.HOUR_OF_DAY, 19);
+        return calendar.getTime();
+    }
+
 }

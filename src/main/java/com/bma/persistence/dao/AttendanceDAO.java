@@ -52,7 +52,9 @@ public class AttendanceDAO {
 
     public Attendance updateAttendance(Attendance attendance) throws BMAException{
         if(attendance.getId()!=null){
-            return this.repository.save(attendance);
+            attendance.setDate(Utils.addHoursToJavaUtilDate(attendance.getDate()));
+            attendance = this.repository.save(attendance);
+            return attendance;
         }else{
             String msg = String.format("Cannot update an attendance without an Id");
             throw new BMAException(msg);
@@ -77,5 +79,4 @@ public class AttendanceDAO {
         date.setHours(16);
         return this.repository.findAllByDate(date);
     }
-
 }

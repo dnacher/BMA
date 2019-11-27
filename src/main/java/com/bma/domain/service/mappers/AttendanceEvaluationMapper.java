@@ -21,6 +21,7 @@ public class AttendanceEvaluationMapper implements AbstractMapper<AttendanceEval
         entity.setAttended3(dto.getAttended3());
         entity.setAttended4(dto.getAttended4());
         entity.setLastUpdate(dto.getLastUpdate());
+        entity.setAttendance(dto.getAttendance());
         return entity;
     }
 
@@ -34,6 +35,7 @@ public class AttendanceEvaluationMapper implements AbstractMapper<AttendanceEval
         attendanceEvaluationDTO.setAttended3(entity.getAttended3());
         attendanceEvaluationDTO.setAttended4(entity.getAttended4());
         attendanceEvaluationDTO.setLastUpdate(entity.getLastUpdate());
+        attendanceEvaluationDTO.setAttendance(entity.getAttendance());
         return attendanceEvaluationDTO;
     }
 }

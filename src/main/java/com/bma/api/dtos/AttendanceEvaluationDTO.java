@@ -12,6 +12,7 @@ public class AttendanceEvaluationDTO implements Serializable {
     private Integer attended3;
     private Integer attended4;
     private Date lastUpdate;
+    private String attendance;
 
     public Integer getId() {
         return id;
@@ -79,7 +80,6 @@ public class AttendanceEvaluationDTO implements Serializable {
         }else{
             return 0;
         }
-
     }
 
     public void setAttendedValue(Integer newValue){
@@ -94,5 +94,23 @@ public class AttendanceEvaluationDTO implements Serializable {
             case 0:
                 attended1 = newValue;
         }
+        this.getAttendanceValueEvaluation();
+    }
+
+    public void getAttendanceValueEvaluation(){
+        String strValue = "";
+        strValue+= (this.getAttended1() != null) ? getAttended1(): "X";
+        strValue+= (this.getAttended2() != null) ? getAttended2(): "X";
+        strValue+= (this.getAttended3() != null) ? getAttended3(): "X";
+        strValue+= (this.getAttended4() != null) ? getAttended4(): "X";
+        this.attendance= strValue;
+    }
+
+    public String getAttendance() {
+        return attendance;
+    }
+
+    public void setAttendance(String attendance) {
+        this.attendance = attendance;
     }
 }
