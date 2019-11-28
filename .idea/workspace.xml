@@ -2,30 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ee6e61f-6a5b-46b4-8d2f-cc903fd4071d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/attendance/attendance.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/attendance/attendance.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BMA-FRONT/src/resources/background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/app.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bma.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bma.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/bma.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/bma.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/AttendanceDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/AttendanceDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/AttendanceEvaluationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/AttendanceEvaluationDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/AttendanceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/AttendanceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/AttendanceEvaluationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/AttendanceEvaluationMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/endpoint/controller/AttendanceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/endpoint/controller/AttendanceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/AttendanceDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/AttendanceDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/AttendanceEvaluation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/AttendanceEvaluation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/AttendanceDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/AttendanceDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/AttendanceEvaluationDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/AttendanceEvaluationDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/AttendanceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/domain/service/AttendanceService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/AttendanceEvaluationMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/AttendanceEvaluationMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/AttendanceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/AttendanceController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/AttendanceDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/AttendanceDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/AttendanceEvaluation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/AttendanceEvaluation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/utils/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/utils/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/email/AttendanceConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/email/AttendanceConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/email/EmailEvaluation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/email/EmailEvaluation.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +34,11 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1RvEw5QrbgPf9bE0QvCwTIcrYHC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -159,7 +145,8 @@
       <workItem from="1573778741431" duration="62000" />
       <workItem from="1573778924539" duration="4806000" />
       <workItem from="1574727052819" duration="6366000" />
-      <workItem from="1574862574796" duration="17569000" />
+      <workItem from="1574862574796" duration="18133000" />
+      <workItem from="1574944114796" duration="6128000" />
     </task>
     <servers />
   </component>
@@ -179,6 +166,9 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -196,11 +186,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/TopicDAO.java</url>
           <line>33</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bma/api/dtos/AttendanceEvaluationDTO.java</url>
-          <line>101</line>
-          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

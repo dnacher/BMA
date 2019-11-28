@@ -101,8 +101,6 @@ public class AttendanceService {
         attendanceEvaluationDTO.setLastUpdate(attendance.getDate());
         attendanceEvaluationDTO.setAttended1(attendance.getAttendanceValue());
         attendanceEvaluationDTO.getAttendanceValueEvaluation();
-        AttendanceEvaluation attendanceEvaluation = this.attendanceEvaluationMapper.mapToEntity(attendanceEvaluationDTO);
-        attendanceEvaluation = attendanceEvaluationDAO.saveAttendanceEvaluation(attendanceEvaluation);
-        attendanceEvaluation.getId();
+        attendanceEvaluationDAO.saveAttendanceEvaluation(this.attendanceEvaluationMapper.mapToEntity(attendanceEvaluationDTO));
     }
 }
