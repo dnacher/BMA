@@ -1,12 +1,14 @@
 package com.bma.endpoint.controller;
 import com.bma.api.dtos.AttendanceDTO;
 import com.bma.domain.service.AttendanceService;
+import com.bma.email.EmailEvaluation;
+import com.bma.email.EmailObject;
 import com.bma.utils.Utils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import javax.validation.constraints.Email;
+import java.util.*;
 
 @CrossOrigin(origins = "*")
 @RestController
@@ -14,6 +16,9 @@ import java.util.List;
 public class AttendanceController {
 
     private final AttendanceService attendanceService;
+
+    @Autowired
+    public EmailEvaluation emailEvaluation;
 
     public AttendanceController(AttendanceService attendanceService){
         this.attendanceService = attendanceService;
@@ -30,6 +35,7 @@ public class AttendanceController {
          attendanceDTOS.forEach(attendanceDTO -> {
              finalList.add(this.attendanceService.saveAttendance(attendanceDTO));
          });
+         EmailObject emailObject = emailEvaluation.createEmailObject();
         return finalList;
     }
 
@@ -39,6 +45,7 @@ public class AttendanceController {
         attendanceDTOS.forEach(attendanceDTO -> {
             finalList.add(this.attendanceService.updateAttendance(attendanceDTO));
         });
+        EmailObject emailObject = emailEvaluation.createEmailObject();
         return finalList;
     }
 

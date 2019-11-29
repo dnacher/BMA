@@ -3,11 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="3ee6e61f-6a5b-46b4-8d2f-cc903fd4071d" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../BMA-FRONT/src/resources/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bma/email/EmailObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bma/email/config/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bma/email/config/FreemarkerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bma/email/config/Mail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bma/email/config/SendEmailClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/app.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/AttendanceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/AttendanceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/email/AttendanceConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/email/AttendanceConstant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/email/EmailEvaluation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/email/EmailEvaluation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/endpoint/controller/AttendanceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/endpoint/controller/AttendanceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/AttendanceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/domain/service/AttendanceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/email/AttendanceConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/email/AttendanceConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/email/EmailEvaluation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/email/EmailEvaluation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/AttendanceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/AttendanceController.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +68,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bma.email.config" />
       <recent name="com.bma.persistence.repository" />
       <recent name="com.bma.persistence.dao" />
       <recent name="com.bma.domain.service" />
@@ -146,7 +157,7 @@
       <workItem from="1573778924539" duration="4806000" />
       <workItem from="1574727052819" duration="6366000" />
       <workItem from="1574862574796" duration="18133000" />
-      <workItem from="1574944114796" duration="6128000" />
+      <workItem from="1574944114796" duration="14331000" />
     </task>
     <servers />
   </component>
@@ -186,6 +197,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/TopicDAO.java</url>
           <line>33</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bma/endpoint/controller/AttendanceController.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bma/endpoint/controller/AttendanceController.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
