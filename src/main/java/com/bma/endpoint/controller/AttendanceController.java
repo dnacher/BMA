@@ -3,11 +3,15 @@ import com.bma.api.dtos.AttendanceDTO;
 import com.bma.domain.service.AttendanceService;
 import com.bma.email.EmailEvaluation;
 import com.bma.email.EmailObject;
+import com.bma.email.config.EmailService;
+import com.bma.email.config.Mail;
 import com.bma.utils.Utils;
+import freemarker.template.TemplateException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.constraints.Email;
+import javax.mail.MessagingException;
+import java.io.IOException;
 import java.util.*;
 
 @CrossOrigin(origins = "*")
@@ -35,7 +39,7 @@ public class AttendanceController {
          attendanceDTOS.forEach(attendanceDTO -> {
              finalList.add(this.attendanceService.saveAttendance(attendanceDTO));
          });
-         EmailObject emailObject = emailEvaluation.createEmailObject();
+         emailEvaluation.createEmailObject();
         return finalList;
     }
 
@@ -45,7 +49,7 @@ public class AttendanceController {
         attendanceDTOS.forEach(attendanceDTO -> {
             finalList.add(this.attendanceService.updateAttendance(attendanceDTO));
         });
-        EmailObject emailObject = emailEvaluation.createEmailObject();
+        emailEvaluation.createEmailObject();
         return finalList;
     }
 

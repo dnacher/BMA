@@ -2,14 +2,27 @@ package com.bma.email;
 
 import com.bma.api.dtos.AttendanceEvaluationDTO;
 import com.bma.domain.service.AttendanceEvaluationService;
-import com.bma.persistence.model.AttendanceEvaluation;
+import com.bma.email.config.EmailService;
+import com.bma.email.config.Mail;
+import freemarker.template.TemplateException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import javax.mail.MessagingException;
+import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Component
 public class EmailEvaluation {
+
+    private static Logger log = LoggerFactory.getLogger(EmailEvaluation.class);
+
+    @Autowired
+    private EmailService emailService;
 
     @Autowired
     public AttendanceEvaluationService attendanceEvaluationService;
@@ -23,27 +36,54 @@ public class EmailEvaluation {
         return AttendanceConstant.NNNNN;
     }
 
-    public EmailObject createEmailObject(){
+    public void createEmailObject(){
         List<AttendanceEvaluationDTO> attendanceEvaluations = attendanceEvaluationService.getAttendanceEvaluations();
         EmailObject emailObject = new EmailObject();
         for(AttendanceEvaluationDTO attendanceEvaluation: attendanceEvaluations){
             if(!checkAttendance(attendanceEvaluation).equals(AttendanceConstant.NNNNN)){
+                EmailItem emailItem = new EmailItem();
+                emailItem.setFullName(attendanceEvaluation.getMember().getFullname());
+                emailItem.setAttendance(attendanceEvaluation.getAttendance());
                 switch (checkAttendance(attendanceEvaluation).getEmailType()){
                     case "DownEmail":
-                        emailObject.getDownEmail().add(attendanceEvaluation.getMember().getFullname());
+                        emailObject.getDownEmail().add(emailItem);
                         break;
                     case "UpEmail":
-                        emailObject.getUpEmail().add(attendanceEvaluation.getMember().getFullname());
+                        emailObject.getUpEmail().add(emailItem);
                         break;
                     case "Z":
-                        emailObject.getZ().add(attendanceEvaluation.getMember().getFullname());
+                        emailObject.getZ().add(emailItem);
                         break;
                     case "LastReminder":
-                        emailObject.getLastReminder().add(attendanceEvaluation.getMember().getFullname());
+                        emailObject.getLastReminder().add(emailItem);
                         break;
                 }
             }
         }
-        return emailObject;
+        sendEmail(emailObject);
+    }
+
+    public void sendEmail(EmailObject emailObject){
+        Mail mail = new Mail();
+        mail.setFrom("no-reply@gmail.com");
+        mail.setTo("danielnacher@gmail.com");
+        mail.setSubject("Sending Email with Freemarker HTML Template Example");
+
+        Map<String, Object> model = new HashMap<String, Object>();
+        model.put("name", "DanielNacher");
+        model.put("location", "Uruguay");
+        model.put("signature", "signature");
+        model.put("emailObject", emailObject);
+        mail.setModel(model);
+
+        try {
+            emailService.sendSimpleMessage(mail);
+        } catch (MessagingException e) {
+            log.error(e.getMessage());
+        } catch (IOException e) {
+            log.error(e.getMessage());
+        } catch (TemplateException e) {
+            log.error(e.getMessage());
+        }
     }
 }
