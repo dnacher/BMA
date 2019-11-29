@@ -46,11 +46,19 @@ public class AttendanceEvaluationDAO {
         }
     }
 
+    public List<AttendanceEvaluation> saveAll(List<AttendanceEvaluation> attendanceEvaluations) throws BMAException{
+        List<AttendanceEvaluation> finalList = new ArrayList<>();
+        this.repository.saveAll(attendanceEvaluations).forEach(attendanceEvaluation -> {
+            finalList.add(attendanceEvaluation);
+        });
+        return finalList;
+    }
+
     public void deleteAttendanceEvaluation(AttendanceEvaluation attendanceEvaluation){
         this.repository.delete(attendanceEvaluation);
     }
 
-    public AttendanceEvaluation updateAttendanceEvaluation(AttendanceEvaluation attendanceEvaluation) throws BMAException{
+    public AttendanceEvaluation  updateAttendanceEvaluation(AttendanceEvaluation attendanceEvaluation) throws BMAException{
         if(attendanceEvaluation.getId()!=null){
             return this.repository.save(attendanceEvaluation);
         }else{

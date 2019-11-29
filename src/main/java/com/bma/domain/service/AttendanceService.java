@@ -33,6 +33,13 @@ public class AttendanceService {
         this.attendanceEvaluationMapper= attendanceEvaluationMapper;
     }
 
+    public List<AttendanceDTO> saveAttendances(List<AttendanceDTO> attendanceDTOList){
+        attendanceDTOList.stream().forEach(attendanceDTO -> {
+            attendanceDTO.setDate(Utils.setTodayDate());
+        });
+        attendanceMapper.mapToDTO(this.attendanceDAO.saveAttendances(attendanceMapper.mapToEntityList(attendanceDTOList)));
+    }
+
     public AttendanceDTO saveAttendance(AttendanceDTO attendanceDTO) throws BMAException{
         try {
             attendanceDTO.setDate(Utils.setTodayDate());

@@ -5,6 +5,9 @@ import com.bma.api.dtos.AttendanceDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Component
 public class AttendanceMapper implements AbstractMapper<Attendance, AttendanceDTO>{
 
@@ -21,6 +24,14 @@ public class AttendanceMapper implements AbstractMapper<Attendance, AttendanceDT
         return attendance;
     }
 
+    public List<Attendance> mapToEntityList(List<AttendanceDTO> dtos) {
+        List<Attendance> attendances = new ArrayList<>();
+        dtos.forEach(attendanceDTO -> {
+            attendances.add(mapToEntity(attendanceDTO));
+        });
+        return attendances;
+    }
+
     @Override
     public AttendanceDTO mapToDTO(Attendance entity) {
         AttendanceDTO attendanceDTO = new AttendanceDTO();
@@ -29,5 +40,13 @@ public class AttendanceMapper implements AbstractMapper<Attendance, AttendanceDT
         attendanceDTO.setAttended(entity.isAttended());
         attendanceDTO.setDate(entity.getDate());
         return attendanceDTO;
+    }
+
+    public List<AttendanceDTO> mapToDTOList(List<Attendance> entities) {
+        List<AttendanceDTO> attendanceDTOs = new ArrayList<>();
+        entities.forEach(entity -> {
+            attendanceDTOs.add(mapToDTO(entity));
+        });
+        return attendanceDTOs;
     }
 }

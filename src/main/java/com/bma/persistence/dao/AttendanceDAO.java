@@ -46,6 +46,15 @@ public class AttendanceDAO {
         return this.repository.save(attendance);
     }
 
+    public List<Attendance> saveAttendances(List<Attendance> attendances) throws BMAException{
+        List<Attendance> finalList= new ArrayList<>();
+        this.repository.saveAll(attendances).forEach(attendance -> {
+            finalList.add(attendance);
+        });
+        return finalList;
+    }
+
+
     public void deleteAttendance(Attendance attendance){
         this.repository.delete(attendance);
     }

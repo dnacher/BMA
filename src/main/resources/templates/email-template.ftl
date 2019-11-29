@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<#--    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>-->
     <link href='css/style.css' rel='stylesheet' type='text/css'>
 
     <!-- use the font -->
@@ -30,9 +30,9 @@
             <#if emailObject.downEmail?size gt 0>
                 <p>People who are not attending</p>
                 <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
-                    <tr class="th">
-                        <th>Fullname</th>
-                        <th>Attendance</th>
+                    <tr>
+                        <th class="th">Fullname</th>
+                        <th class="th">Attendance</th>
                     </tr>
                     <#list emailObject.downEmail as downEmailItem>
                         <tr>
@@ -47,9 +47,9 @@
             <#if emailObject.upEmail?size gt 0>
                 <p>People who start attending again</p>
                 <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
-                    <tr class="th">
-                        <th>Fullname</th>
-                        <th>Attendance</th>
+                    <tr>
+                        <th class="th">Fullname</th>
+                        <th class="th">Attendance</th>
                     </tr>
                     <#list emailObject.upEmail as upEmailItem>
                         <tr>
@@ -64,9 +64,9 @@
             <#if emailObject.z?size gt 0>
                 <p>People who are persisten in their attendance</p>
                 <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
-                    <tr class="th">
-                        <th>Fullname</th>
-                        <th>Attendance</th>
+                    <tr>
+                        <th class="th">Fullname</th>
+                        <th class="th">Attendance</th>
                     </tr>
                     <#list emailObject.z as zItem>
                         <tr>
@@ -81,9 +81,9 @@
             <#if emailObject.lastReminder?size gt 0>
                 <p>Last reminder, these members are not attending for 3 Sundays now</p>
                 <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
-                    <tr class="th">
-                        <th>Fullname</th>
-                        <th>Attendance</th>
+                    <tr>
+                        <th class="th">Fullname</th>
+                        <th class="th">Attendance</th>
                     </tr>
                     <#list emailObject.lastReminder as lastReminderItem>
                         <tr>
@@ -96,8 +96,8 @@
         </tr>
         <tr>
             <td bgcolor="#006180" style="padding: 30px 30px 30px 30px;">
-                <p >${signature}</p>
-                <p>${location}</p>
+<#--                <p >${signature}</p>-->
+<#--                <p>${location}</p>-->
             </td>
         </tr>
     </table>
