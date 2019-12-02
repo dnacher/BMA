@@ -1,4 +1,30 @@
-.th {
-    background-color: #006180;
+tr th {
+    background-color: #1192ab;
     color: white;
+    text-align: left;
+}
+
+.headerMail{
+    text-align: center;
+    padding: 40px 0 30px 0;
+    background-color: #1192ab;
+}
+
+.bodyMail{
+
+}
+
+.footerMail{
+    background-color: #006180;
+    padding: 30px 30px 30px 30px;
+}
+
+.iconResources {
+    color: white;
+}
+
+.attendance-icon{
+    display: block;
+    height: 35px;
+    width: 35px;
 }

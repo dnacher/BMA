@@ -60,6 +60,7 @@ public class EmailEvaluation {
                 }
             }
         }
+
         sendEmail(emailObject);
     }
 
@@ -67,12 +68,9 @@ public class EmailEvaluation {
         Mail mail = new Mail();
         mail.setFrom("no-reply@gmail.com");
         mail.setTo("danielnacher@gmail.com");
-        mail.setSubject("Sending Email with Freemarker HTML Template Example");
+        mail.setSubject("Attendance status email");
 
-        Map<String, Object> model = new HashMap<String, Object>();
-        model.put("name", "DanielNacher");
-        model.put("location", "Uruguay");
-        model.put("signature", "signature");
+        Map<String, Object> model = new HashMap<>();
         model.put("emailObject", emailObject);
         mail.setModel(model);
 

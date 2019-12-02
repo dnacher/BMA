@@ -2,16 +2,10 @@ package com.bma.endpoint.controller;
 import com.bma.api.dtos.AttendanceDTO;
 import com.bma.domain.service.AttendanceService;
 import com.bma.email.EmailEvaluation;
-import com.bma.email.EmailObject;
-import com.bma.email.config.EmailService;
-import com.bma.email.config.Mail;
 import com.bma.utils.Utils;
-import freemarker.template.TemplateException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.mail.MessagingException;
-import java.io.IOException;
 import java.util.*;
 
 @CrossOrigin(origins = "*")
@@ -35,11 +29,8 @@ public class AttendanceController {
 
     @PostMapping(value = "/mul")
     public List<AttendanceDTO> saveAttendances(@RequestBody List<AttendanceDTO> attendanceDTOS){
-        List<AttendanceDTO> finalList = new ArrayList<>();
-         attendanceDTOS.forEach(attendanceDTO -> {
-             finalList.add(this.attendanceService.saveAttendance(attendanceDTO));
-         });
-         emailEvaluation.createEmailObject();
+        List<AttendanceDTO> finalList = this.attendanceService.saveAttendances(attendanceDTOS);
+        emailEvaluation.createEmailObject();
         return finalList;
     }
 
@@ -51,6 +42,11 @@ public class AttendanceController {
         });
         emailEvaluation.createEmailObject();
         return finalList;
+    }
+
+    @PostMapping(value = "/testEmail")
+    public void testEmail(){
+        emailEvaluation.createEmailObject();
     }
 
     @PostMapping(value = "/creates")

@@ -1,7 +1,6 @@
 package com.bma.persistence.dao;
 
 import com.bma.exception.BMAException;
-import com.bma.persistence.model.Attendance;
 import com.bma.persistence.model.AttendanceEvaluation;
 import com.bma.persistence.model.ChurchMember;
 import com.bma.persistence.repository.AttendanceEvaluationRepository;
@@ -46,7 +45,7 @@ public class AttendanceEvaluationDAO {
         }
     }
 
-    public List<AttendanceEvaluation> saveAll(List<AttendanceEvaluation> attendanceEvaluations) throws BMAException{
+    public List<AttendanceEvaluation> saveAttendanceEvaluationList(List<AttendanceEvaluation> attendanceEvaluations) throws BMAException{
         List<AttendanceEvaluation> finalList = new ArrayList<>();
         this.repository.saveAll(attendanceEvaluations).forEach(attendanceEvaluation -> {
             finalList.add(attendanceEvaluation);

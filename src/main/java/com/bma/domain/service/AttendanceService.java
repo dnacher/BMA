@@ -37,7 +37,9 @@ public class AttendanceService {
         attendanceDTOList.stream().forEach(attendanceDTO -> {
             attendanceDTO.setDate(Utils.setTodayDate());
         });
-        attendanceMapper.mapToDTO(this.attendanceDAO.saveAttendances(attendanceMapper.mapToEntityList(attendanceDTOList)));
+        attendanceDTOList = attendanceMapper.mapToDTOList(this.attendanceDAO.saveAttendances(attendanceMapper.mapToEntityList(attendanceDTOList)));
+        saveAttendanceEvaluationList(attendanceMapper.mapToEntityList(attendanceDTOList));
+        return attendanceDTOList;
     }
 
     public AttendanceDTO saveAttendance(AttendanceDTO attendanceDTO) throws BMAException{
@@ -61,7 +63,6 @@ public class AttendanceService {
     }
 
     public void deleteAttendance(AttendanceDTO attendanceDTO){
-
         this.attendanceDAO.deleteAttendance(attendanceMapper.mapToEntity(attendanceDTO));
     }
 
@@ -109,5 +110,15 @@ public class AttendanceService {
         attendanceEvaluationDTO.setAttended1(attendance.getAttendanceValue());
         attendanceEvaluationDTO.getAttendanceValueEvaluation();
         attendanceEvaluationDAO.saveAttendanceEvaluation(this.attendanceEvaluationMapper.mapToEntity(attendanceEvaluationDTO));
+    }
+
+    public void saveAttendanceEvaluationList(List<Attendance> attendances){
+        attendances.forEach(attendance -> {
+            AttendanceEvaluation attendanceEvaluation = this.attendanceEvaluationDAO.getAttendanceEvaluationByChurchMember(attendance.getChurchMember());
+            AttendanceEvaluationDTO attendanceEvaluationDTO = attendanceEvaluationMapper.mapToDTO(attendanceEvaluation);
+            attendanceEvaluationDTO.setAttended1(attendance.getAttendanceValue());
+            attendanceEvaluation = this.attendanceEvaluationMapper.mapToEntity(attendanceEvaluationDTO);
+            attendanceEvaluationDAO.updateAttendanceEvaluation(attendanceEvaluation);
+        });
     }
 }
