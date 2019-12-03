@@ -10,15 +10,11 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
-
-import javax.activation.DataHandler;
 import javax.activation.DataSource;
 import javax.activation.FileDataSource;
-import javax.mail.BodyPart;
 import javax.mail.MessagingException;
-import javax.mail.internet.MimeBodyPart;
+import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
@@ -31,33 +27,21 @@ public class EmailService {
     @Autowired
     private Configuration freemarkerConfig;
 
-    private static final String BMA_CANCEL = "images/sauron_icon.png";
+    private static final String BMA_CANCEL = "templates/images/sauron_icon.png";
 
     public void sendSimpleMessage(Mail mail) throws MessagingException, IOException, TemplateException {
-        MimeMessage message = emailSender.createMimeMessage();
-        MimeMessageHelper helper = new MimeMessageHelper(message,
-                MimeMessageHelper.MULTIPART_MODE_MIXED_RELATED,
-                StandardCharsets.UTF_8.name());
-        Template t = freemarkerConfig.getTemplate("email-template.ftl");
+        MimeMessage message = this.emailSender.createMimeMessage();
+        MimeMessageHelper helper = new MimeMessageHelper(message, MimeMessageHelper.MULTIPART_MODE_MIXED_RELATED, StandardCharsets.UTF_8.name());
+        Template t = this.freemarkerConfig.getTemplate("email-template.ftl");
         String html = FreeMarkerTemplateUtils.processTemplateIntoString(t, mail.getModel());
-        DataSource ds23 = getImage(BMA_CANCEL);
-
-        BodyPart messageBodyPart = new MimeBodyPart();
-        messageBodyPart = new MimeBodyPart();
-        DataSource fds = new FileDataSource(BMA_CANCEL); //here adding image path to send mail like image and text
-        messageBodyPart.setDataHandler(new DataHandler(fds));
-        messageBodyPart.setHeader("Content-ID", "<image>");
-        MimeMultipart multipart = new MimeMultipart("related");
-        multipart.addBodyPart(messageBodyPart);
-        message.setContent(multipart);
-
-
-        helper.setTo(mail.getTo());
+        helper.setCc(InternetAddress.parse("danielnacher@gmail.com"));
         helper.setText(html, true);
-        helper.setSubject(mail.getSubject());
+        helper.addInline("cancel", new ClassPathResource("templates/images/cancel.png"));
+        helper.addInline("loading", new ClassPathResource("templates/images/loading.png"));
+        helper.addInline("checked", new ClassPathResource("templates/images/checked.png"));
+        helper.setSubject("update Address");
         helper.setFrom(mail.getFrom());
-
-        emailSender.send(message);
+        this.emailSender.send(message);
     }
 
     private static DataSource getImage(String url){

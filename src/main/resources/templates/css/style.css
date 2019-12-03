@@ -7,7 +7,7 @@ tr th {
 .headerMail{
     text-align: center;
     padding: 40px 0 30px 0;
-    background-color: #1192ab;
+    background-image: linear-gradient(to right, #006180 , #046787, #0a6e8f,#0c789c,#1192ab);
 }
 
 .bodyMail{
@@ -15,8 +15,8 @@ tr th {
 }
 
 .footerMail{
-    background-color: #006180;
     padding: 30px 30px 30px 30px;
+    background-image: linear-gradient(to right, #006180 , #046787, #0a6e8f,#0c789c,#1192ab);
 }
 
 .iconResources {
@@ -24,7 +24,22 @@ tr th {
 }
 
 .attendance-icon{
+    align-items: center;
     display: block;
-    height: 35px;
-    width: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+    width: 30px;
+}
+
+.header{
+    text-align: center;
+}
+
+.fullname{
+    text-align: left;
+}
+
+.table-cell{
+    padding: 5px;
 }

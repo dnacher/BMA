@@ -99,10 +99,10 @@ public class AttendanceEvaluationDTO implements Serializable {
 
     public void getAttendanceValueEvaluation(){
         String strValue = "";
-        strValue+= (this.getAttended1() != null) ? getAttended1(): "X";
-        strValue+= (this.getAttended2() != null) ? getAttended2(): "X";
-        strValue+= (this.getAttended3() != null) ? getAttended3(): "X";
         strValue+= (this.getAttended4() != null) ? getAttended4(): "X";
+        strValue+= (this.getAttended3() != null) ? getAttended3(): "X";
+        strValue+= (this.getAttended2() != null) ? getAttended2(): "X";
+        strValue+= (this.getAttended1() != null) ? getAttended1(): "X";
         this.attendance= strValue;
     }
 

@@ -10,7 +10,6 @@
     <#import "macros/utils.ftl" as u>
 </head>
 <body style="margin: 0; padding: 0;">
-<img src="cid:sauron_icon" alt="nothing here">
     <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
         <tr>
             <@u.header/>

@@ -29,8 +29,11 @@ public class AttendanceController {
 
     @PostMapping(value = "/mul")
     public List<AttendanceDTO> saveAttendances(@RequestBody List<AttendanceDTO> attendanceDTOS){
-        List<AttendanceDTO> finalList = this.attendanceService.saveAttendances(attendanceDTOS);
-        emailEvaluation.createEmailObject();
+        List<AttendanceDTO> finalList = new ArrayList<>();
+         attendanceDTOS.forEach(attendanceDTO -> {
+             finalList.add(this.attendanceService.saveAttendance(attendanceDTO));
+         });
+         emailEvaluation.createEmailObject();
         return finalList;
     }
 
