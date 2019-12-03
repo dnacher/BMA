@@ -72,7 +72,7 @@ public class AttendanceService {
             attendanceDTO = this.attendanceMapper.mapToDTO(attendance);
             AttendanceEvaluation attendanceEvaluation = this.attendanceEvaluationDAO.getAttendanceEvaluationByChurchMember(attendance.getChurchMember());
             AttendanceEvaluationDTO attendanceEvaluationDTO = attendanceEvaluationMapper.mapToDTO(attendanceEvaluation);
-            attendanceEvaluationDTO.setAttended1(attendance.getAttendanceValue());
+            attendanceEvaluationDTO.setAttendedValue(attendanceDTO.getAttendanceValue());
             attendanceEvaluation = this.attendanceEvaluationMapper.mapToEntity(attendanceEvaluationDTO);
             attendanceEvaluationDAO.updateAttendanceEvaluation(attendanceEvaluation);
             return attendanceDTO;
@@ -107,7 +107,7 @@ public class AttendanceService {
         AttendanceEvaluationDTO attendanceEvaluationDTO = new AttendanceEvaluationDTO();
         attendanceEvaluationDTO.setMember(attendance.getChurchMember());
         attendanceEvaluationDTO.setLastUpdate(attendance.getDate());
-        attendanceEvaluationDTO.setAttended1(attendance.getAttendanceValue());
+        attendanceEvaluationDTO.setAttended4(attendance.getAttendanceValue());
         attendanceEvaluationDTO.getAttendanceValueEvaluation();
         attendanceEvaluationDAO.saveAttendanceEvaluation(this.attendanceEvaluationMapper.mapToEntity(attendanceEvaluationDTO));
     }

@@ -71,38 +71,41 @@ public class AttendanceEvaluationDTO implements Serializable {
     }
 
     public Integer getOldestAttendanceValue(){
-        if(this.getAttended3()!=null){
-            return 3;
+        if(this.getAttended1()!=null){
+            return 1;
         }else if(this.getAttended2()!=null){
             return 2;
-        }else if(this.getAttended1()!=null){
-            return 1;
+        }else if(this.getAttended3()!=null){
+            return 3;
+        }else if(this.getAttended4()!=null){
+            return 4;
         }else{
-            return 0;
+            return 5;
         }
     }
 
     public void setAttendedValue(Integer newValue){
         Integer i = this.getOldestAttendanceValue();
         switch (i){
-            case 3:
-                attended4 = attended3;
-            case 2:
-                attended3 = attended2;
             case 1:
-                attended2 = attended1;
-            case 0:
-                attended1 = newValue;
+            case 2:
+                attended1 = attended2;
+            case 3:
+                attended2 = attended3;
+            case 4:
+                attended3 = attended4;
+            case 5:
+                attended4 = newValue;
         }
         this.getAttendanceValueEvaluation();
     }
 
     public void getAttendanceValueEvaluation(){
         String strValue = "";
-        strValue+= (this.getAttended4() != null) ? getAttended4(): "X";
-        strValue+= (this.getAttended3() != null) ? getAttended3(): "X";
-        strValue+= (this.getAttended2() != null) ? getAttended2(): "X";
         strValue+= (this.getAttended1() != null) ? getAttended1(): "X";
+        strValue+= (this.getAttended2() != null) ? getAttended2(): "X";
+        strValue+= (this.getAttended3() != null) ? getAttended3(): "X";
+        strValue+= (this.getAttended4() != null) ? getAttended4(): "X";
         this.attendance= strValue;
     }
 

@@ -18,7 +18,7 @@
 </#macro>
 
 <#macro tableHeader>
-    <tr>
+    <tr class="header-color">
         <th class="fullname">Fullname</th>
         <th class="header">Attendance</th>
         <th class="header">Attendance</th>

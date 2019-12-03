@@ -1,5 +1,4 @@
 tr th {
-    background-color: #1192ab;
     color: white;
     text-align: left;
 }
@@ -7,6 +6,10 @@ tr th {
 .headerMail{
     text-align: center;
     padding: 40px 0 30px 0;
+    background-image: linear-gradient(to right, #006180 , #046787, #0a6e8f,#0c789c,#1192ab);
+}
+
+.header-color{
     background-image: linear-gradient(to right, #006180 , #046787, #0a6e8f,#0c789c,#1192ab);
 }
 

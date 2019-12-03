@@ -6,14 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="sauron-persistence" />
+        <module name="sauron-endpoint" />
         <module name="sauron-api" />
         <module name="sauron-integration" />
-        <module name="sauron-endpoint" />
-        <module name="sauron-domain" />
         <module name="bma" />
-        <module name="sauron-persistence" />
         <module name="sauron-flow" />
         <module name="mail-template-freemaker" />
+        <module name="sauron-domain" />
       </profile>
     </annotationProcessing>
   </component>

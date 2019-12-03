@@ -39,7 +39,7 @@ public class EmailService {
         helper.addInline("cancel", new ClassPathResource("templates/images/cancel.png"));
         helper.addInline("loading", new ClassPathResource("templates/images/loading.png"));
         helper.addInline("checked", new ClassPathResource("templates/images/checked.png"));
-        helper.setSubject("update Address");
+        helper.setSubject("Attendance status email");
         helper.setFrom(mail.getFrom());
         this.emailSender.send(message);
     }

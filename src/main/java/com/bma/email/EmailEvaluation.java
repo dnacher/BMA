@@ -61,15 +61,15 @@ public class EmailEvaluation {
             }
         }
 
-        sendEmail(emailObject);
+        if(emailObject.getDownEmail().size()>0 || emailObject.getUpEmail().size()>0 || emailObject.getLastReminder().size()>0){
+            sendEmail(emailObject);
+        }
     }
 
     public void sendEmail(EmailObject emailObject){
         Mail mail = new Mail();
         mail.setFrom("no-reply@gmail.com");
         mail.setTo("danielnacher@gmail.com");
-        mail.setSubject("Attendance status email");
-
         Map<String, Object> model = new HashMap<>();
         model.put("emailObject", emailObject);
         mail.setModel(model);
