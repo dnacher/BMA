@@ -1,7 +1,5 @@
 package com.bma.api.dtos;
 
-import com.bma.persistence.model.Calling;
-
 public class ChurchMemberDTO {
 
     private Integer id;
@@ -14,7 +12,7 @@ public class ChurchMemberDTO {
 
     private CallingDTO calling;
 
-    private String organization;
+    private OrganizationDTO organization;
 
     public Integer getId() {
         return id;
@@ -56,11 +54,11 @@ public class ChurchMemberDTO {
         this.calling = calling;
     }
 
-    public String getOrganization() {
+    public OrganizationDTO getOrganization() {
         return organization;
     }
 
-    public void setOrganization(String organization) {
+    public void setOrganization(OrganizationDTO organization) {
         this.organization = organization;
     }
 }

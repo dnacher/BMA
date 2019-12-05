@@ -46,6 +46,10 @@ public class PrayerDAO {
         prayerRepository.delete(prayer);
     }
 
+    public void deletePrayer(Integer id){
+        prayerRepository.deleteById(id);
+    }
+
     public Prayer updatePrayer(Prayer prayer){
         if(prayer.getId()!=null){
             return prayerRepository.save(prayer);

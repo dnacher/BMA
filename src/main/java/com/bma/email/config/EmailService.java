@@ -27,7 +27,9 @@ public class EmailService {
     @Autowired
     private Configuration freemarkerConfig;
 
-    private static final String BMA_CANCEL = "templates/images/sauron_icon.png";
+    private static final String BMA_CANCEL = "templates/images/cancel.png";
+    private static final String BMA_CHECKED = "templates/images/checked.png";
+    private static final String BMA_LOADING = "templates/images/loading.png";
 
     public void sendSimpleMessage(Mail mail) throws MessagingException, IOException, TemplateException {
         MimeMessage message = this.emailSender.createMimeMessage();
@@ -36,21 +38,12 @@ public class EmailService {
         String html = FreeMarkerTemplateUtils.processTemplateIntoString(t, mail.getModel());
         helper.setCc(InternetAddress.parse("danielnacher@gmail.com"));
         helper.setText(html, true);
-        helper.addInline("cancel", new ClassPathResource("templates/images/cancel.png"));
-        helper.addInline("loading", new ClassPathResource("templates/images/loading.png"));
-        helper.addInline("checked", new ClassPathResource("templates/images/checked.png"));
+        helper.addInline("cancel", new ClassPathResource(BMA_CANCEL));
+        helper.addInline("loading", new ClassPathResource(BMA_LOADING));
+        helper.addInline("checked", new ClassPathResource(BMA_CHECKED));
         helper.setSubject("Attendance status email");
         helper.setFrom(mail.getFrom());
         this.emailSender.send(message);
-    }
-
-    private static DataSource getImage(String url){
-        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-        if (classLoader == null) {
-            classLoader = MailSender.class.getClassLoader();
-        }
-        DataSource ds = new FileDataSource(url);
-        return ds;
     }
 
 }

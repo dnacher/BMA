@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 import javax.transaction.Transactional;
 
 import com.bma.persistence.model.ChurchMember;
+import com.bma.utils.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -37,6 +38,7 @@ public class PrayerService {
     public PrayerDTO savePrayer(PrayerDTO prayerDTO) throws BMAException{
         try {
             if(prayerDTO.getChurchMember().getId()!=null){
+                prayerDTO.setDate(Utils.setDateToSave(prayerDTO.getDate()));
                 return savePrayerDTO(prayerDTO);
             }else{
                 ChurchMember churchMember = this.churchMemberMapper.mapToEntity(prayerDTO.getChurchMember());
@@ -55,9 +57,13 @@ public class PrayerService {
         return prayerMapper.mapToDTO(prayer);
     }
 
-    public void deletePrayer(PrayerDTO prayerDTO){
+//    public void deletePrayer(PrayerDTO prayerDTO){
+//
+//        this.prayerDAO.deletePrayer(prayerMapper.mapToEntity(prayerDTO));
+//    }
 
-        this.prayerDAO.deletePrayer(prayerMapper.mapToEntity(prayerDTO));
+    public void deletePrayer(Integer id){
+        this.prayerDAO.deletePrayer(id);
     }
 
     public PrayerDTO updatePrayer(PrayerDTO prayerDTO) throws BMAException{

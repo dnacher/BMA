@@ -1,20 +1,9 @@
-package com.bma.persistence.model;
+package com.bma.api.dtos;
 
-import javax.persistence.*;
+public class OrganizationDTO {
 
-@Entity
-@Table(name = "organization")
-public class Organization {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
     private Integer id;
-
-    @Column(name = "name")
     private String name;
-
-    public Organization(){}
 
     public Integer getId() {
         return id;

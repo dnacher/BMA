@@ -45,11 +45,16 @@ public class PrayerController {
         return this.prayerService.updatePrayer(prayerDTO);
     }
     
+//    @DeleteMapping(value = "/{id}")
+//    public void deletePrayer(@PathVariable Integer id,@RequestBody PrayerDTO prayerDTO){
+//        String msg = String.format("The Prayer Id %s is different from the Url Id",prayerDTO.getId());
+//        Utils.validateUrlIdEqualsBodyId(id,prayerDTO.getId(),msg);
+//        this.prayerService.deletePrayer(prayerDTO);
+//    }
+
     @DeleteMapping(value = "/{id}")
-    public void deletePrayer(@PathVariable Integer id,@RequestBody PrayerDTO prayerDTO){
-        String msg = String.format("The Prayer Id %s is different from the Url Id",prayerDTO.getId());
-        Utils.validateUrlIdEqualsBodyId(id,prayerDTO.getId(),msg);
-        this.prayerService.deletePrayer(prayerDTO);
+    public void deletePrayer(@PathVariable Integer id){
+        this.prayerService.deletePrayer(id);
     }
     
 }

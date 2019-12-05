@@ -28,7 +28,6 @@
                     </#list>
                 </table><br>
             </#if>
-
             <#-- upEmail -->
             <#if emailObject.upEmail?size gt 0>
                 <p>People who start attending again</p>
@@ -42,7 +41,6 @@
                     </#list>
                 </table><br>
             </#if>
-
             <#-- z -->
             <#if emailObject.z?size gt 0>
                 <p>People who are inconstant in their attendance</p>
@@ -56,7 +54,6 @@
                     </#list>
                 </table><br>
             </#if>
-
             <#-- lastReminder -->
             <#if emailObject.lastReminder?size gt 0>
                 <p>Last reminder, these members are not attending for 3 Sundays now</p>
@@ -74,13 +71,9 @@
         <tr>
             <td class="footerMail">
                 <div class="iconResources">Icons made by
-                    <a style="color: white" href="https://www.flaticon.com/authors/roundicons" title="Roundicons">
-                        Roundicons
-                    </a>
+                    <a style="color: white" href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a>
                     from
-                    <a style="color: white" href="https://www.flaticon.com/" title="Flaticon">
-                        www.flaticon.com
-                    </a>
+                    <a style="color: white" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
                 </div>
             </td>
         </tr>

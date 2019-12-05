@@ -2,7 +2,6 @@ package com.bma.endpoint.controller;
 
 import com.bma.api.dtos.TopicDTO;
 import com.bma.domain.service.TopicService;
-import com.bma.domain.service.mappers.TopicMapper;
 import com.bma.utils.Utils;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,11 +14,9 @@ import java.util.List;
 public class TopicController {
 
     private final TopicService topicService;
-    private final TopicMapper topicMapper;
 
-    public TopicController(TopicService topicService, TopicMapper topicMapper){
+    public TopicController(TopicService topicService){
         this.topicService = topicService;
-        this.topicMapper = topicMapper;
     }
 
     @PostMapping(value = "/")
@@ -54,7 +51,6 @@ public class TopicController {
     
     @DeleteMapping(value = "/{id}")
     public void deleteTopic(@PathVariable Integer id){
-        String msg = String.format("The Topic Id %s is different from the Url Id",id);
         this.topicService.deleteTopic(id);
     }
     

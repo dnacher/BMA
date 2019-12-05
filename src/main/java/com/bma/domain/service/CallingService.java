@@ -41,6 +41,10 @@ public class CallingService {
         this.callingDAO.deleteCalling(callingMapper.mapToEntity(callingDTO));
     }
 
+    public void deleteCalling(Integer id){
+        this.callingDAO.deleteCalling(id);
+    }
+
     public CallingDTO updateCalling(CallingDTO callingDTO) throws BMAException{
         try {
             return this.callingMapper.mapToDTO(this.callingDAO.updateCalling(callingMapper.mapToEntity(callingDTO)));

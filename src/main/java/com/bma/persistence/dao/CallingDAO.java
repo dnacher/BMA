@@ -43,6 +43,10 @@ public class CallingDAO {
         this.repository.delete(calling);
     }
 
+    public void deleteCalling(Integer id){
+        this.repository.deleteById(id);
+    }
+
     public Calling updateCalling(Calling calling) throws BMAException{
         if(calling.getId()!=null){
             return this.repository.save(calling);

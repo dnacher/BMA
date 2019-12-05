@@ -1,7 +1,6 @@
 package com.bma.domain.service.mappers;
 
 import com.bma.persistence.model.ChurchMember;
-import com.bma.persistence.model.Organization;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import com.bma.api.dtos.ChurchMemberDTO;
@@ -15,6 +14,9 @@ public class ChurchMemberMapper implements AbstractMapper<ChurchMember, ChurchMe
     @Autowired
     private CallingMapper callingMapper;
 
+    @Autowired
+    private OrganizationMapper organizationMapper;
+
     @Override
     public ChurchMember mapToEntity(ChurchMemberDTO dto) {
         ChurchMember member = new ChurchMember();
@@ -26,7 +28,7 @@ public class ChurchMemberMapper implements AbstractMapper<ChurchMember, ChurchMe
             member.setCalling(callingMapper.mapToEntity(dto.getCalling()));
         }
         if(dto.getCalling()!=null){
-            member.setOrganization(Organization.valueOf(dto.getOrganization()));
+            member.setOrganization(organizationMapper.mapToEntity(dto.getOrganization()));
         }
         return  member;
     }
@@ -42,7 +44,7 @@ public class ChurchMemberMapper implements AbstractMapper<ChurchMember, ChurchMe
             churchMemberDTO.setCalling(callingMapper.mapToDTO(entity.getCalling()));
         }
         if(entity.getOrganization()!=null){
-            churchMemberDTO.setOrganization(entity.getOrganization().toString());
+            churchMemberDTO.setOrganization(organizationMapper.mapToDTO(entity.getOrganization()));
         }
         return churchMemberDTO;
     }

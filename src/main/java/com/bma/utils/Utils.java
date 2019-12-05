@@ -25,10 +25,9 @@ public class Utils {
     }
 
     public static Date setDateToSave(Date date){
-        //, Integer GMTTime
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
-        cal.add(Calendar.HOUR, (GMT*-1));
+        cal.add(Calendar.HOUR, 16);
         return cal.getTime();
     }
 

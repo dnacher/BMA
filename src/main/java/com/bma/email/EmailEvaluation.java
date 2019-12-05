@@ -60,7 +60,6 @@ public class EmailEvaluation {
                 }
             }
         }
-
         if(emailObject.getDownEmail().size()>0 || emailObject.getUpEmail().size()>0 || emailObject.getLastReminder().size()>0){
             sendEmail(emailObject);
         }
@@ -73,7 +72,6 @@ public class EmailEvaluation {
         Map<String, Object> model = new HashMap<>();
         model.put("emailObject", emailObject);
         mail.setModel(model);
-
         try {
             emailService.sendSimpleMessage(mail);
         } catch (MessagingException e) {

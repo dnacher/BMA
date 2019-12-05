@@ -24,10 +24,9 @@ public class ChurchMember {
     @JoinColumn(name = "calling")
     private Calling calling;
 
-    @Column(name = "organization")
-    @Enumerated(EnumType.STRING)
+    @ManyToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "organization")
     private Organization organization;
-
 
     public Integer getId() {
         return id;

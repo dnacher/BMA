@@ -349,3 +349,30 @@ ADD CONSTRAINT `attendance_evaluation_member_id`
 ALTER TABLE `bma`.`attendance_evaluation`
     ADD COLUMN `attendance` VARCHAR(45) NULL AFTER `church_member`;
 
+ALTER TABLE `bma`.`prayer`
+    DROP FOREIGN KEY `prayer_member_id`;
+ALTER TABLE `bma`.`prayer`
+    CHANGE COLUMN `member` `church_member` INT(11) NULL DEFAULT NULL ;
+ALTER TABLE `bma`.`prayer`
+    ADD CONSTRAINT `prayer_member_id`
+        FOREIGN KEY (`church_member`)
+            REFERENCES `bma`.`church_member` (`id`);
+
+CREATE TABLE `bma`.`organization` (
+                                      `id` INT NOT NULL AUTO_INCREMENT,
+                                      `name` VARCHAR(75) NULL,
+                                      PRIMARY KEY (`id`));
+
+ALTER TABLE `bma`.`church_member`
+    CHANGE COLUMN `organization` `organization` INT NULL DEFAULT NULL ;
+
+ALTER TABLE `bma`.`church_member`
+    ADD INDEX `member_organization_id_idx` (`organization` ASC) VISIBLE;
+
+
+ALTER TABLE `bma`.`church_member`
+    ADD CONSTRAINT `member_organization_id`
+        FOREIGN KEY (`organization`)
+            REFERENCES `bma`.`organization` (`id`)
+            ON DELETE NO ACTION
+            ON UPDATE NO ACTION;
