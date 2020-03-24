@@ -7,19 +7,23 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sauron-persistence" />
+        <module name="vivienda-back" />
         <module name="sauron-endpoint" />
         <module name="sauron-api" />
         <module name="sauron-integration" />
+        <module name="sauron-domain" />
         <module name="bma" />
         <module name="sauron-flow" />
+        <module name="vivienda-maven" />
         <module name="mail-template-freemaker" />
-        <module name="sauron-domain" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="bma" options="-parameters" />
+      <module name="vivienda-back" options="-parameters" />
+      <module name="vivienda-maven" options="-parameters" />
     </option>
   </component>
 </project>

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../BMA-FRONT/BMA-FRONT.iml" filepath="$PROJECT_DIR$/../BMA-FRONT/BMA-FRONT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../trader/trader.iml" filepath="$PROJECT_DIR$/../trader/trader.iml" />
     </modules>
   </component>
 </project>

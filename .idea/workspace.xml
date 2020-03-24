@@ -2,67 +2,140 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ee6e61f-6a5b-46b4-8d2f-cc903fd4071d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/OrganizationDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/OrganizationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/OrganizationMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bma/endpoint/controller/OrganizationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/OrganizationDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/repository/OrganizationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/attendance/attendance.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/attendance/attendance.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/attendance/attendance.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/attendance/attendance.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/calling/calling.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/calling/calling.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/calling/calling.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/calling/calling.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/dialog/dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/dialog/dialog.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/dialog/dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/dialog/dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/discourse/discourse.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/discourse/discourse.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/discourse/discourse.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/discourse/discourse.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/hymn/hymn.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/hymn/hymn.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/hymn/hymn.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/hymn/hymn.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/member/member.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/member/member.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/member/member.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/member/member.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/organization/organization.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/organization/organization.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/organization/organization.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/organization/organization.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/prayer/prayer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/prayer/prayer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/prayer/prayer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/prayer/prayer.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/topic/topic.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/topic/topic.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/topic/topic.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/topic/topic.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/libreriaViviendas.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vivienda-maven/src/seguridad/Seguridad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/sacrament-meeting/sacrament-meeting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/sacrament-meeting/sacrament-meeting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/sacrament-meeting/sacrament-meeting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/sacrament-meeting/sacrament-meeting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/bma.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/bma.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/ChurchMemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/api/dtos/ChurchMemberDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/CallingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/CallingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/PrayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/PrayerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/ChurchMemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/ChurchMemberMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/email/EmailEvaluation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/email/EmailEvaluation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/email/config/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/email/config/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/endpoint/controller/CallingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/endpoint/controller/CallingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/endpoint/controller/PrayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/endpoint/controller/PrayerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/endpoint/controller/TopicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/endpoint/controller/TopicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/CallingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/CallingDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/PrayerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/PrayerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/ChurchMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/ChurchMember.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/persistence/model/Organization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/email-template.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/email-template.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/images/sauron_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/ChurchMemberDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/ChurchMemberDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/CallingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/domain/service/CallingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/PrayerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/domain/service/PrayerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/ChurchMemberMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/ChurchMemberMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/email/EmailEvaluation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/email/EmailEvaluation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/email/config/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/email/config/EmailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/CallingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/CallingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/PrayerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/PrayerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/TopicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/TopicController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/CallingDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/CallingDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/PrayerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/PrayerDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/ChurchMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/ChurchMember.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Organization.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Organization.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/utils/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bma/utils/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/email-template.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/email-template.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/images/sauron_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bma-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bma-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/bma.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/BmaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/BmaServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/AttendanceDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/AttendanceEvaluationDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/CallingDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/ChurchMemberDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/DiscourseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/HymnDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/OrganizationDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/PrayerDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/SacramentMeetingDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/SustainingReleaseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/api/dtos/TopicDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/AttendanceEvaluationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/AttendanceService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/CallingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/ChurchMemberService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/DiscourseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/HymnService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/OrganizationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/PrayerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/SacramentMeetingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/SustainingReleaseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/TopicService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/AbstractMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/AttendanceEvaluationMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/AttendanceMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/CallingMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/ChurchMemberMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/DiscourseMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/HymnMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/OrganizationMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/PrayerMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/SacramentMeetingMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/SustainingReleaseMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/domain/service/mappers/TopicMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/email/AttendanceConstant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/email/EmailEvaluation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/email/EmailItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/email/EmailObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/email/config/EmailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/email/config/FreemarkerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/email/config/Mail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/email/config/SendEmailClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/AttendanceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/CallingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/DiscourseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/HymnController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/MemberController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/OrganizationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/PrayerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/SacramentMeetingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/SustainingReleaseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/endpoint/controller/TopicController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/exception/BMAException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/AttendanceDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/AttendanceEvaluationDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/CallingDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/ChurchMemberDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/DiscourseDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/HymnDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/OrganizationDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/PrayerDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/SacramentMeetingDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/SustainingReleaseDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/dao/TopicDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Attendance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/AttendanceEvaluation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Calling.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/ChurchMember.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Discourse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Hymn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Organization.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Prayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/SacramentMeeting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/SustainingRelease.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/model/Topic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/repository/AttendanceEvaluationRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/repository/AttendanceRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/repository/CallingRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/repository/ChurchMemberRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/repository/DiscourseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/repository/HymnRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/repository/OrganizationRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/repository/PrayerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/repository/SacramentMeetingRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/repository/SustainingReleaseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/persistence/repository/TopicRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bma/utils/Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/email-template.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/images/cancel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/images/checked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/images/loading.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/macros/utils.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.bma.BmaServerTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.bma.BmaServerTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/bma/BmaServerTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vivienda-maven/src/persistence/DAO/PermisoUsuarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vivienda-maven/src/persistence/DAO/PermisoUsuarioDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vivienda-maven/src/persistence/DAO/UsuarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vivienda-maven/src/persistence/DAO/UsuarioDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vivienda-maven/src/persistence/entities/PermisoUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vivienda-maven/src/persistence/entities/PermisoUsuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vivienda-maven/src/persistence/repository/PermisoUsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vivienda-maven/src/persistence/repository/PermisoUsuarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vivienda-maven/src/persistence/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vivienda-maven/src/persistence/repository/UsuarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vivienda-maven/src/validaciones/LoginValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vivienda-maven/src/validaciones/LoginValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vivienda-maven/src/view/MB/LoginMB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vivienda-maven/src/view/MB/LoginMB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vivienda-maven/src/view/MB/SeguridadMB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vivienda-maven/src/view/MB/SeguridadMB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vivienda-maven/target/classes/persistence/DAO/PermisoUsuarioDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vivienda-maven/target/classes/persistence/DAO/PermisoUsuarioDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vivienda-maven/target/classes/persistence/DAO/UsuarioDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vivienda-maven/target/classes/persistence/DAO/UsuarioDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vivienda-maven/target/classes/persistence/entities/PermisoUsuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vivienda-maven/target/classes/persistence/entities/PermisoUsuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vivienda-maven/target/classes/persistence/repository/PermisoUsuarioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vivienda-maven/target/classes/persistence/repository/PermisoUsuarioRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vivienda-maven/target/classes/persistence/repository/UsuarioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vivienda-maven/target/classes/persistence/repository/UsuarioRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vivienda-maven/target/classes/validaciones/LoginValidation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vivienda-maven/target/classes/validaciones/LoginValidation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vivienda-maven/target/classes/view/MB/LoginMB.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vivienda-maven/target/classes/view/MB/LoginMB.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,18 +145,65 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="vivienda@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="vivienda@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="vivienda@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="vivienda: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="vivienda@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="vivienda: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="usuario: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="CSS File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../BMA-FRONT" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../vivienda-back" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/dnacher/BMA-FRONT.git" />
+        <option value="https://github.com/dnacher/BMA.git" />
+        <option value="https://github.com/dnacher/vivienda.git" />
+      </set>
+    </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -99,6 +219,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelOrder2" value="2" />
@@ -109,37 +231,42 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BMA-FRONT/src/app" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vivienda-back/src/main/java/com/vivienda/api/dto" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/../BMA-FRONT/node_modules/protractor" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.1575" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/../BMA-FRONT/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../BMA-FRONT/src/app" />
-      <recent name="$PROJECT_DIR$/../BMA-FRONT/src/app/services" />
-      <recent name="$PROJECT_DIR$/../BMA-FRONT/src/app/classes" />
-      <recent name="$PROJECT_DIR$/src/main/resources/images" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.bma.endpoint.controller" />
-      <recent name="com.bma.domain.service" />
-      <recent name="com.bma.domain.service.mappers" />
-      <recent name="com.bma.persistence.dao" />
-      <recent name="com.bma.persistence.repository" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Desarrollo\vivienda-back" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates/images" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates/macros" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Utils" />
+      <recent name="persistence.entities" />
+      <recent name="vivienda" />
+      <recent name="com.bma.endpoint.controller" />
+      <recent name="com.bma.domain.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Desarrollo\vivienda-back\src\main\java\com\vivienda\api\dto" />
+      <recent name="C:\Desarrollo\vivienda-back\src\main\java\com\vivienda\exception" />
+      <recent name="C:\Desarrollo\vivienda-back\src\main\java\com\vivienda\persistence\dao" />
+      <recent name="C:\Desarrollo\vivienda-back\src\main\java\com\vivienda\persistence\repository" />
+      <recent name="C:\Desarrollo\vivienda-back\src\main\java\com\vivienda\persistence" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -149,7 +276,27 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BmaServer">
+  <component name="RunManager" selected="Application.Viviendas">
+    <configuration name="Trader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="trader.Trader" />
+      <module name="trader" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Viviendas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="viviendas.Viviendas" />
+      <module name="vivienda-maven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="viviendas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="E2E Tests (bma-front)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/../BMA-FRONT/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
@@ -162,16 +309,11 @@
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
     </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="mail-template-freemaker" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.memorynotfound.mail.Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BmaServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="bma" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bma.BmaServer" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="$APPLICATION_HOME_DIR$/jbr" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -186,17 +328,29 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.Trader" />
+      <item itemvalue="Application.Viviendas" />
+      <item itemvalue="JavaScript Debug.Angular Application" />
+      <item itemvalue="npm.Angular CLI Server" />
+      <item itemvalue="Protractor.E2E Tests (bma-front)" />
+      <item itemvalue="Spring Boot.BmaServer" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Viviendas" />
+        <item itemvalue="Application.Trader" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
         <serviceView>
-          <option name="contentProportion" value="0.013554217" />
           <treeState>
             <expand />
             <select />
           </treeState>
-          <option name="groupByServiceGroups" value="false" />
         </serviceView>
       </list>
     </option>
@@ -239,6 +393,30 @@
       <workItem from="1575547108459" duration="2982000" />
       <workItem from="1575553767969" duration="95000" />
       <workItem from="1575553996356" duration="20318000" />
+      <workItem from="1575758538930" duration="4000" />
+      <workItem from="1576335482289" duration="2989000" />
+      <workItem from="1580508607900" duration="5104000" />
+      <workItem from="1581030096540" duration="74000" />
+      <workItem from="1581032022605" duration="594000" />
+      <workItem from="1581985683157" duration="3680000" />
+      <workItem from="1582065307947" duration="2115000" />
+      <workItem from="1582072672814" duration="4251000" />
+      <workItem from="1582159724774" duration="5357000" />
+      <workItem from="1582668121361" duration="2137000" />
+      <workItem from="1582681873089" duration="2913000" />
+      <workItem from="1582756171772" duration="4609000" />
+      <workItem from="1583454166032" duration="4014000" />
+      <workItem from="1583544945802" duration="3654000" />
+      <workItem from="1584405446533" duration="4280000" />
+      <workItem from="1584570480624" duration="39000" />
+      <workItem from="1584570590828" duration="5729000" />
+      <workItem from="1584579183171" duration="2692000" />
+      <workItem from="1584583831535" duration="1201000" />
+      <workItem from="1584657509179" duration="4298000" />
+      <workItem from="1584662286030" duration="4001000" />
+      <workItem from="1584746006236" duration="6105000" />
+      <workItem from="1584800092568" duration="3005000" />
+      <workItem from="1585009712582" duration="6986000" />
     </task>
     <servers />
   </component>
@@ -262,218 +440,130 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="86" key="#Assign_Data_Sources" timestamp="1575558089835">
-      <screen x="0" y="23" width="1440" height="795" />
+    <state x="341" y="68" key="#Assign_Data_Sources" timestamp="1585013347330">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="320" y="86" key="#Assign_Data_Sources/0.23.1440.795/1440.-323.2560.1417@0.23.1440.795" timestamp="1575558089835" />
-    <state x="320" y="87" key="#Project_Structure" timestamp="1575311336605">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="341" y="68" key="#Assign_Data_Sources/0.0.1536.864@0.0.1536.864" timestamp="1585013347330" />
+    <state x="472" y="77" key="#Project_Structure" timestamp="1585010444729">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="320" y="87" key="#Project_Structure/0.23.1440.877/1440.-323.2560.1333@0.23.1440.877" timestamp="1575311336605" />
-    <state x="320" y="87" key="#Project_Structure/0.23.1440.877/1440.-323.2560.1337@0.23.1440.877" timestamp="1575293358624" />
-    <state x="533" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1575047884791">
-      <screen x="0" y="23" width="1440" height="797" />
+    <state x="472" y="77" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1585010444729" />
+    <state x="361" y="92" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584657619962">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="533" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1440.797/-2560.23.2560.1417@0.23.1440.797" timestamp="1575047884791" />
-    <state x="408" y="169" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575547080846">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="361" y="92" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1584657619962" />
+    <state x="569" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1584666195246">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="408" y="156" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.797/1440.-323.2560.1417@0.23.1440.797" timestamp="1575288781088" />
-    <state x="408" y="169" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.877/1440.-323.2560.1333@0.23.1440.877" timestamp="1575547080846" />
-    <state x="458" y="175" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575573510486">
-      <screen x="0" y="23" width="1440" height="801" />
+    <state x="569" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1584666195246" />
+    <state x="636" y="221" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584657618622">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="458" y="174" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.795/1440.-323.2560.1417@0.23.1440.795" timestamp="1575558146493" />
-    <state x="458" y="175" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.801/1440.-323.2560.1417@0.23.1440.801" timestamp="1575573510486" />
-    <state width="1398" height="214" key="GridCell.Tab.0.bottom" timestamp="1575580572191">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state x="636" y="221" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.864@0.0.1536.864" timestamp="1584657618622" />
+    <state x="618" y="321" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584584948458">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1310" height="235" key="GridCell.Tab.0.bottom/0.23.1440.793/1440.-323.2560.1417@0.23.1440.793" timestamp="1575402306246" />
-    <state width="1349" height="224" key="GridCell.Tab.0.bottom/0.23.1440.795/1440.-323.2560.1417@0.23.1440.795" timestamp="1575558130154" />
-    <state width="1358" height="201" key="GridCell.Tab.0.bottom/0.23.1440.797/-2560.23.2560.1417@0.23.1440.797" timestamp="1575052214652" />
-    <state width="1310" height="237" key="GridCell.Tab.0.bottom/0.23.1440.797/1440.-323.2560.1417@0.23.1440.797" timestamp="1575310718722" />
-    <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.23.1440.798/1440.-323.2560.1417@0.23.1440.798" timestamp="1575580572191" />
-    <state width="1349" height="219" key="GridCell.Tab.0.bottom/0.23.1440.801/1440.-323.2560.1417@0.23.1440.801" timestamp="1575570938974" />
-    <state width="1349" height="219" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.-323.2560.1333@0.23.1440.877" timestamp="1575568531685" />
-    <state width="2454" height="235" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.-323.2560.1333@1440.-323.2560.1333" timestamp="1575405388815" />
-    <state width="1310" height="237" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.-323.2560.1337@0.23.1440.877" timestamp="1575311144363" />
-    <state width="1358" height="201" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.-323.2560.1417@0.23.1440.877" timestamp="1575053086973" />
-    <state width="1398" height="214" key="GridCell.Tab.0.center" timestamp="1575580572190">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state x="618" y="321" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.864@0.0.1536.864" timestamp="1584584948458" />
+    <state x="669" y="325" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1582162551240">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1310" height="235" key="GridCell.Tab.0.center/0.23.1440.793/1440.-323.2560.1417@0.23.1440.793" timestamp="1575402306245" />
-    <state width="1349" height="224" key="GridCell.Tab.0.center/0.23.1440.795/1440.-323.2560.1417@0.23.1440.795" timestamp="1575558130154" />
-    <state width="1358" height="201" key="GridCell.Tab.0.center/0.23.1440.797/-2560.23.2560.1417@0.23.1440.797" timestamp="1575052214649" />
-    <state width="1310" height="237" key="GridCell.Tab.0.center/0.23.1440.797/1440.-323.2560.1417@0.23.1440.797" timestamp="1575310718720" />
-    <state width="1398" height="214" key="GridCell.Tab.0.center/0.23.1440.798/1440.-323.2560.1417@0.23.1440.798" timestamp="1575580572190" />
-    <state width="1349" height="219" key="GridCell.Tab.0.center/0.23.1440.801/1440.-323.2560.1417@0.23.1440.801" timestamp="1575570938973" />
-    <state width="1349" height="219" key="GridCell.Tab.0.center/0.23.1440.877/1440.-323.2560.1333@0.23.1440.877" timestamp="1575568531685" />
-    <state width="2454" height="235" key="GridCell.Tab.0.center/0.23.1440.877/1440.-323.2560.1333@1440.-323.2560.1333" timestamp="1575405388814" />
-    <state width="1310" height="237" key="GridCell.Tab.0.center/0.23.1440.877/1440.-323.2560.1337@0.23.1440.877" timestamp="1575311144362" />
-    <state width="1358" height="201" key="GridCell.Tab.0.center/0.23.1440.877/1440.-323.2560.1417@0.23.1440.877" timestamp="1575053086973" />
-    <state width="1398" height="214" key="GridCell.Tab.0.left" timestamp="1575580572190">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state x="669" y="325" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1536.864@0.0.1536.864" timestamp="1582162551240" />
+    <state x="710" y="105" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1582164720982">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1310" height="235" key="GridCell.Tab.0.left/0.23.1440.793/1440.-323.2560.1417@0.23.1440.793" timestamp="1575402306244" />
-    <state width="1349" height="224" key="GridCell.Tab.0.left/0.23.1440.795/1440.-323.2560.1417@0.23.1440.795" timestamp="1575558130153" />
-    <state width="1358" height="201" key="GridCell.Tab.0.left/0.23.1440.797/-2560.23.2560.1417@0.23.1440.797" timestamp="1575052214649" />
-    <state width="1310" height="237" key="GridCell.Tab.0.left/0.23.1440.797/1440.-323.2560.1417@0.23.1440.797" timestamp="1575310718719" />
-    <state width="1398" height="214" key="GridCell.Tab.0.left/0.23.1440.798/1440.-323.2560.1417@0.23.1440.798" timestamp="1575580572190" />
-    <state width="1349" height="219" key="GridCell.Tab.0.left/0.23.1440.801/1440.-323.2560.1417@0.23.1440.801" timestamp="1575570938972" />
-    <state width="1349" height="219" key="GridCell.Tab.0.left/0.23.1440.877/1440.-323.2560.1333@0.23.1440.877" timestamp="1575568531684" />
-    <state width="2454" height="235" key="GridCell.Tab.0.left/0.23.1440.877/1440.-323.2560.1333@1440.-323.2560.1333" timestamp="1575405388814" />
-    <state width="1310" height="237" key="GridCell.Tab.0.left/0.23.1440.877/1440.-323.2560.1337@0.23.1440.877" timestamp="1575311144361" />
-    <state width="1358" height="201" key="GridCell.Tab.0.left/0.23.1440.877/1440.-323.2560.1417@0.23.1440.877" timestamp="1575053086972" />
-    <state width="1398" height="214" key="GridCell.Tab.0.right" timestamp="1575580572191">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state x="710" y="105" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1536.864@0.0.1536.864" timestamp="1582164720982" />
+    <state x="476" y="358" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1584408454375">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1310" height="235" key="GridCell.Tab.0.right/0.23.1440.793/1440.-323.2560.1417@0.23.1440.793" timestamp="1575402306246" />
-    <state width="1349" height="224" key="GridCell.Tab.0.right/0.23.1440.795/1440.-323.2560.1417@0.23.1440.795" timestamp="1575558130154" />
-    <state width="1358" height="201" key="GridCell.Tab.0.right/0.23.1440.797/-2560.23.2560.1417@0.23.1440.797" timestamp="1575052214651" />
-    <state width="1310" height="237" key="GridCell.Tab.0.right/0.23.1440.797/1440.-323.2560.1417@0.23.1440.797" timestamp="1575310718721" />
-    <state width="1398" height="214" key="GridCell.Tab.0.right/0.23.1440.798/1440.-323.2560.1417@0.23.1440.798" timestamp="1575580572191" />
-    <state width="1349" height="219" key="GridCell.Tab.0.right/0.23.1440.801/1440.-323.2560.1417@0.23.1440.801" timestamp="1575570938974" />
-    <state width="1349" height="219" key="GridCell.Tab.0.right/0.23.1440.877/1440.-323.2560.1333@0.23.1440.877" timestamp="1575568531685" />
-    <state width="2454" height="235" key="GridCell.Tab.0.right/0.23.1440.877/1440.-323.2560.1333@1440.-323.2560.1333" timestamp="1575405388814" />
-    <state width="1310" height="237" key="GridCell.Tab.0.right/0.23.1440.877/1440.-323.2560.1337@0.23.1440.877" timestamp="1575311144362" />
-    <state width="1358" height="201" key="GridCell.Tab.0.right/0.23.1440.877/1440.-323.2560.1417@0.23.1440.877" timestamp="1575053086973" />
-    <state width="1398" height="214" key="GridCell.Tab.1.bottom" timestamp="1575580572192">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state x="476" y="358" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.864@0.0.1536.864" timestamp="1584408454375" />
+    <state x="536" y="292" width="464" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1584407431455">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1310" height="235" key="GridCell.Tab.1.bottom/0.23.1440.793/1440.-323.2560.1417@0.23.1440.793" timestamp="1575402306111" />
-    <state width="1349" height="224" key="GridCell.Tab.1.bottom/0.23.1440.795/1440.-323.2560.1417@0.23.1440.795" timestamp="1575558130155" />
-    <state width="1358" height="229" key="GridCell.Tab.1.bottom/0.23.1440.797/-2560.23.2560.1417@0.23.1440.797" timestamp="1575052214517" />
-    <state width="1310" height="237" key="GridCell.Tab.1.bottom/0.23.1440.797/1440.-323.2560.1417@0.23.1440.797" timestamp="1575310718585" />
-    <state width="1398" height="214" key="GridCell.Tab.1.bottom/0.23.1440.798/1440.-323.2560.1417@0.23.1440.798" timestamp="1575580572192" />
-    <state width="1349" height="219" key="GridCell.Tab.1.bottom/0.23.1440.801/1440.-323.2560.1417@0.23.1440.801" timestamp="1575570938976" />
-    <state width="1349" height="219" key="GridCell.Tab.1.bottom/0.23.1440.877/1440.-323.2560.1333@0.23.1440.877" timestamp="1575568531687" />
-    <state width="2454" height="235" key="GridCell.Tab.1.bottom/0.23.1440.877/1440.-323.2560.1333@1440.-323.2560.1333" timestamp="1575405388816" />
-    <state width="1310" height="237" key="GridCell.Tab.1.bottom/0.23.1440.877/1440.-323.2560.1337@0.23.1440.877" timestamp="1575311144205" />
-    <state width="1358" height="201" key="GridCell.Tab.1.bottom/0.23.1440.877/1440.-323.2560.1417@0.23.1440.877" timestamp="1575053086975" />
-    <state width="1398" height="214" key="GridCell.Tab.1.center" timestamp="1575580572192">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state x="536" y="292" width="464" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.864@0.0.1536.864" timestamp="1584407431455" />
+    <state x="486" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585017444092">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1310" height="235" key="GridCell.Tab.1.center/0.23.1440.793/1440.-323.2560.1417@0.23.1440.793" timestamp="1575402306111" />
-    <state width="1349" height="224" key="GridCell.Tab.1.center/0.23.1440.795/1440.-323.2560.1417@0.23.1440.795" timestamp="1575558130155" />
-    <state width="1358" height="229" key="GridCell.Tab.1.center/0.23.1440.797/-2560.23.2560.1417@0.23.1440.797" timestamp="1575052214516" />
-    <state width="1310" height="237" key="GridCell.Tab.1.center/0.23.1440.797/1440.-323.2560.1417@0.23.1440.797" timestamp="1575310718584" />
-    <state width="1398" height="214" key="GridCell.Tab.1.center/0.23.1440.798/1440.-323.2560.1417@0.23.1440.798" timestamp="1575580572192" />
-    <state width="1349" height="219" key="GridCell.Tab.1.center/0.23.1440.801/1440.-323.2560.1417@0.23.1440.801" timestamp="1575570938975" />
-    <state width="1349" height="219" key="GridCell.Tab.1.center/0.23.1440.877/1440.-323.2560.1333@0.23.1440.877" timestamp="1575568531686" />
-    <state width="2454" height="235" key="GridCell.Tab.1.center/0.23.1440.877/1440.-323.2560.1333@1440.-323.2560.1333" timestamp="1575405388815" />
-    <state width="1310" height="237" key="GridCell.Tab.1.center/0.23.1440.877/1440.-323.2560.1337@0.23.1440.877" timestamp="1575311144203" />
-    <state width="1358" height="201" key="GridCell.Tab.1.center/0.23.1440.877/1440.-323.2560.1417@0.23.1440.877" timestamp="1575053086974" />
-    <state width="1398" height="214" key="GridCell.Tab.1.left" timestamp="1575580572191">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state x="486" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.864@0.0.1536.864" timestamp="1585017444092" />
+    <state x="610" y="173" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1583455237758">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1310" height="235" key="GridCell.Tab.1.left/0.23.1440.793/1440.-323.2560.1417@0.23.1440.793" timestamp="1575402306110" />
-    <state width="1349" height="224" key="GridCell.Tab.1.left/0.23.1440.795/1440.-323.2560.1417@0.23.1440.795" timestamp="1575558130155" />
-    <state width="1358" height="229" key="GridCell.Tab.1.left/0.23.1440.797/-2560.23.2560.1417@0.23.1440.797" timestamp="1575052214516" />
-    <state width="1310" height="237" key="GridCell.Tab.1.left/0.23.1440.797/1440.-323.2560.1417@0.23.1440.797" timestamp="1575310718584" />
-    <state width="1398" height="214" key="GridCell.Tab.1.left/0.23.1440.798/1440.-323.2560.1417@0.23.1440.798" timestamp="1575580572191" />
-    <state width="1349" height="219" key="GridCell.Tab.1.left/0.23.1440.801/1440.-323.2560.1417@0.23.1440.801" timestamp="1575570938975" />
-    <state width="1349" height="219" key="GridCell.Tab.1.left/0.23.1440.877/1440.-323.2560.1333@0.23.1440.877" timestamp="1575568531686" />
-    <state width="2454" height="235" key="GridCell.Tab.1.left/0.23.1440.877/1440.-323.2560.1333@1440.-323.2560.1333" timestamp="1575405388815" />
-    <state width="1310" height="237" key="GridCell.Tab.1.left/0.23.1440.877/1440.-323.2560.1337@0.23.1440.877" timestamp="1575311144203" />
-    <state width="1358" height="201" key="GridCell.Tab.1.left/0.23.1440.877/1440.-323.2560.1417@0.23.1440.877" timestamp="1575053086974" />
-    <state width="1398" height="214" key="GridCell.Tab.1.right" timestamp="1575580572192">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state x="610" y="173" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1536.864@0.0.1536.864" timestamp="1583455237758" />
+    <state x="159" y="164" key="FileChooserDialogImpl" timestamp="1584662010007">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1310" height="235" key="GridCell.Tab.1.right/0.23.1440.793/1440.-323.2560.1417@0.23.1440.793" timestamp="1575402306111" />
-    <state width="1349" height="224" key="GridCell.Tab.1.right/0.23.1440.795/1440.-323.2560.1417@0.23.1440.795" timestamp="1575558130155" />
-    <state width="1358" height="229" key="GridCell.Tab.1.right/0.23.1440.797/-2560.23.2560.1417@0.23.1440.797" timestamp="1575052214517" />
-    <state width="1310" height="237" key="GridCell.Tab.1.right/0.23.1440.797/1440.-323.2560.1417@0.23.1440.797" timestamp="1575310718585" />
-    <state width="1398" height="214" key="GridCell.Tab.1.right/0.23.1440.798/1440.-323.2560.1417@0.23.1440.798" timestamp="1575580572192" />
-    <state width="1349" height="219" key="GridCell.Tab.1.right/0.23.1440.801/1440.-323.2560.1417@0.23.1440.801" timestamp="1575570938976" />
-    <state width="1349" height="219" key="GridCell.Tab.1.right/0.23.1440.877/1440.-323.2560.1333@0.23.1440.877" timestamp="1575568531686" />
-    <state width="2454" height="235" key="GridCell.Tab.1.right/0.23.1440.877/1440.-323.2560.1333@1440.-323.2560.1333" timestamp="1575405388816" />
-    <state width="1310" height="237" key="GridCell.Tab.1.right/0.23.1440.877/1440.-323.2560.1337@0.23.1440.877" timestamp="1575311144204" />
-    <state width="1358" height="201" key="GridCell.Tab.1.right/0.23.1440.877/1440.-323.2560.1417@0.23.1440.877" timestamp="1575053086975" />
-    <state width="1398" height="214" key="GridCell.Tab.2.bottom" timestamp="1575580572194">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state x="159" y="164" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1584662010007" />
+    <state width="1493" height="266" key="GridCell.Tab.0.bottom" timestamp="1584759901658">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1310" height="235" key="GridCell.Tab.2.bottom/0.23.1440.793/1440.-323.2560.1417@0.23.1440.793" timestamp="1575402306113" />
-    <state width="1349" height="224" key="GridCell.Tab.2.bottom/0.23.1440.795/1440.-323.2560.1417@0.23.1440.795" timestamp="1575558130156" />
-    <state width="1358" height="201" key="GridCell.Tab.2.bottom/0.23.1440.797/-2560.23.2560.1417@0.23.1440.797" timestamp="1575052214497" />
-    <state width="1310" height="237" key="GridCell.Tab.2.bottom/0.23.1440.797/1440.-323.2560.1417@0.23.1440.797" timestamp="1575310718587" />
-    <state width="1398" height="214" key="GridCell.Tab.2.bottom/0.23.1440.798/1440.-323.2560.1417@0.23.1440.798" timestamp="1575580572194" />
-    <state width="1349" height="219" key="GridCell.Tab.2.bottom/0.23.1440.877/1440.-323.2560.1333@0.23.1440.877" timestamp="1575568531688" />
-    <state width="2454" height="235" key="GridCell.Tab.2.bottom/0.23.1440.877/1440.-323.2560.1333@1440.-323.2560.1333" timestamp="1575405388817" />
-    <state width="1310" height="237" key="GridCell.Tab.2.bottom/0.23.1440.877/1440.-323.2560.1337@0.23.1440.877" timestamp="1575311144207" />
-    <state width="1358" height="201" key="GridCell.Tab.2.bottom/0.23.1440.877/1440.-323.2560.1417@0.23.1440.877" timestamp="1575053086976" />
-    <state width="1398" height="214" key="GridCell.Tab.2.center" timestamp="1575580572193">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="1493" height="266" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1584759901658" />
+    <state width="1493" height="266" key="GridCell.Tab.0.center" timestamp="1584759901658">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1310" height="235" key="GridCell.Tab.2.center/0.23.1440.793/1440.-323.2560.1417@0.23.1440.793" timestamp="1575402306112" />
-    <state width="1349" height="224" key="GridCell.Tab.2.center/0.23.1440.795/1440.-323.2560.1417@0.23.1440.795" timestamp="1575558130156" />
-    <state width="1358" height="201" key="GridCell.Tab.2.center/0.23.1440.797/-2560.23.2560.1417@0.23.1440.797" timestamp="1575052214497" />
-    <state width="1310" height="237" key="GridCell.Tab.2.center/0.23.1440.797/1440.-323.2560.1417@0.23.1440.797" timestamp="1575310718586" />
-    <state width="1398" height="214" key="GridCell.Tab.2.center/0.23.1440.798/1440.-323.2560.1417@0.23.1440.798" timestamp="1575580572193" />
-    <state width="1349" height="219" key="GridCell.Tab.2.center/0.23.1440.877/1440.-323.2560.1333@0.23.1440.877" timestamp="1575568531688" />
-    <state width="2454" height="235" key="GridCell.Tab.2.center/0.23.1440.877/1440.-323.2560.1333@1440.-323.2560.1333" timestamp="1575405388816" />
-    <state width="1310" height="237" key="GridCell.Tab.2.center/0.23.1440.877/1440.-323.2560.1337@0.23.1440.877" timestamp="1575311144206" />
-    <state width="1358" height="201" key="GridCell.Tab.2.center/0.23.1440.877/1440.-323.2560.1417@0.23.1440.877" timestamp="1575053086975" />
-    <state width="1398" height="214" key="GridCell.Tab.2.left" timestamp="1575580572193">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="1493" height="266" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1584759901658" />
+    <state width="1493" height="266" key="GridCell.Tab.0.left" timestamp="1584759901658">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1310" height="235" key="GridCell.Tab.2.left/0.23.1440.793/1440.-323.2560.1417@0.23.1440.793" timestamp="1575402306112" />
-    <state width="1349" height="224" key="GridCell.Tab.2.left/0.23.1440.795/1440.-323.2560.1417@0.23.1440.795" timestamp="1575558130156" />
-    <state width="1358" height="201" key="GridCell.Tab.2.left/0.23.1440.797/-2560.23.2560.1417@0.23.1440.797" timestamp="1575052214497" />
-    <state width="1310" height="237" key="GridCell.Tab.2.left/0.23.1440.797/1440.-323.2560.1417@0.23.1440.797" timestamp="1575310718586" />
-    <state width="1398" height="214" key="GridCell.Tab.2.left/0.23.1440.798/1440.-323.2560.1417@0.23.1440.798" timestamp="1575580572193" />
-    <state width="1349" height="219" key="GridCell.Tab.2.left/0.23.1440.877/1440.-323.2560.1333@0.23.1440.877" timestamp="1575568531687" />
-    <state width="2454" height="235" key="GridCell.Tab.2.left/0.23.1440.877/1440.-323.2560.1333@1440.-323.2560.1333" timestamp="1575405388816" />
-    <state width="1310" height="237" key="GridCell.Tab.2.left/0.23.1440.877/1440.-323.2560.1337@0.23.1440.877" timestamp="1575311144205" />
-    <state width="1358" height="201" key="GridCell.Tab.2.left/0.23.1440.877/1440.-323.2560.1417@0.23.1440.877" timestamp="1575053086975" />
-    <state width="1398" height="214" key="GridCell.Tab.2.right" timestamp="1575580572193">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="1493" height="266" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1584759901658" />
+    <state width="1493" height="266" key="GridCell.Tab.0.right" timestamp="1584759901658">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1310" height="235" key="GridCell.Tab.2.right/0.23.1440.793/1440.-323.2560.1417@0.23.1440.793" timestamp="1575402306112" />
-    <state width="1349" height="224" key="GridCell.Tab.2.right/0.23.1440.795/1440.-323.2560.1417@0.23.1440.795" timestamp="1575558130156" />
-    <state width="1358" height="201" key="GridCell.Tab.2.right/0.23.1440.797/-2560.23.2560.1417@0.23.1440.797" timestamp="1575052214497" />
-    <state width="1310" height="237" key="GridCell.Tab.2.right/0.23.1440.797/1440.-323.2560.1417@0.23.1440.797" timestamp="1575310718587" />
-    <state width="1398" height="214" key="GridCell.Tab.2.right/0.23.1440.798/1440.-323.2560.1417@0.23.1440.798" timestamp="1575580572193" />
-    <state width="1349" height="219" key="GridCell.Tab.2.right/0.23.1440.877/1440.-323.2560.1333@0.23.1440.877" timestamp="1575568531688" />
-    <state width="2454" height="235" key="GridCell.Tab.2.right/0.23.1440.877/1440.-323.2560.1333@1440.-323.2560.1333" timestamp="1575405388816" />
-    <state width="1310" height="237" key="GridCell.Tab.2.right/0.23.1440.877/1440.-323.2560.1337@0.23.1440.877" timestamp="1575311144206" />
-    <state width="1358" height="201" key="GridCell.Tab.2.right/0.23.1440.877/1440.-323.2560.1417@0.23.1440.877" timestamp="1575053086976" />
-    <state x="349" y="122" key="NewModule_or_Project.wizard" timestamp="1575293356079">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1493" height="266" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1584759901658" />
+    <state width="1493" height="266" key="GridCell.Tab.1.bottom" timestamp="1584759901658">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="349" y="122" key="NewModule_or_Project.wizard/0.23.1440.877/1440.-323.2560.1337@0.23.1440.877" timestamp="1575293356079" />
-    <state x="229" y="64" key="SettingsEditor" timestamp="1575055034741">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1493" height="266" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1584759901658" />
+    <state width="1493" height="266" key="GridCell.Tab.1.center" timestamp="1584759901658">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="229" y="60" key="SettingsEditor/0.23.1440.797/-2560.23.2560.1417@0.23.1440.797" timestamp="1575047882320" />
-    <state x="229" y="64" key="SettingsEditor/0.23.1440.877/1440.-323.2560.1337@0.23.1440.877" timestamp="1575055034741" />
-    <state x="120" y="123" width="1200" height="597" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1575394261970">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1493" height="266" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1584759901658" />
+    <state width="1493" height="266" key="GridCell.Tab.1.left" timestamp="1584759901658">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="120" y="123" width="1200" height="597" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.877/1440.-323.2560.1333@0.23.1440.877" timestamp="1575394261970" />
-    <state x="120" y="123" width="1200" height="597" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.877/1440.-323.2560.1337@0.23.1440.877" timestamp="1575310367327" />
-    <state x="399" y="277" key="com.intellij.ide.util.TipDialog" timestamp="1575553997063">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1493" height="266" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1584759901658" />
+    <state width="1493" height="266" key="GridCell.Tab.1.right" timestamp="1584759901658">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="399" y="253" key="com.intellij.ide.util.TipDialog/0.23.1440.793/1440.-323.2560.1417@0.23.1440.793" timestamp="1575385423663" />
-    <state x="399" y="254" key="com.intellij.ide.util.TipDialog/0.23.1440.797/-2560.23.2560.1417@0.23.1440.797" timestamp="1575038846237" />
-    <state x="399" y="254" key="com.intellij.ide.util.TipDialog/0.23.1440.797/1440.-323.2560.1417@0.23.1440.797" timestamp="1575288933645" />
-    <state x="399" y="277" key="com.intellij.ide.util.TipDialog/0.23.1440.877/1440.-323.2560.1333@0.23.1440.877" timestamp="1575553997063" />
-    <state x="399" y="277" key="com.intellij.ide.util.TipDialog/0.23.1440.877/1440.-323.2560.1337@0.23.1440.877" timestamp="1575054581322" />
-    <state x="378" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1575309971411">
-      <screen x="0" y="23" width="1440" height="797" />
+    <state width="1493" height="266" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1584759901658" />
+    <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1582162641425">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="378" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.797/1440.-323.2560.1417@0.23.1440.797" timestamp="1575309971411" />
-    <state x="378" y="43" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.877/1440.-323.2560.1337@0.23.1440.877" timestamp="1575308686962" />
-    <state x="386" y="169" width="942" height="476" key="find.popup" timestamp="1575574763483">
-      <screen x="0" y="23" width="1440" height="801" />
+    <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.864@0.0.1536.864" timestamp="1582162641425" />
+    <state x="402" y="77" key="Maven.ArtifactSearchDialog" timestamp="1584662024046">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="387" y="344" width="908" height="476" key="find.popup/0.23.1440.797/1440.-323.2560.1417@0.23.1440.797" timestamp="1575296170073" />
-    <state x="386" y="169" width="942" height="476" key="find.popup/0.23.1440.801/1440.-323.2560.1417@0.23.1440.801" timestamp="1575574763483" />
-    <state x="386" y="183" width="942" height="476" key="find.popup/0.23.1440.877/1440.-323.2560.1337@0.23.1440.877" timestamp="1575308650783" />
-    <state x="385" y="192" width="670" height="676" key="search.everywhere.popup" timestamp="1575375690540">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="402" y="77" key="Maven.ArtifactSearchDialog/0.0.1536.864@0.0.1536.864" timestamp="1584662024046" />
+    <state x="372" y="98" key="NewModule_or_Project.wizard" timestamp="1582668368289">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="385" y="192" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/1440.-323.2560.1333@0.23.1440.877" timestamp="1575375690540" />
+    <state x="372" y="98" key="NewModule_or_Project.wizard/0.0.1536.864@0.0.1536.864" timestamp="1582668368289" />
+    <state x="555" y="143" key="RollbackChangesDialog" timestamp="1585011942978">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="555" y="143" key="RollbackChangesDialog/0.0.1536.864@0.0.1536.864" timestamp="1585011942978" />
+    <state x="426" y="250" key="com.intellij.ide.util.TipDialog" timestamp="1582072694931">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="426" y="250" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1582072694931" />
+    <state x="412" y="157" width="1005" height="536" key="find.popup" timestamp="1582668576446">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="412" y="157" width="1005" height="536" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1582668576446" />
+    <state x="512" y="224" key="git4idea.merge.GitPullDialog" timestamp="1585011889842">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="512" y="224" key="git4idea.merge.GitPullDialog/0.0.1536.864@0.0.1536.864" timestamp="1585011889842" />
+    <state x="100" y="0" key="new project wizard" timestamp="1585010427712">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="100" y="0" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1585010427712" />
+    <state x="425" y="197" key="run.anything.popup" timestamp="1583456895221">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1583456895221" />
+    <state x="411" y="166" width="715" height="666" key="search.everywhere.popup" timestamp="1582072753417">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="411" y="166" width="715" height="666" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1582072753417" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -484,14 +574,24 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bma/persistence/dao/TopicDAO.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/bma/endpoint/controller/MemberController.java</url>
           <line>28</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bma/endpoint/controller/SacramentMeetingController.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../vivienda-maven/src/view/MB/LoginMB.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../vivienda-maven/src/validaciones/LoginValidation.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
