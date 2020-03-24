@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="entities:hibernate:hibernate.cfg.xml/Hibernate" uuid="d5a62059-a479-4706-9570-7c99767c14b6">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+C:/Desarrollo/vivienda/src/entities/hibernate/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/vivienda?zeroDateTimeBehavior=convertToNull</jdbc-url>
+    </data-source>
+  </component>
+</project>
