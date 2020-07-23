@@ -23,14 +23,18 @@ public class ChurchMemberMapper implements AbstractMapper<ChurchMember, ChurchMe
         member.setId(dto.getId());
         member.setName(dto.getName());
         member.setSurname(dto.getSurname());
-        member.setFullname(dto.getFullname());
-        if(dto.getCalling()!=null) {
+        if(dto.getFullname()==null){
+            member.setFullname(dto.getSurname() + ", " + dto.getName());
+        }else {
+            member.setFullname(dto.getFullname());
+        }
+        if (dto.getCalling() != null) {
             member.setCalling(callingMapper.mapToEntity(dto.getCalling()));
         }
-        if(dto.getCalling()!=null){
+        if (dto.getCalling() != null) {
             member.setOrganization(organizationMapper.mapToEntity(dto.getOrganization()));
         }
-        return  member;
+        return member;
     }
 
     @Override
@@ -40,16 +44,16 @@ public class ChurchMemberMapper implements AbstractMapper<ChurchMember, ChurchMe
         churchMemberDTO.setName(entity.getName());
         churchMemberDTO.setSurname(entity.getSurname());
         churchMemberDTO.setFullname(entity.getFullname());
-        if(entity.getCalling()!=null) {
+        if (entity.getCalling() != null) {
             churchMemberDTO.setCalling(callingMapper.mapToDTO(entity.getCalling()));
         }
-        if(entity.getOrganization()!=null){
+        if (entity.getOrganization() != null) {
             churchMemberDTO.setOrganization(organizationMapper.mapToDTO(entity.getOrganization()));
         }
         return churchMemberDTO;
     }
 
-    public List<ChurchMember> mapToEntityList(List<ChurchMemberDTO> dtos){
+    public List<ChurchMember> mapToEntityList(List<ChurchMemberDTO> dtos) {
         List<ChurchMember> churchMembers = new ArrayList<>();
         dtos.forEach(churchMemberDTO -> {
             churchMembers.add(mapToEntity(churchMemberDTO));
@@ -57,7 +61,7 @@ public class ChurchMemberMapper implements AbstractMapper<ChurchMember, ChurchMe
         return churchMembers;
     }
 
-    public List<ChurchMemberDTO> mapToDTOList(List<ChurchMember> churchMembers){
+    public List<ChurchMemberDTO> mapToDTOList(List<ChurchMember> churchMembers) {
         List<ChurchMemberDTO> churchMemberDTOS = new ArrayList<>();
         churchMembers.forEach(churchMember -> {
             churchMemberDTOS.add(mapToDTO(churchMember));

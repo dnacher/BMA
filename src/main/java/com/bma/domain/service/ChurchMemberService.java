@@ -56,7 +56,8 @@ public class ChurchMemberService {
 
     public List<ChurchMemberDTO> getMembers(){
         List<ChurchMember> members = this.churchMemberDAO.getChurchMembers();
-        return members.stream().map(member -> this.churchMemberMapper.mapToDTO(member)).collect(Collectors.toList());
+        List<ChurchMemberDTO> membersDTO = members.stream().map(member -> this.churchMemberMapper.mapToDTO(member)).collect(Collectors.toList());
+        return membersDTO;
     }
 
     public List<AttendanceDTO> getMembersTest(){
