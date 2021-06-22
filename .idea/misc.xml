@@ -4,15 +4,26 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../mail-template-freemaker/pom.xml" />
         <option value="$PROJECT_DIR$/../sauron/pom.xml" />
-        <option value="$PROJECT_DIR$/../vivienda-back/pom.xml" />
-        <option value="$PROJECT_DIR$/../excercises-java/pom.xml" />
+        <option value="$PROJECT_DIR$/../ship/pom.xml" />
+        <option value="$PROJECT_DIR$/../ProductManagement/pom.xml" />
+        <option value="$PROJECT_DIR$/../log4JProject/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../sauron/sauron-api/pom.xml" />
+        <option value="$PROJECT_DIR$/../sauron/sauron-domain/pom.xml" />
+        <option value="$PROJECT_DIR$/../sauron/sauron-endpoint/pom.xml" />
+        <option value="$PROJECT_DIR$/../sauron/sauron-flow/pom.xml" />
+        <option value="$PROJECT_DIR$/../sauron/sauron-integration/pom.xml" />
+        <option value="$PROJECT_DIR$/../sauron/sauron-persistence/pom.xml" />
+      </set>
+    </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

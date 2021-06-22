@@ -6,27 +6,37 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="sauron-persistence" />
-        <module name="sauron-endpoint" />
-        <module name="excercises-java" />
-        <module name="vivienda-back" />
-        <module name="sauron-integration" />
-        <module name="sauron-domain" />
-        <module name="bma" />
-        <module name="sauron-api" />
-        <module name="sauron-flow" />
+        <module name="ship" />
+        <module name="log4JProject" />
         <module name="mail-template-freemaker" />
+        <module name="ProductManagement" />
+        <module name="bma" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="excercises-java" target="8" />
+      <module name="minimarket-app" target="11" />
+      <module name="sauron-api" target="1.5" />
+      <module name="sauron-domain" target="1.5" />
+      <module name="sauron-endpoint" target="1.5" />
+      <module name="sauron-flow" target="1.5" />
+      <module name="sauron-integration" target="1.5" />
+      <module name="sauron-persistence" target="1.5" />
+      <module name="travel" target="11" />
+      <module name="vivienda-back" target="1.8" />
       <module name="vivienda-maven" target="1.8" />
+      <module name="viviendas" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="bma" options="-parameters" />
+      <module name="minimarket-app" options="-parameters" />
+      <module name="ship" options="-parameters" />
+      <module name="travel" options="-parameters" />
       <module name="vivienda-back" options="-parameters" />
       <module name="vivienda-maven" options="-parameters" />
+      <module name="viviendas" options="-parameters" />
     </option>
   </component>
 </project>

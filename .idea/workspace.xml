@@ -1,31 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3ee6e61f-6a5b-46b4-8d2f-cc903fd4071d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trader/src/mercenary/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trader/src/mercenary/Mercernary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trader/src/mercenary/model/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trader/src/mercenary/model/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trader/src/mercenary/model/PlayerType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trader/src/mercenary/utils/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/prayer/prayer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/prayer/prayer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/prayer/prayer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/prayer/prayer.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/sacrament-meeting/sacrament-meeting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/sacrament-meeting/sacrament-meeting.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/sacrament-meeting/sacrament-meeting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/sacrament-meeting/sacrament-meeting.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMA-FRONT/src/app/services/data.member.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BMA-FRONT/src/app/services/data.member.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/libreriaViviendas.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/ChurchMemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/ChurchMemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/ChurchMemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bma/domain/service/mappers/ChurchMemberMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trader/src/trader/Trader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trader/src/trader/Trader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vivienda-back/vivienda-back.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/bma.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/bma.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/email-template.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/email-template.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/macros/utils.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/macros/utils.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bw-front/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bw-front/src/app/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sauron/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../sauron/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sauron/artifact-id" beforeDir="false" afterPath="$PROJECT_DIR$/../sauron/artifact-id" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sauron/build" beforeDir="false" afterPath="$PROJECT_DIR$/../sauron/build" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sauron/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sauron/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sauron/sauron-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sauron/sauron-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sauron/sauron-domain/src/main/resources/templates/alert.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../sauron/sauron-domain/src/main/resources/templates/alert.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sauron/sauron-domain/src/main/resources/templates/alert_extend.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../sauron/sauron-domain/src/main/resources/templates/alert_extend.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sauron/sauron-domain/src/main/resources/templates/error.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../sauron/sauron-domain/src/main/resources/templates/error.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sauron/sauron-domain/src/main/resources/templates/finish-incidence.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../sauron/sauron-domain/src/main/resources/templates/finish-incidence.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sauron/sauron-domain/src/main/resources/templates/open-incidence.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../sauron/sauron-domain/src/main/resources/templates/open-incidence.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sauron/sauron-endpoint/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sauron/sauron-endpoint/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sauron/sauron-flow/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sauron/sauron-flow/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sauron/sauron-integration/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sauron/sauron-integration/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sauron/sauron-integration/src/main/java/com/despegar/fulfillment/sauron/integration/atp3/ATP3ClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sauron/sauron-integration/src/main/java/com/despegar/fulfillment/sauron/integration/atp3/ATP3ClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sauron/sauron-persistence/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sauron/sauron-persistence/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sauron/sauron-persistence/src/main/java/com/despegar/fulfillment/sauron/persistence/config/DatabaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sauron/sauron-persistence/src/main/java/com/despegar/fulfillment/sauron/persistence/config/DatabaseConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sauron/support/beta/conf/env/environment.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../sauron/support/beta/conf/env/environment.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sauron/support/dev/conf/env/environment.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../sauron/support/dev/conf/env/environment.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sauron/support/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sauron/support/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sauron/support/newrelic.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../sauron/support/newrelic.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sauron/support/prod/conf/env/environment.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../sauron/support/prod/conf/env/environment.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,43 +48,6 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="vivienda@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="vivienda@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="vivienda@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="vivienda: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="vivienda@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="vivienda: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="usuario: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-    </expand>
-    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -83,8 +60,16 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../ship" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
@@ -116,12 +101,14 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../excercises" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/../viviendas/src/main/java/com/viviendas" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/../BMA-FRONT/node_modules/protractor" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -129,33 +116,38 @@
     <property name="project.structure.proportion" value="0.1575" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/../BMA-FRONT/node_modules/typescript/lib" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="ts.external.directory.path" value="C:\Desarrollo\bw-front\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.viviendas.viviendas.exceptions" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Desarrollo\vivienda-back\src\main\resources" />
-      <recent name="C:\Desarrollo\vivienda-maven\.idea" />
-      <recent name="C:\Desarrollo\vivienda-back\src\main\java\com\vivienda\api\dto" />
-      <recent name="C:\Desarrollo\vivienda-back\src\main\java\com\vivienda\exception" />
-      <recent name="C:\Desarrollo\vivienda-back\src\main\java\com\vivienda\persistence\dao" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Utils" />
-      <recent name="persistence.entities" />
-      <recent name="vivienda" />
-      <recent name="com.bma.endpoint.controller" />
-      <recent name="com.bma.domain.service" />
+      <recent name="C:\Desarrollo\travel\src\main\java\com\travels\travel\exceptions" />
+      <recent name="C:\Desarrollo\bw-front\src\assets\img" />
+      <recent name="C:\Desarrollo\ProductManagement\src\main\resources" />
+      <recent name="C:\Desarrollo\ProductManagement\src\main\java\labs\pm\data" />
+      <recent name="C:\Desarrollo\bw-front\src\app\admin-dashboard\home" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Desarrollo\vivienda-back" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates/images" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates/macros" />
+      <recent name="C:\Desarrollo\bw-front\src\assets\img" />
+      <recent name="C:\Desarrollo\ProductManagement\src\main\java\labs\pm\data" />
+      <recent name="C:\Desarrollo\ProductManagement\src\main\java\labs.pm.app" />
+      <recent name="C:\Desarrollo\ProductManagement\src\main\resources" />
+      <recent name="C:\Desarrollo\bw-front\src\assets\css" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.minimarket.minimarketapp" />
+      <recent name="" />
+      <recent name="com.viviendas" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.travels.travel.domain.service.mappers" />
+      <recent name="com.travels.travel.utils" />
+      <recent name="com.travels.travel.error" />
+      <recent name="com.minimarket.minimarketapp.dto" />
+      <recent name="com.minimarket.minimarketapp.domain.service.mappers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -165,20 +157,13 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BmaServer">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="excercises-java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Mercernary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mercenary.Mercernary" />
-      <module name="trader" />
+  <component name="RunManager" selected="Spring Boot.Ship">
+    <configuration name="Legion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Legion.main.Legion" />
+      <module name="ProductManagement" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mercenary.*" />
+          <option name="PATTERN" value="Legion.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -186,9 +171,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Trader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="trader.Trader" />
-      <module name="trader" />
+    <configuration name="Shop (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="labs.pm.app.Shop" />
+      <module name="ProductManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="labs.pm.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="log4JMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="logJava.log4JMain" />
+      <module name="log4JProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="logJava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -202,30 +206,16 @@
       <scope-kind value="ALL" />
       <method v="2" />
     </configuration>
-    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+    <configuration name="E2E Tests (bw-front)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/../bw-front/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-package value="$PROJECT_DIR$/../bw-front/node_modules/protractor" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
       <method v="2" />
     </configuration>
-    <configuration name="vivienda-back []" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list />
-            </option>
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$/../vivienda-back" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
     </configuration>
     <configuration name="BmaServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -237,20 +227,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ViviendaServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="vivienda-back" />
+    <configuration name="Ship" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ship" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.vivienda.*" />
+          <option name="PATTERN" value="com.ship.ship.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.vivienda.ViviendaServer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ship.ship.Ship" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+    <configuration name="Angular CLI Server (BMA-FRONT)" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/../BMA-FRONT/package.json" />
       <command value="run" />
       <scripts>
@@ -260,26 +250,49 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="Angular CLI Server (bw-front)" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/../bw-front/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server (travel-front)" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/../travel-front/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Application.Trader" />
-      <item itemvalue="Application.Mercernary" />
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Shop (1)" />
+      <item itemvalue="Application.Legion" />
+      <item itemvalue="Application.log4JMain" />
       <item itemvalue="JavaScript Debug.Angular Application" />
-      <item itemvalue="Maven.vivienda-back []" />
-      <item itemvalue="npm.Angular CLI Server" />
+      <item itemvalue="npm.Angular CLI Server (bw-front)" />
+      <item itemvalue="npm.Angular CLI Server (travel-front)" />
+      <item itemvalue="npm.Angular CLI Server (BMA-FRONT)" />
+      <item itemvalue="Protractor.E2E Tests (bw-front)" />
       <item itemvalue="Protractor.E2E Tests (bma-front)" />
       <item itemvalue="Spring Boot.BmaServer" />
-      <item itemvalue="Spring Boot.ViviendaServer" />
+      <item itemvalue="Spring Boot.Ship" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Trader" />
-        <item itemvalue="Application.Mercernary" />
-        <item itemvalue="Spring Boot.ViviendaServer" />
+        <item itemvalue="Spring Boot.Ship" />
+        <item itemvalue="Application.log4JMain" />
+        <item itemvalue="Application.Shop (1)" />
+        <item itemvalue="Application.Legion" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -374,12 +387,122 @@
       <workItem from="1595167397257" duration="1241000" />
       <workItem from="1595282786833" duration="22000" />
       <workItem from="1595425452828" duration="62000" />
-      <workItem from="1595425587876" duration="9287000" />
+      <workItem from="1595425587876" duration="12174000" />
+      <workItem from="1595863076749" duration="4284000" />
+      <workItem from="1596581088750" duration="4071000" />
+      <workItem from="1596731108238" duration="2360000" />
+      <workItem from="1596758054266" duration="23810000" />
+      <workItem from="1596936380673" duration="2715000" />
+      <workItem from="1597095868221" duration="12429000" />
+      <workItem from="1597414100266" duration="4000" />
+      <workItem from="1597787118835" duration="16603000" />
+      <workItem from="1597952028557" duration="14678000" />
+      <workItem from="1598046097592" duration="20827000" />
+      <workItem from="1599227684192" duration="382000" />
+      <workItem from="1599228150083" duration="2449000" />
+      <workItem from="1599337806009" duration="22646000" />
+      <workItem from="1599778016975" duration="12992000" />
+      <workItem from="1600388548420" duration="21148000" />
+      <workItem from="1603548303951" duration="1591000" />
+      <workItem from="1603550564598" duration="73489000" />
+      <workItem from="1604534547623" duration="7141000" />
+      <workItem from="1604612355453" duration="17222000" />
+      <workItem from="1604760729780" duration="7976000" />
+      <workItem from="1606178193255" duration="599000" />
+      <workItem from="1606389424084" duration="609000" />
+      <workItem from="1606576910293" duration="1250000" />
+      <workItem from="1606578261084" duration="22142000" />
+      <workItem from="1607188876540" duration="449000" />
+      <workItem from="1607189456677" duration="3167000" />
+      <workItem from="1607204639106" duration="41635000" />
+      <workItem from="1607716156013" duration="14360000" />
+      <workItem from="1607823264664" duration="3609000" />
+      <workItem from="1608074276840" duration="7475000" />
+      <workItem from="1608085282100" duration="78000" />
+      <workItem from="1608161023947" duration="24573000" />
+      <workItem from="1608572809126" duration="1983000" />
+      <workItem from="1608823962974" duration="9000" />
+      <workItem from="1609256319170" duration="5000" />
+      <workItem from="1609263534925" duration="1196000" />
+      <workItem from="1609283809850" duration="11344000" />
+      <workItem from="1609346876720" duration="35605000" />
+      <workItem from="1609632249270" duration="1490000" />
+      <workItem from="1610481078980" duration="518000" />
+      <workItem from="1610481612196" duration="6330000" />
+      <workItem from="1610543418010" duration="2012000" />
+      <workItem from="1610545453636" duration="24847000" />
+      <workItem from="1610657095732" duration="9638000" />
+      <workItem from="1610677654337" duration="1572000" />
+      <workItem from="1610762534088" duration="1299000" />
+      <workItem from="1610764133346" duration="2072000" />
+      <workItem from="1611334468186" duration="1503000" />
+      <workItem from="1611414579349" duration="15674000" />
+      <workItem from="1611575808004" duration="15637000" />
+      <workItem from="1611658287916" duration="2005000" />
+      <workItem from="1611832970129" duration="691000" />
+      <workItem from="1613606265003" duration="6120000" />
+      <workItem from="1614898332760" duration="427000" />
+      <workItem from="1614898887296" duration="2191000" />
+      <workItem from="1615424483387" duration="2400000" />
+      <workItem from="1615590252325" duration="1499000" />
+      <workItem from="1615605466625" duration="6461000" />
+      <workItem from="1615847819902" duration="3751000" />
+      <workItem from="1615912157486" duration="1325000" />
+      <workItem from="1615926133697" duration="33970000" />
+      <workItem from="1616025861275" duration="1471000" />
+      <workItem from="1616244004026" duration="3096000" />
+      <workItem from="1616539769972" duration="2146000" />
+      <workItem from="1616629635403" duration="4046000" />
+      <workItem from="1616637419585" duration="19286000" />
+      <workItem from="1616730613984" duration="12559000" />
+      <workItem from="1616872430951" duration="303000" />
+      <workItem from="1616880186371" duration="5004000" />
+      <workItem from="1617138222140" duration="2014000" />
+      <workItem from="1617161004694" duration="716000" />
+      <workItem from="1617244337968" duration="54443000" />
+      <workItem from="1617501851615" duration="2545000" />
+      <workItem from="1617669939428" duration="856000" />
+      <workItem from="1617713964416" duration="4351000" />
+      <workItem from="1617835380230" duration="10430000" />
+      <workItem from="1617933640627" duration="3472000" />
+      <workItem from="1617970423790" duration="3655000" />
+      <workItem from="1618156323118" duration="5000" />
+      <workItem from="1618412433234" duration="926000" />
+      <workItem from="1618414112636" duration="12948000" />
+      <workItem from="1618451468373" duration="117000" />
+      <workItem from="1618535183449" duration="7620000" />
+      <workItem from="1618876897473" duration="4812000" />
+      <workItem from="1618881781682" duration="1461000" />
+      <workItem from="1618884389666" duration="816000" />
+      <workItem from="1618918577469" duration="14339000" />
+      <workItem from="1619284824281" duration="736000" />
+      <workItem from="1619485663018" duration="5245000" />
+      <workItem from="1619567733253" duration="14924000" />
+      <workItem from="1619656233621" duration="14054000" />
+      <workItem from="1619800402122" duration="222000" />
+      <workItem from="1619822486383" duration="2336000" />
+      <workItem from="1619829927019" duration="4000" />
+      <workItem from="1619911093980" duration="3685000" />
+      <workItem from="1620133842471" duration="872000" />
+      <workItem from="1620171827744" duration="1279000" />
+      <workItem from="1620174244769" duration="2081000" />
+      <workItem from="1620180792011" duration="758000" />
+      <workItem from="1620485961226" duration="1754000" />
+      <workItem from="1620510794433" duration="2303000" />
+      <workItem from="1620685853583" duration="5601000" />
+      <workItem from="1621469134353" duration="14691000" />
+      <workItem from="1621634328623" duration="2209000" />
+      <workItem from="1622585367918" duration="2162000" />
+      <workItem from="1622676591481" duration="593000" />
+      <workItem from="1622846080608" duration="1104000" />
+      <workItem from="1622978918188" duration="186000" />
+      <workItem from="1623159156099" duration="1313000" />
+      <workItem from="1624379498687" duration="24000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -395,84 +518,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="249" y="7" key="#Project_Structure" timestamp="1595088478079">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="249" y="7" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1595088478079" />
-    <state x="569" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1595087738108">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="569" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1595087738108" />
-    <state x="449" y="168" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1592875029615">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="449" y="168" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.864@0.0.1536.864" timestamp="1592875029615" />
-    <state x="549" y="126" key="FileChooserDialogImpl" timestamp="1595084182202">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="549" y="126" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1595084182202" />
-    <state width="1024" height="313" key="GridCell.Tab.0.bottom" timestamp="1595517724284">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1024" height="313" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1595517724284" />
-    <state width="1024" height="313" key="GridCell.Tab.0.center" timestamp="1595517724284">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1024" height="313" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1595517724284" />
-    <state width="1024" height="313" key="GridCell.Tab.0.left" timestamp="1595517724284">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1024" height="313" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1595517724284" />
-    <state width="1024" height="313" key="GridCell.Tab.0.right" timestamp="1595517724284">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1024" height="313" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1595517724284" />
-    <state width="1024" height="313" key="GridCell.Tab.1.bottom" timestamp="1595517724284">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1024" height="313" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1595517724284" />
-    <state width="1024" height="313" key="GridCell.Tab.1.center" timestamp="1595517724284">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1024" height="313" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1595517724284" />
-    <state width="1024" height="313" key="GridCell.Tab.1.left" timestamp="1595517724284">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1024" height="313" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1595517724284" />
-    <state width="1024" height="313" key="GridCell.Tab.1.right" timestamp="1595517724284">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1024" height="313" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1595517724284" />
-    <state width="1024" height="313" key="GridCell.Tab.2.bottom" timestamp="1595516658554">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1024" height="313" key="GridCell.Tab.2.bottom/0.0.1536.864@0.0.1536.864" timestamp="1595516658554" />
-    <state width="1024" height="313" key="GridCell.Tab.2.center" timestamp="1595516658554">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1024" height="313" key="GridCell.Tab.2.center/0.0.1536.864@0.0.1536.864" timestamp="1595516658554" />
-    <state width="1024" height="313" key="GridCell.Tab.2.left" timestamp="1595516658554">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1024" height="313" key="GridCell.Tab.2.left/0.0.1536.864@0.0.1536.864" timestamp="1595516658554" />
-    <state width="1024" height="313" key="GridCell.Tab.2.right" timestamp="1595516658554">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1024" height="313" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1595516658554" />
-    <state x="439" y="137" key="NewModule_or_Project.wizard" timestamp="1595084198677">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="439" y="137" key="NewModule_or_Project.wizard/0.0.1536.864@0.0.1536.864" timestamp="1595084198677" />
-    <state x="209" y="93" key="new project wizard" timestamp="1595084311087">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="209" y="93" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1595084311087" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1595084509792">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1595084509792" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -527,7 +572,43 @@
           <line>237</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../excercises-java/src/main/java/view/MainView.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../viviendas/src/main/java/com/viviendas/security/MyUserDetailService.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../viviendas/src/main/java/com/viviendas/controller/homeController.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../ship/src/main/java/com/ship/ship/domain/service/CartService.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../ProductManagement/src/main/java/labs.pm.app/Shop.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.minimarket.minimarketapp.persistence.model.TransactionLine" memberName="transaction" />
+        <PinnedItemInfo parentTag="com.viviendas.viviendas.dto.UserDTO" memberName="userRole" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="transaction.lines" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

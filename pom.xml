@@ -23,7 +23,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
 
-        <endpoint>bma</endpoint>
+        <com.minimarket.minimarketapp.endpoint>bma</com.minimarket.minimarketapp.endpoint>
         <main-class>com.bma.BmaServer</main-class>
         <health-check-token>imbma</health-check-token>
         <health-check-timeout>120</health-check-timeout>
@@ -31,7 +31,7 @@
 
         <hibernate-core.version>5.4.2.Final</hibernate-core.version>
         <hibernate-common.version>5.1.0.Final</hibernate-common.version>
-        <hibernate-validations.version>6.1.0.Final</hibernate-validations.version>
+        <hibernate-validations.version>6.1.5.Final</hibernate-validations.version>
         <hibernate-validations-uel.version>3.0.1-b09</hibernate-validations-uel.version>
         <c3p0.version>0.9.1.2</c3p0.version>
     </properties>

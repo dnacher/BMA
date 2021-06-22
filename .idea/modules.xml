@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../BMA-FRONT/BMA-FRONT.iml" filepath="$PROJECT_DIR$/../BMA-FRONT/BMA-FRONT.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../trader/trader.iml" filepath="$PROJECT_DIR$/../trader/trader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bw-front/bw-front.iml" filepath="$PROJECT_DIR$/../bw-front/bw-front.iml" />
     </modules>
   </component>
 </project>
